@@ -1,0 +1,17 @@
+[project]
+name = "kite-forecast"
+version = "0.1.0"
+description = "Kitesurf conditions analysis for Gran Canaria"
+readme = "README.md"
+authors = [
+    { name = "Sergio Betancor", email = "serbetancor@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+kite-forecast = "kite_forecast:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
