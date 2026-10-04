@@ -1,74 +1,61 @@
-from dataclasses import dataclass
-
+from kite_forecast.models.beach import Beach
 from kite_forecast.models.location import Location
 
-
-@dataclass(frozen=True)
-class Beach:
-    id: str
-    name: str
-    location: Location
-    # orientation
-    # preferred_wind_directions
-    # ideal_wind_min
-    # ideal_wind_max
-
-
-BEACHES = (
+BEACHES: tuple[Beach, ...] = (
     Beach(
         id="salinas",
         name="Salinas",
         location=Location(
-            latitude=0.0,
-            longitude=0.0,
+            latitude=27.818078,
+            longitude=-15.421142,
         ),
     ),
     Beach(
         id="vargas",
         name="Vargas",
         location=Location(
-            latitude=0.0,
-            longitude=0.0,
+            latitude=27.8883,
+            longitude=-15.3938,
         ),
     ),
     Beach(
-        id="bocababarranco",
-        name="Bocababarranco",
+        id="bocabarranco",
+        name="Bocabarranco",
         location=Location(
-            latitude=0.0,
-            longitude=0.0,
+            latitude=28.03182,
+            longitude=-15.39614,
         ),
     ),
     Beach(
         id="las-burras",
         name="Las Burras",
         location=Location(
-            latitude=0.0,
-            longitude=0.0,
+            latitude=27.7655,
+            longitude=-15.5529,
         ),
     ),
     Beach(
         id="castillo-del-romeral",
         name="Castillo del Romeral",
         location=Location(
-            latitude=0.0,
-            longitude=0.0,
+            latitude=27.7973,
+            longitude=-15.4631,
         ),
     ),
     Beach(
         id="el-burrero",
         name="El Burrero",
         location=Location(
-            latitude=0.0,
-            longitude=0.0,
+            latitude=27.9106,
+            longitude=-15.3865,
         ),
     ),
     Beach(
         id="punta-de-maspalomas",
         name="Punta de Maspalomas",
         location=Location(
-            latitude=0.0,
-            longitude=0.0,
+            latitude=27.73885,
+            longitude=-15.56943,
         ),
     ),
 )

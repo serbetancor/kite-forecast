@@ -7,7 +7,10 @@ authors = [
     { name = "Sergio Betancor", email = "serbetancor@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "httpx>=0.28.1",
+    "pydantic>=2.13.5",
+]
 
 [project.scripts]
 kite-forecast = "kite_forecast:main"
@@ -15,3 +18,23 @@ kite-forecast = "kite_forecast:main"
 [build-system]
 requires = ["uv_build>=0.12.22,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.414",
+    "pytest>=9.1.1",
+    "ruff>=0.16.10",
+]
+
+[tool.pyright]
+include = ["src"]
+typeCheckingMode = "strict"
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
