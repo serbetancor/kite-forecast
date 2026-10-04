@@ -25,36 +25,37 @@ class OpenMeteoWeatherResponse(BaseModel):
 class OpenMeteoWeatherProvider:
     BASE_URL = "https://api.open-meteo.com/v1/forecast"
 
-    async def get_forecasts(
+    async def get_forecast(
         self,
-        beaches: tuple[Beach, ...],
-    ) -> list[WeatherForecast]:
-        latitudes = ",".join(str(beach.location.latitude) for beach in beaches)
-        longitudes = ",".join(str(beach.location.longitude) for beach in beaches)
-
+        beach: Beach,
+        timestamp: datetime,
+    ) -> WeatherForecast:
         url = (
             f"{self.BASE_URL}"
-            f"?latitude={latitudes}"
-            f"&longitude={longitudes}"
+            f"?latitude={beach.location.latitude}"
+            f"&longitude={beach.location.longitude}"
             "&hourly=wind_speed_10m,wind_direction_10m,"
             "wind_gusts_10m,temperature_2m"
-            "&forecast_days=2"
+            f"&start_date={timestamp.date()}"
+            f"&end_date={timestamp.date()}"
             "&timezone=Europe%2FMadrid"
         )
 
         data = await get_json(url)
+        response = OpenMeteoWeatherResponse.model_validate(data)
 
-        if isinstance(data, list):
-            locations = [
-                OpenMeteoWeatherResponse.model_validate(location) for location in data
-            ]
-        else:
-            locations = [OpenMeteoWeatherResponse.model_validate(data)]
+        forecast = to_weather_forecast(beach, response)
 
-        return [
-            to_weather_forecast(beach, response)
-            for beach, response in zip(beaches, locations)
-        ]
+        for observation in forecast.observations:
+            if observation.timestamp == timestamp:
+                return WeatherForecast(
+                    beach=forecast.beach,
+                    model_latitude=forecast.model_latitude,
+                    model_longitude=forecast.model_longitude,
+                    observations=[observation],
+                )
+
+        raise ValueError(f"No weather forecast found for {beach.name} at {timestamp}")
 
 
 def to_weather_observations(

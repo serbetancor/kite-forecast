@@ -1,22 +1,52 @@
+# =========================
 # Python
+# =========================
+
 __pycache__/
 *.py[cod]
+*.pyo
 
-# Virtual environment
 .venv/
+venv/
+env/
 
-# Tooling
 .pytest_cache/
 .mypy_cache/
+.pyright/
 .ruff_cache/
 
-# IDE
-.vscode/
-.idea/
+.coverage
+htmlcov/
+coverage.xml
 
+# =========================
+# Node / frontend
+# =========================
+
+node_modules/
+dist/
+.vite/
+
+# =========================
 # Environment
+# =========================
+
 .env
 .env.*
+!.env.example
 
-# Local data
-data/
+# =========================
+# IDE / editors
+# =========================
+
+.vscode/*
+!.vscode/settings.json
+
+.idea/
+
+# =========================
+# OS
+# =========================
+
+.DS_Store
+Thumbs.db

@@ -1,7 +1,12 @@
+import asyncio
+from datetime import datetime
+from unittest.mock import AsyncMock, patch
+
 from kite_forecast.config.beaches import BEACHES
 from kite_forecast.models.marine import MarineObservation
-from kite_forecast.providers.open_meteo import (
-    OpenMeteoHourly,
+from kite_forecast.providers.open_meteo_marine import (
+    OpenMeteoMarineHourly,
+    OpenMeteoMarineProvider,
     OpenMeteoMarineResponse,
     to_marine_forecast,
     to_marine_observations,
@@ -13,7 +18,7 @@ def test_to_marine_observations() -> None:
         latitude=27.791664,
         longitude=-15.458328,
         timezone="Europe/Madrid",
-        hourly=OpenMeteoHourly(
+        hourly=OpenMeteoMarineHourly(
             time=[
                 "2026-10-03T12:00",
                 "2026-10-03T13:00",
@@ -27,7 +32,7 @@ def test_to_marine_observations() -> None:
         ),
     )
 
-    observations = to_marine_observations(response)
+    observations = to_marine_observations(response.hourly)
 
     assert len(observations) == 2
     assert all(
@@ -52,7 +57,7 @@ def test_to_marine_forecast() -> None:
         latitude=27.791664,
         longitude=-15.458328,
         timezone="Europe/Madrid",
-        hourly=OpenMeteoHourly(
+        hourly=OpenMeteoMarineHourly(
             time=["2026-10-03T12:00"],
             wave_height=[1.24],
             wave_direction=[53.0],
@@ -70,3 +75,50 @@ def test_to_marine_forecast() -> None:
     assert forecast.model_longitude == -15.458328
     assert len(forecast.observations) == 1
     assert forecast.observations[0].wave_height_m == 1.24
+
+
+def test_get_forecast() -> None:
+    beach = BEACHES[0]
+    timestamp = datetime(2026, 10, 3, 12)
+
+    response = OpenMeteoMarineResponse(
+        latitude=27.791664,
+        longitude=-15.458328,
+        timezone="Europe/Madrid",
+        hourly=OpenMeteoMarineHourly(
+            time=[
+                "2026-10-03T12:00",
+                "2026-10-03T13:00",
+            ],
+            wave_height=[1.24, 1.18],
+            wave_direction=[53.0, 55.0],
+            wave_period=[5.9, 6.1],
+            sea_level_height_msl=[-0.62, -0.55],
+            ocean_current_velocity=[1.5, 1.7],
+            ocean_current_direction=[234.0, 230.0],
+        ),
+    )
+
+    provider = OpenMeteoMarineProvider()
+
+    with patch(
+        "kite_forecast.providers.open_meteo_marine.get_json",
+        new_callable=AsyncMock,
+        return_value=response.model_dump(),
+    ):
+        forecast = asyncio.run(
+            provider.get_forecast(
+                beach,
+                timestamp,
+            )
+        )
+
+    assert forecast.beach == beach
+    assert len(forecast.observations) == 1
+
+    observation = forecast.observations[0]
+
+    assert observation.timestamp == timestamp
+    assert observation.wave_height_m == 1.24
+    assert observation.wave_direction_deg == 53.0
+    assert observation.wave_period_s == 5.9

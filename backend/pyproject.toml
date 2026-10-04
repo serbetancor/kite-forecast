@@ -2,7 +2,7 @@
 name = "kite-forecast"
 version = "0.1.0"
 description = "Kitesurf conditions analysis for Gran Canaria"
-readme = "README.md"
+readme = "../README.md"
 authors = [
     { name = "Sergio Betancor", email = "serbetancor@gmail.com" }
 ]
