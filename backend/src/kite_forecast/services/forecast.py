@@ -11,6 +11,7 @@ from kite_forecast.reports.objective import (
     build_objective_report,
 )
 from kite_forecast.services.kite_sizing import build_kite_sizing_matrix
+from kite_forecast.services.spot_scoring import score_forecast
 
 
 class ForecastService:
@@ -49,7 +50,8 @@ class ForecastService:
         timestamp: datetime,
     ) -> ObjectiveReport:
         forecast = await self._get_hourly_forecast(beach, timestamp)
-        return build_objective_report(forecast)
+        score = score_forecast(forecast)
+        return build_objective_report(forecast, score)
 
     async def get_kite_sizing(
         self,

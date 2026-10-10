@@ -1,11 +1,9 @@
 from kite_forecast.config.spot_conditions import SPOT_CONDITIONS
 from kite_forecast.models.forecast import HourlyForecast
 from kite_forecast.models.score import (
-    ComponentScore,
     HourlyScore,
-    HourlyScoreResult,
-    WaveScoreBreakdown,
-    WindScoreBreakdown,
+    WaveScore,
+    WindScore,
 )
 from kite_forecast.models.spot_conditions import SpotConditions
 
@@ -81,7 +79,7 @@ def _wave_period_score(period_s: float, min_period_s: float) -> float:
 def score_wind(
     forecast: HourlyForecast,
     conditions: SpotConditions,
-) -> WindScoreBreakdown:
+) -> WindScore:
     wind_conditions = conditions.wind
     observation = forecast.weather
 
@@ -111,18 +109,18 @@ def score_wind(
         + gusts_score * weights.gusts
     )
 
-    return WindScoreBreakdown(
+    return WindScore(
+        total=total,
         speed=speed_score,
         direction=direction_score,
         gusts=gusts_score,
-        total=total,
     )
 
 
 def score_waves(
     forecast: HourlyForecast,
     conditions: SpotConditions,
-) -> WaveScoreBreakdown:
+) -> WaveScore:
     wave_conditions = conditions.waves
     observation = forecast.marine
 
@@ -149,15 +147,15 @@ def score_waves(
         + direction_score * weights.direction
     )
 
-    return WaveScoreBreakdown(
+    return WaveScore(
+        total=total,
         height=height_score,
         period=period_score,
         direction=direction_score,
-        total=total,
     )
 
 
-def score_forecast(forecast: HourlyForecast) -> HourlyScoreResult:
+def score_forecast(forecast: HourlyForecast) -> HourlyScore:
     conditions = next(
         (item for item in SPOT_CONDITIONS if item.beach_id == forecast.beach.id),
         None,
@@ -170,18 +168,18 @@ def score_forecast(forecast: HourlyForecast) -> HourlyScoreResult:
     wind = score_wind(forecast, conditions)
     waves = score_waves(forecast, conditions)
 
-    return HourlyScoreResult(
-        score=HourlyScore(
-            wind=ComponentScore(
-                score=wind.total,
-                reason="Provisional wind score.",
-            ),
-            waves=ComponentScore(
-                score=waves.total,
-                reason="Wave scoring is not calibrated yet.",
-            ),
-            total=wind.total * 0.7 + waves.total * 0.3,
+    return HourlyScore(
+        total=wind.total * 0.7 + waves.total * 0.3,
+        wind=WindScore(
+            total=wind.total,
+            speed=wind.speed,
+            direction=wind.direction,
+            gusts=wind.gusts,
         ),
-        wind=wind,
-        waves=waves,
+        waves=WaveScore(
+            total=waves.total,
+            height=waves.height,
+            period=waves.period,
+            direction=waves.direction,
+        ),
     )

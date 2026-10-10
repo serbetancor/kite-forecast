@@ -1,4 +1,4 @@
-from kite_forecast.models.score import WaveScoreBreakdown
+from kite_forecast.models.score import WaveScore
 from kite_forecast.models.spot_conditions import WaveConditions
 from kite_forecast.scoring.utils import angular_distance_deg, linear_score
 
@@ -46,7 +46,7 @@ def score_waves(
     direction_deg: float,
     period_s: float,
     conditions: WaveConditions,
-) -> WaveScoreBreakdown:
+) -> WaveScore:
     height_score = score_wave_height(
         height_m,
         conditions,
@@ -70,11 +70,11 @@ def score_waves(
         + period_score * weights.period
     )
 
-    return WaveScoreBreakdown(
+    return WaveScore(
+        total=total,
         height=height_score,
         direction=direction_score,
         period=period_score,
-        total=total,
     )
 
 
@@ -93,11 +93,3 @@ def score_wave_direction(
         return 0.0
 
     return 100.0 * (1 - closest_distance / tolerance)
-
-
-def describe_waves(
-    height_m: float,
-    direction_deg: float,
-    period_s: float,
-) -> str:
-    return f"{height_m:.1f} m, {direction_deg:.0f}°, período {period_s:.1f} s"

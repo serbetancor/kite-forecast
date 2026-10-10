@@ -19,6 +19,24 @@ const cellsByCombination = computed(() => {
   return cells
 })
 
+const visibleWeights = computed(() =>
+  props.matrix.weights_kg.filter((weight) =>
+    props.matrix.kite_sizes_m2.some((size) => {
+      const cell = getCell(weight, size)
+      return cell !== undefined && cell.score > 0
+    }),
+  ),
+)
+
+const visibleSizes = computed(() =>
+  props.matrix.kite_sizes_m2.filter((size) =>
+    props.matrix.weights_kg.some((weight) => {
+      const cell = getCell(weight, size)
+      return cell !== undefined && cell.score > 0
+    }),
+  ),
+)
+
 function getCell(weight: number, size: number): KiteSizingCell | undefined {
   return cellsByCombination.value.get(`${weight}-${size}`)
 }
@@ -57,7 +75,7 @@ function selectCell(cell: KiteSizingCell | undefined) {
       </div>
     </div>
 
-    <div class="mt-6 overflow-x-auto pb-3">
+    <div class="mt-6 overflow-x-hidden pb-3">
       <div class="min-w-212.5">
         <div class="mb-2 pl-16 text-center text-sm text-slate-400">
           Peso del rider (kg)
@@ -72,17 +90,14 @@ function selectCell(cell: KiteSizingCell | undefined) {
           <div></div>
 
           <div
-            v-for="weight in matrix.weights_kg"
+            v-for="weight in visibleWeights"
             :key="weight"
             class="pb-2 text-center text-xs text-slate-400"
           >
             {{ weight }}
           </div>
 
-          <template
-            v-for="size in [...matrix.kite_sizes_m2].reverse()"
-            :key="size"
-          >
+          <template v-for="size in [...visibleSizes].reverse()" :key="size">
             <div
               class="flex items-center justify-end pr-3 text-sm text-slate-300"
             >
@@ -90,7 +105,7 @@ function selectCell(cell: KiteSizingCell | undefined) {
             </div>
 
             <button
-              v-for="weight in matrix.weights_kg"
+              v-for="weight in visibleWeights"
               :key="`${weight}-${size}`"
               type="button"
               class="aspect-square min-w-0 rounded-sm border transition hover:z-10 hover:scale-110 hover:border-white focus:ring-2 focus:ring-white focus:outline-none"

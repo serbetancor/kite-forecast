@@ -1,3 +1,4 @@
+import os
 from datetime import date, datetime
 from typing import TypedDict
 
@@ -9,9 +10,12 @@ from kite_forecast.services.forecast import ForecastService
 
 app = FastAPI(title="Kite Forecast API")
 
+
+frontend_urls = os.getenv("FRONTEND_URL", "http://localhost:5173")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=frontend_urls,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

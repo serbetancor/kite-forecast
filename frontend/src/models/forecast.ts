@@ -32,6 +32,26 @@ export interface WindReport {
   gusts_knots: number
 }
 
+export interface WindScoreReport {
+  total: number
+  speed: number
+  direction: number
+  gusts: number
+}
+
+export interface WavesScoreReport {
+  total: number
+  height: number
+  period: number
+  direction: number
+}
+
+export interface ScoreReport {
+  total: number
+  wind: WindScoreReport
+  waves: WavesScoreReport
+}
+
 export interface ObjectiveReport {
   beach: Beach
   timestamp: string
@@ -39,6 +59,7 @@ export interface ObjectiveReport {
   weather: WeatherReport
   waves: WavesReport
   sea: SeaReport
+  score: ScoreReport
 }
 
 export interface KiteSizingCell {

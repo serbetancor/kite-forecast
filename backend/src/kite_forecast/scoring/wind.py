@@ -1,4 +1,4 @@
-from kite_forecast.models.score import WindScoreBreakdown
+from kite_forecast.models.score import WindScore
 from kite_forecast.models.spot_conditions import WindConditions
 from kite_forecast.scoring.utils import (
     angular_distance_deg,
@@ -66,7 +66,7 @@ def score_wind(
     direction_deg: float,
     gust_speed_knots: float,
     conditions: WindConditions,
-) -> WindScoreBreakdown:
+) -> WindScore:
     speed_score = score_wind_speed(
         speed_knots,
         conditions,
@@ -90,19 +90,9 @@ def score_wind(
         + gust_score * weights.gusts
     )
 
-    return WindScoreBreakdown(
+    return WindScore(
+        total=total,
         speed=speed_score,
         direction=direction_score,
         gusts=gust_score,
-        total=total,
-    )
-
-
-def describe_wind(
-    speed_knots: float,
-    direction_deg: float,
-    gust_speed_knots: float,
-) -> str:
-    return (
-        f"{speed_knots:.1f} kn, {direction_deg:.0f}°, ráfagas {gust_speed_knots:.1f} kn"
     )

@@ -4,6 +4,7 @@ from pydantic import BaseModel
 
 from kite_forecast.models.beach import Beach
 from kite_forecast.models.forecast import HourlyForecast
+from kite_forecast.models.score import HourlyScore
 from kite_forecast.utils.directions import degrees_to_cardinal
 
 
@@ -39,10 +40,12 @@ class ObjectiveReport(BaseModel):
     weather: WeatherReport
     waves: WavesReport
     sea: SeaReport
+    score: HourlyScore
 
 
 def build_objective_report(
     forecast: HourlyForecast,
+    score: HourlyScore,
 ) -> ObjectiveReport:
     weather = forecast.weather
     marine = forecast.marine
@@ -70,7 +73,8 @@ def build_objective_report(
             current_velocity_kmh=marine.current_velocity_kmh,
             current_direction_deg=marine.current_direction_deg,
             current_direction_cardinal=degrees_to_cardinal(
-                marine.current_direction_deg
+                marine.current_direction_deg,
             ),
         ),
+        score=score,
     )
