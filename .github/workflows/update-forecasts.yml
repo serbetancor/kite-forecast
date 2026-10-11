@@ -1,0 +1,280 @@
+name: Update forecast cache
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+      timezone: "Atlantic/Canary"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-forecast-cache
+  cancel-in-progress: false
+
+jobs:
+  update-forecasts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Install dependencies
+        working-directory: backend
+        run: uv sync --locked --no-dev
+
+      - name: Configure Git and prepare daily branch
+        id: prepare
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git fetch origin main
+
+          RUN_DATE="$(TZ=Atlantic/Canary date +%F)"
+          BRANCH_NAME="bot/forecasts-${RUN_DATE}"
+          MAIN_HEAD="$(git rev-parse origin/main)"
+
+          git checkout -B "$BRANCH_NAME" origin/main
+
+          PREVIOUS_COMMIT_IS_BOT=false
+
+          if [ "$(git show -s --format=%ae "$MAIN_HEAD")" = \
+            "41898282+github-actions[bot]@users.noreply.github.com" ] \
+            && git show -s --format=%B "$MAIN_HEAD" \
+              | grep -Fxq "Forecast-Cache-Bot: true"; then
+            PREVIOUS_COMMIT_IS_BOT=true
+          fi
+
+          {
+            echo "branch_name=$BRANCH_NAME"
+            echo "main_head=$MAIN_HEAD"
+            echo "previous_commit_is_bot=$PREVIOUS_COMMIT_IS_BOT"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Update beaches sequentially
+        working-directory: backend
+        env:
+          BRANCH_NAME: ${{ steps.prepare.outputs.branch_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          BEACH_IDS="$(uv run --no-sync python -c \
+            'from kite_forecast.config.beaches import BEACHES; print("\n".join(beach.id for beach in BEACHES))')"
+
+          TOTAL="$(printf '%s\n' "$BEACH_IDS" | grep -c .)"
+          INDEX=0
+
+          while IFS= read -r BEACH_ID; do
+            [ -n "$BEACH_ID" ] || continue
+
+            INDEX=$((INDEX + 1))
+
+            echo "[$INDEX/$TOTAL] Updating forecast for $BEACH_ID..."
+
+            uv run --no-sync python scripts/update_forecasts.py \
+              --beach-id "$BEACH_ID"
+
+            OUTPUT_FILE="data/forecasts/${BEACH_ID}.json"
+
+            if [ ! -s "$OUTPUT_FILE" ]; then
+              echo "::error::Missing or empty forecast file: $OUTPUT_FILE"
+              exit 1
+            fi
+
+            git add "$OUTPUT_FILE"
+
+            if ! git diff --cached --quiet; then
+              git commit -m "chore: update forecast for ${BEACH_ID}"
+              git push --force origin "$BRANCH_NAME"
+            else
+              echo "No changes for $BEACH_ID."
+            fi
+
+            if [ "$INDEX" -lt "$TOTAL" ]; then
+              echo "Waiting 3 minutes before the next beach..."
+              sleep 180
+            fi
+          done <<< "$BEACH_IDS"
+
+      - name: Validate complete forecast cache
+        working-directory: backend
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          uv run --no-sync python - <<'PY'
+          from pathlib import Path
+
+          from kite_forecast.config.beaches import BEACHES
+          from kite_forecast.models.cached_forecast import CachedForecast
+
+          directory = Path("data/forecasts")
+
+          expected_files = {f"{beach.id}.json" for beach in BEACHES}
+          actual_files = {path.name for path in directory.glob("*.json")}
+
+          if actual_files != expected_files:
+              raise SystemExit(
+                  f"Forecast files mismatch. Expected: {expected_files}; "
+                  f"found: {actual_files}"
+              )
+
+          for beach in BEACHES:
+              path = directory / f"{beach.id}.json"
+              forecast = CachedForecast.model_validate_json(
+                  path.read_text(encoding="utf-8")
+              )
+
+              if (
+                  forecast.weather.beach.id != beach.id
+                  or forecast.marine.beach.id != beach.id
+              ):
+                  raise SystemExit(
+                      f"Forecast data does not match beach {beach.id}"
+                  )
+
+              print(f"Validated: {path.name}")
+
+          print("All forecast files are present and valid.")
+          PY
+
+      - name: Generate score cache
+        working-directory: backend
+        run: uv run --no-sync python scripts/update_scores.py
+
+      - name: Commit score cache
+        shell: bash
+        env:
+          BRANCH_NAME: ${{ steps.prepare.outputs.branch_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add backend/data/scores.json
+
+          if git diff --cached --quiet; then
+            echo "Score cache has no changes."
+            exit 0
+          fi
+
+          git commit \
+            -m "chore: update forecast scores cache" \
+            -m "Forecast-Cache-Bot: true"
+
+          git push origin "$BRANCH_NAME"
+
+      - name: Check for changes
+        id: changes
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git fetch origin main
+
+          if git diff --quiet "origin/main...${{ steps.prepare.outputs.branch_name }}"; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No forecast changes to publish."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create or update pull request
+        if: steps.changes.outputs.changed == 'true'
+        id: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH_NAME: ${{ steps.prepare.outputs.branch_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          PR_NUMBER="$(gh pr list \
+            --base main \
+            --head "$BRANCH_NAME" \
+            --state open \
+            --json number \
+            --jq '.[0].number // empty')"
+
+          if [ -z "$PR_NUMBER" ]; then
+            gh pr create \
+              --base main \
+              --head "$BRANCH_NAME" \
+              --title "chore: update forecast cache" \
+              --body "Automated daily forecast cache update.
+
+          All beach forecasts were fetched and validated successfully.
+
+          Forecast-Cache-Bot: true"
+
+            PR_NUMBER="$(gh pr view "$BRANCH_NAME" \
+              --json number --jq '.number')"
+          fi
+
+          echo "number=$PR_NUMBER" >> "$GITHUB_OUTPUT"
+          echo "Created or updated PR #$PR_NUMBER."
+
+      - name: Squash and merge pull request
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ steps.pr.outputs.number }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          gh pr merge "$PR_NUMBER" \
+            --squash \
+            --delete-branch \
+            --subject "chore: update forecast cache" \
+            --body "Forecast-Cache-Bot: true"
+
+      - name: Consolidate consecutive bot updates
+        if: steps.changes.outputs.changed == 'true' && steps.prepare.outputs.previous_commit_is_bot == 'true'
+        env:
+          PREVIOUS_MAIN_HEAD: ${{ steps.prepare.outputs.main_head }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git fetch origin main
+          git checkout -B main origin/main
+
+          MERGED_HEAD="$(git rev-parse origin/main)"
+          MERGED_PARENT="$(git rev-parse "${MERGED_HEAD}^")"
+
+          # Never rewrite main if the merge did not land directly
+          # on the exact commit that this workflow inspected.
+          if [ "$MERGED_PARENT" != "$PREVIOUS_MAIN_HEAD" ]; then
+            echo "::error::Unexpected main history. Refusing to rewrite it."
+            exit 1
+          fi
+
+          PREVIOUS_PARENT="$(git rev-parse "${PREVIOUS_MAIN_HEAD}^")"
+
+          # Keep the latest forecast tree but replace the two
+          # consecutive bot commits with a single commit.
+          git reset --soft "$PREVIOUS_PARENT"
+
+          git commit \
+            -m "chore: update forecast cache" \
+            -m "Forecast-Cache-Bot: true"
+
+          git push --force-with-lease origin main

@@ -37,7 +37,7 @@ async def get_json(url: str) -> dict[str, object]:
                     raise
 
                 logger.warning(
-                    "Open-Meteo connection failed. " "Retrying (attempt %s/%s)",
+                    "Open-Meteo connection failed. Retrying (attempt %s/%s)",
                     attempt,
                     MAX_ATTEMPTS,
                 )
@@ -49,7 +49,7 @@ async def get_json(url: str) -> dict[str, object]:
                     raise
 
                 logger.warning(
-                    "Open-Meteo returned HTTP %s. " "Retrying (attempt %s/%s)",
+                    "Open-Meteo returned HTTP %s. Retrying (attempt %s/%s)",
                     status_code,
                     attempt,
                     MAX_ATTEMPTS,

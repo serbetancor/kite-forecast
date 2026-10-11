@@ -50,7 +50,7 @@ def build_kite_sizing_matrix(
         if wind_speed <= 0:
             ideal_size = 0.0
         else:
-            ideal_size = weight * 2.2 / wind_speed
+            ideal_size = (weight * 2.2) / (wind_speed * 0.539957)
 
         for kite_size in kite_sizes:
             score = _suitability_score(
