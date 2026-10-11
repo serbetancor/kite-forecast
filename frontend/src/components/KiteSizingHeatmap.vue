@@ -19,24 +19,6 @@ const cellsByCombination = computed(() => {
   return cells
 })
 
-const visibleWeights = computed(() =>
-  props.matrix.weights_kg.filter((weight) =>
-    props.matrix.kite_sizes_m2.some((size) => {
-      const cell = getCell(weight, size)
-      return cell !== undefined && cell.score > 0
-    }),
-  ),
-)
-
-const visibleSizes = computed(() =>
-  props.matrix.kite_sizes_m2.filter((size) =>
-    props.matrix.weights_kg.some((weight) => {
-      const cell = getCell(weight, size)
-      return cell !== undefined && cell.score > 0
-    }),
-  ),
-)
-
 function getCell(weight: number, size: number): KiteSizingCell | undefined {
   return cellsByCombination.value.get(`${weight}-${size}`)
 }
@@ -69,9 +51,9 @@ function selectCell(cell: KiteSizingCell | undefined) {
       </div>
 
       <div class="text-sm text-slate-400">
-        Viento: {{ matrix.wind_speed_kmh }} kmh
+        Viento: {{ matrix.wind_speed_kmh }} km/h
         <span class="mx-1">·</span>
-        Rachas: {{ matrix.wind_gusts_kmh }} kmh
+        Rachas: {{ matrix.wind_gusts_kmh }} km/h
       </div>
     </div>
 
@@ -90,14 +72,17 @@ function selectCell(cell: KiteSizingCell | undefined) {
           <div></div>
 
           <div
-            v-for="weight in visibleWeights"
+            v-for="weight in matrix.weights_kg"
             :key="weight"
             class="pb-2 text-center text-xs text-slate-400"
           >
             {{ weight }}
           </div>
 
-          <template v-for="size in [...visibleSizes].reverse()" :key="size">
+          <template
+            v-for="size in [...matrix.kite_sizes_m2].reverse()"
+            :key="size"
+          >
             <div
               class="flex items-center justify-end pr-3 text-sm text-slate-300"
             >
@@ -105,7 +90,7 @@ function selectCell(cell: KiteSizingCell | undefined) {
             </div>
 
             <button
-              v-for="weight in visibleWeights"
+              v-for="weight in matrix.weights_kg"
               :key="`${weight}-${size}`"
               type="button"
               class="aspect-square min-w-0 rounded-sm border transition hover:z-10 hover:scale-110 hover:border-white focus:ring-2 focus:ring-white focus:outline-none"
@@ -119,8 +104,12 @@ function selectCell(cell: KiteSizingCell | undefined) {
                     ? '#ffffff'
                     : 'transparent',
               }"
-              :title="`${weight} kg · ${size} m² · ${getCell(weight, size)?.score.toFixed(1) ?? 'Sin datos'}`"
-              :aria-label="`${weight} kg, cometa de ${size} m², puntuación ${getCell(weight, size)?.score.toFixed(1) ?? 'sin datos'}`"
+              :title="`${weight} kg · ${size} m² · ${
+                getCell(weight, size)?.score.toFixed(1) ?? 'Sin datos'
+              }`"
+              :aria-label="`${weight} kg, cometa de ${size} m², puntuación ${
+                getCell(weight, size)?.score.toFixed(1) ?? 'sin datos'
+              }`"
               @click="selectCell(getCell(weight, size))"
             ></button>
           </template>

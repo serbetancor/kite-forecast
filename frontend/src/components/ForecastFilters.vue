@@ -3,6 +3,7 @@ import { computed, watch } from "vue"
 
 import type { BeachOption } from "../models/config"
 import { formatDate } from "../utils/formatters"
+import DateSelector from "./DateSelector.vue"
 
 const props = defineProps<{
   beaches: BeachOption[]
@@ -19,38 +20,6 @@ const emit = defineEmits<{
   "update:selectedTime": [value: string]
   search: []
 }>()
-
-const dateOptions = computed(() => {
-  const today = new Date()
-  today.setHours(12, 0, 0, 0)
-
-  return Array.from(
-    { length: Math.max(1, props.forecastHorizonDays) },
-    (_, index) => {
-      const date = new Date(today)
-      date.setDate(today.getDate() + index)
-
-      return {
-        value: formatDate(date),
-        day:
-          index === 0
-            ? "HOY"
-            : new Intl.DateTimeFormat("es-ES", {
-                weekday: "short",
-              })
-                .format(date)
-                .replace(".", "")
-                .toUpperCase(),
-        number: date.getDate(),
-        month: new Intl.DateTimeFormat("es-ES", {
-          month: "short",
-        })
-          .format(date)
-          .replace(".", ""),
-      }
-    },
-  )
-})
 
 const availableTimes = computed(() => {
   const hours = Array.from(
@@ -116,33 +85,11 @@ watch(
         </select>
       </div>
 
-      <fieldset>
-        <legend class="mb-2 text-sm font-medium text-(--previ-navy)">
-          Día de previsión
-        </legend>
-
-        <div class="grid grid-cols-4 gap-2 sm:grid-cols-7 lg:grid-cols-7">
-          <button
-            v-for="date in dateOptions"
-            :key="date.value"
-            type="button"
-            :aria-pressed="selectedDate === date.value"
-            class="flex w-full min-w-0 flex-col items-center rounded-xl border px-2 py-2 transition"
-            :class="
-              selectedDate === date.value
-                ? 'border-(--previ-blue) bg-sky-50 text-(--previ-blue)'
-                : 'border-(--previ-border) bg-white text-(--previ-text) hover:border-(--previ-blue)'
-            "
-            @click="emit('update:selectedDate', date.value)"
-          >
-            <span class="text-xs font-medium">{{ date.day }}</span>
-            <span class="text-lg leading-6 font-semibold">
-              {{ date.number }}
-            </span>
-            <span class="text-xs">{{ date.month }}</span>
-          </button>
-        </div>
-      </fieldset>
+      <DateSelector
+        :model-value="selectedDate"
+        :days="forecastHorizonDays"
+        @update:model-value="emit('update:selectedDate', $event)"
+      />
 
       <fieldset>
         <legend class="mb-2 text-sm font-medium text-(--previ-navy)">
@@ -161,7 +108,7 @@ watch(
             :class="
               selectedTime === time
                 ? 'border-(--previ-navy) bg-(--previ-navy) text-white'
-                : 'border-(--previ-border) bg-white text-(--previ-text) hover:border-(--previ-blue)'
+                : 'border-(--previ-border) text-(--previ-text) hover:border-(--previ-blue)'
             "
             @click="emit('update:selectedTime', time)"
           >

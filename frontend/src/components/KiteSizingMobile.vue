@@ -103,7 +103,7 @@ watch(
             :class="
               selectedWeight === weight
                 ? 'border-(--previ-blue) bg-sky-50 text-(--previ-blue)'
-                : 'border-(--previ-border) bg-white text-(--previ-text) hover:border-(--previ-blue)'
+                : 'border-(--previ-border) text-(--previ-text) hover:border-(--previ-blue)'
             "
             @click="selectedWeight = weight"
           >

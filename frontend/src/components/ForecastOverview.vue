@@ -17,9 +17,6 @@ const props = defineProps<{
   loading: boolean
 }>()
 
-const isGoodConditions = computed(
-  () => Math.round(props.forecast.score.total) < 70,
-)
 const metricCards = computed(() => [
   {
     title: "Viento",
@@ -93,25 +90,13 @@ const metricCards = computed(() => [
           <div class="mt-auto ml-auto flex shrink-0 flex-col items-end gap-1">
             <div class="flex items-baseline gap-1">
               <span
-                class="text-5xl font-bold tracking-tight tabular-nums"
-                :class="isGoodConditions ? 'text-red-500' : 'text-green-600'"
+                class="text-5xl font-bold tracking-tight text-(--previ-blue) tabular-nums"
               >
                 {{ Math.round(forecast.score.total) }}
               </span>
 
               <span class="text-md text-(--previ-muted)">/ 100</span>
             </div>
-
-            <span
-              class="text-xs font-medium"
-              :class="isGoodConditions ? 'text-red-500' : 'text-green-600'"
-            >
-              {{
-                isGoodConditions
-                  ? "Condiciones limitadas"
-                  : "Buenas condiciones"
-              }}
-            </span>
           </div>
         </div>
       </div>

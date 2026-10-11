@@ -160,6 +160,46 @@ jobs:
         working-directory: backend
         run: uv run --no-sync python scripts/update_scores.py
 
+      - name: Validate score cache
+        working-directory: backend
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          uv run --no-sync python - <<'PY'
+          from pathlib import Path
+
+          from kite_forecast.config.beaches import BEACHES
+          from kite_forecast.models.scored_forecast import ScoreCache
+
+          path = Path("data/scores.json")
+
+          if not path.is_file() or path.stat().st_size == 0:
+              raise SystemExit("Score cache is missing or empty.")
+
+          cache = ScoreCache.model_validate_json(
+              path.read_text(encoding="utf-8")
+          )
+
+          expected_ids = {beach.id for beach in BEACHES}
+          actual_ids = {entry.beach_id for entry in cache.entries}
+
+          if not cache.entries:
+              raise SystemExit("Score cache contains no entries.")
+
+          if actual_ids != expected_ids:
+              raise SystemExit(
+                  f"Score cache beach mismatch. "
+                  f"Expected: {sorted(expected_ids)}; "
+                  f"found: {sorted(actual_ids)}"
+              )
+
+          print(f"Validated: {path}")
+          print(f"Beaches: {len(actual_ids)}")
+          print(f"Scored hours: {len(cache.entries)}")
+          print("Score cache is valid.")
+          PY
+
       - name: Commit score cache
         shell: bash
         env:
@@ -219,6 +259,11 @@ jobs:
               --head "$BRANCH_NAME" \
               --title "chore: update forecast cache" \
               --body "Automated daily forecast cache update.
+
+            All beach forecasts were fetched and validated successfully.
+            The hourly score cache was generated and validated successfully.
+
+            Forecast-Cache-Bot: true"
 
           All beach forecasts were fetched and validated successfully.
 

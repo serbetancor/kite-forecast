@@ -10,12 +10,19 @@ from kite_forecast.reports.objective import (
 )
 from kite_forecast.services.forecast_cache import ForecastCache
 from kite_forecast.services.kite_sizing import build_kite_sizing_matrix
-from kite_forecast.services.spot_scoring import score_forecast
+from kite_forecast.services.score_cache import ScoreCacheService
 
 
 class ForecastService:
-    def __init__(self, cache: ForecastCache | None = None) -> None:
+    def __init__(
+        self,
+        cache: ForecastCache | None = None,
+        score_cache: ScoreCacheService | None = None,
+    ) -> None:
         self.cache = cache if cache is not None else ForecastCache()
+        self.score_cache = (
+            score_cache if score_cache is not None else ScoreCacheService()
+        )
 
     async def _get_hourly_forecast(
         self,
@@ -41,7 +48,8 @@ class ForecastService:
         timestamp: datetime,
     ) -> ObjectiveReport:
         forecast = await self._get_hourly_forecast(beach, timestamp)
-        score = score_forecast(forecast)
+        score = self.score_cache.get_score(beach.id, forecast.timestamp)
+
         return build_objective_report(forecast, score)
 
     async def get_kite_sizing(

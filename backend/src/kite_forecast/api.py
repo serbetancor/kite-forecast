@@ -6,7 +6,9 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from kite_forecast.config.beaches import BEACHES
+from kite_forecast.models.scored_forecast import ScoredHour
 from kite_forecast.services.forecast import ForecastService
+from kite_forecast.services.score_cache import ScoreCacheError
 
 app = FastAPI(title="Kite Forecast API")
 
@@ -77,6 +79,29 @@ async def get_forecast(
         selected_beach,
         timestamp,
     )
+
+
+@app.get("/scores")
+async def get_scores(
+    beach: str | None = None,
+    target_date: date | None = None,
+) -> list[ScoredHour]:
+    if beach is not None and not any(item.id == beach for item in BEACHES):
+        raise HTTPException(
+            status_code=404,
+            detail=f"Unknown beach: {beach}",
+        )
+
+    try:
+        return forecast_service.score_cache.get_scores(
+            beach_id=beach,
+            target_date=target_date,
+        )
+    except ScoreCacheError as error:
+        raise HTTPException(
+            status_code=503,
+            detail=str(error),
+        ) from error
 
 
 @app.get("/kite-sizing")

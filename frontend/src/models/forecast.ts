@@ -52,6 +52,11 @@ export interface ScoreReport {
   waves: WavesScoreReport
 }
 
+export interface ScoredHour {
+  beach_id: string
+  datetime: string
+  score: ScoreReport
+}
 export interface ObjectiveReport {
   beach: Beach
   timestamp: string

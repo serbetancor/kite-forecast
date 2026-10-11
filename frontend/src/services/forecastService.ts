@@ -1,5 +1,9 @@
 import type { AppConfig } from "../models/config"
-import type { KiteSizingMatrix, ObjectiveReport } from "../models/forecast"
+import type {
+  KiteSizingMatrix,
+  ObjectiveReport,
+  ScoredHour,
+} from "../models/forecast"
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
 interface ForecastQuery {
@@ -52,4 +56,15 @@ export async function getForecastData(
   ])
 
   return { forecast, kiteSizing }
+}
+
+export function getScores(targetDate: string): Promise<ScoredHour[]> {
+  const params = new URLSearchParams({
+    target_date: targetDate,
+  })
+
+  return fetchJson<ScoredHour[]>(
+    `${API_BASE_URL}/scores?${params.toString()}`,
+    "No se han podido cargar las puntuaciones de las playas.",
+  )
 }
