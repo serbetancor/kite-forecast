@@ -38,7 +38,8 @@ class OpenMeteoWeatherProvider:
             "wind_gusts_10m,temperature_2m"
             f"&start_date={timestamp.date()}"
             f"&end_date={timestamp.date()}"
-            "&timezone=Europe%2FMadrid"
+            "&timezone=Atlantic%2FCanary"
+            "&wind_speed_unit=kn"
         )
 
         data = await get_json(url)
@@ -66,9 +67,9 @@ def to_weather_observations(
     return [
         WeatherObservation(
             timestamp=datetime.fromisoformat(timestamp),
-            wind_speed_kmh=wind_speed,
+            wind_speed_kn=wind_speed,
             wind_direction_deg=wind_direction,
-            wind_gusts_kmh=wind_gusts,
+            wind_gusts_kn=wind_gusts,
             temperature_c=temperature,
         )
         for (

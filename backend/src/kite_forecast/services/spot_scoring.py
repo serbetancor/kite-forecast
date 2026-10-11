@@ -22,30 +22,30 @@ def _direction_score(
 
 
 def _wind_speed_score(
-    speed_kmh: float,
-    min_speed_kmh: float,
-    ideal_speed_kmh: float,
-    max_speed_kmh: float,
+    speed_kn: float,
+    min_speed_kn: float,
+    ideal_speed_kn: float,
+    max_speed_kn: float,
 ) -> float:
-    if speed_kmh < min_speed_kmh or speed_kmh > max_speed_kmh:
+    if speed_kn < min_speed_kn or speed_kn > max_speed_kn:
         return 0.0
 
-    if speed_kmh <= ideal_speed_kmh:
-        denominator = ideal_speed_kmh - min_speed_kmh
+    if speed_kn <= ideal_speed_kn:
+        denominator = ideal_speed_kn - min_speed_kn
         if denominator == 0:
             return 100.0
-        return 100.0 * (speed_kmh - min_speed_kmh) / denominator
+        return 100.0 * (speed_kn - min_speed_kn) / denominator
 
-    denominator = max_speed_kmh - ideal_speed_kmh
+    denominator = max_speed_kn - ideal_speed_kn
     if denominator == 0:
         return 100.0
-    return 100.0 * (max_speed_kmh - speed_kmh) / denominator
+    return 100.0 * (max_speed_kn - speed_kn) / denominator
 
 
-def _wind_gusts_score(gusts_kmh: float, max_gust_kmh: float) -> float:
-    if gusts_kmh <= max_gust_kmh:
+def _wind_gusts_score(gusts_kn: float, max_gust_kn: float) -> float:
+    if gusts_kn <= max_gust_kn:
         return 100.0
-    return max(0.0, 100.0 * max_gust_kmh / gusts_kmh)
+    return max(0.0, 100.0 * max_gust_kn / gusts_kn)
 
 
 def _wave_height_score(
@@ -84,10 +84,10 @@ def score_wind(
     observation = forecast.weather
 
     speed_score = _wind_speed_score(
-        observation.wind_speed_kmh,
-        wind_conditions.min_speed_kmh,
-        wind_conditions.ideal_speed_kmh,
-        wind_conditions.max_speed_kmh,
+        observation.wind_speed_kn,
+        wind_conditions.min_speed_kn,
+        wind_conditions.ideal_speed_kn,
+        wind_conditions.max_speed_kn,
     )
     direction_score = _direction_score(
         observation.wind_direction_deg,
@@ -95,8 +95,8 @@ def score_wind(
         wind_conditions.direction_tolerance_deg,
     )
     gusts_score = _wind_gusts_score(
-        observation.wind_gusts_kmh,
-        wind_conditions.max_gust_kmh,
+        observation.wind_gusts_kn,
+        wind_conditions.max_gust_kn,
     )
 
     if speed_score == 0.0:

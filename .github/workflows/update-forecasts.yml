@@ -205,6 +205,8 @@ jobs:
         env:
           BRANCH_NAME: ${{ steps.prepare.outputs.branch_name }}
         run: |
+          set -euo pipefail
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
@@ -254,20 +256,18 @@ jobs:
             --jq '.[0].number // empty')"
 
           if [ -z "$PR_NUMBER" ]; then
+            PR_BODY="$(printf '%s\n' \
+              'All beach forecasts were fetched and validated successfully.' \
+              '' \
+              'The hourly score cache was generated and validated successfully.' \
+              '' \
+              'Forecast-Cache-Bot: true')"
+
             gh pr create \
               --base main \
               --head "$BRANCH_NAME" \
               --title "chore: update forecast cache" \
-              --body "Automated daily forecast cache update.
-
-            All beach forecasts were fetched and validated successfully.
-            The hourly score cache was generated and validated successfully.
-
-            Forecast-Cache-Bot: true"
-
-          All beach forecasts were fetched and validated successfully.
-
-          Forecast-Cache-Bot: true"
+              --body "$PR_BODY"
 
             PR_NUMBER="$(gh pr view "$BRANCH_NAME" \
               --json number --jq '.number')"

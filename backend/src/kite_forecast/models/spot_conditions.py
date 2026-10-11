@@ -35,10 +35,10 @@ class WindConditions(BaseModel):
     preferred_directions_deg: tuple[float, ...]
     direction_tolerance_deg: float = Field(gt=0, le=180)
 
-    min_speed_kmh: float = Field(ge=0)
-    ideal_speed_kmh: float = Field(ge=0)
-    max_speed_kmh: float = Field(ge=0)
-    max_gust_kmh: float = Field(ge=0)
+    min_speed_kn: float = Field(ge=0)
+    ideal_speed_kn: float = Field(ge=0)
+    max_speed_kn: float = Field(ge=0)
+    max_gust_kn: float = Field(ge=0)
 
     score_weights: WindScoreWeights
 

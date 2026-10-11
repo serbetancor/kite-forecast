@@ -51,9 +51,9 @@ function selectCell(cell: KiteSizingCell | undefined) {
       </div>
 
       <div class="text-sm text-slate-400">
-        Viento: {{ matrix.wind_speed_kmh }} km/h
+        Viento: {{ matrix.wind_speed_kn }} km/h
         <span class="mx-1">·</span>
-        Rachas: {{ matrix.wind_gusts_kmh }} km/h
+        Rachas: {{ matrix.wind_gusts_kn }} km/h
       </div>
     </div>
 

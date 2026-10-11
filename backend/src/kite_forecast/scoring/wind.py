@@ -7,26 +7,26 @@ from kite_forecast.scoring.utils import (
 
 
 def score_wind_speed(
-    speed_kmh: float,
+    speed_kn: float,
     conditions: WindConditions,
 ) -> float:
-    if speed_kmh < conditions.min_speed_kmh:
+    if speed_kn < conditions.min_speed_kn:
         return 0.0
 
-    if speed_kmh <= conditions.ideal_speed_kmh:
+    if speed_kn <= conditions.ideal_speed_kn:
         return linear_score(
-            speed_kmh,
-            conditions.min_speed_kmh,
-            conditions.ideal_speed_kmh,
+            speed_kn,
+            conditions.min_speed_kn,
+            conditions.ideal_speed_kn,
             0.0,
             100.0,
         )
 
-    if speed_kmh <= conditions.max_speed_kmh:
+    if speed_kn <= conditions.max_speed_kn:
         return linear_score(
-            speed_kmh,
-            conditions.ideal_speed_kmh,
-            conditions.max_speed_kmh,
+            speed_kn,
+            conditions.ideal_speed_kn,
+            conditions.max_speed_kn,
             100.0,
             0.0,
         )
@@ -52,23 +52,23 @@ def score_wind_direction(
 
 
 def score_wind_gusts(
-    gust_speed_kmh: float,
+    gust_speed_kn: float,
     conditions: WindConditions,
 ) -> float:
-    if gust_speed_kmh <= conditions.max_gust_kmh:
+    if gust_speed_kn <= conditions.max_gust_kn:
         return 100.0
 
     return 0.0
 
 
 def score_wind(
-    speed_kmh: float,
+    speed_kn: float,
     direction_deg: float,
-    gust_speed_kmh: float,
+    gust_speed_kn: float,
     conditions: WindConditions,
 ) -> WindScore:
     speed_score = score_wind_speed(
-        speed_kmh,
+        speed_kn,
         conditions,
     )
 
@@ -78,7 +78,7 @@ def score_wind(
     )
 
     gust_score = score_wind_gusts(
-        gust_speed_kmh,
+        gust_speed_kn,
         conditions,
     )
 
