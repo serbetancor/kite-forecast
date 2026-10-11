@@ -11,8 +11,8 @@ class KiteSizingCell(BaseModel):
 
 class KiteSizingMatrix(BaseModel):
     timestamp: datetime
-    wind_speed_knots: float
-    wind_gusts_knots: float
+    wind_speed_kmh: float
+    wind_gusts_kmh: float
     weights_kg: list[int]
     kite_sizes_m2: list[int]
     cells: list[KiteSizingCell]

@@ -25,9 +25,9 @@ const metricCards = computed(() => [
     title: "Viento",
     icon: WindIcon,
     iconBackground: "bg-sky-50",
-    value: props.forecast.wind.speed_knots,
-    unit: "kn",
-    detail: `Rachas: ${props.forecast.wind.gusts_knots} kn`,
+    value: props.forecast.wind.speed_kmh,
+    unit: "kmh",
+    detail: `Rachas: ${props.forecast.wind.gusts_kmh} kmh`,
     direction: formatDirection(
       props.forecast.wind.direction_deg,
       props.forecast.wind.direction_cardinal,

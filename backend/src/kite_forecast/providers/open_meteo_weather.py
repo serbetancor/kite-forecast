@@ -66,9 +66,9 @@ def to_weather_observations(
     return [
         WeatherObservation(
             timestamp=datetime.fromisoformat(timestamp),
-            wind_speed_knots=wind_speed,
+            wind_speed_kmh=wind_speed,
             wind_direction_deg=wind_direction,
-            wind_gusts_knots=wind_gusts,
+            wind_gusts_kmh=wind_gusts,
             temperature_c=temperature,
         )
         for (

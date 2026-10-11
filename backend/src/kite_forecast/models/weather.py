@@ -7,9 +7,9 @@ from kite_forecast.models.beach import Beach
 
 class WeatherObservation(BaseModel):
     timestamp: datetime
-    wind_speed_knots: float
+    wind_speed_kmh: float
     wind_direction_deg: float
-    wind_gusts_knots: float
+    wind_gusts_kmh: float
     temperature_c: float
 
 

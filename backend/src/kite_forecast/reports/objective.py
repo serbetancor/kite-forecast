@@ -9,10 +9,10 @@ from kite_forecast.utils.directions import degrees_to_cardinal
 
 
 class WindReport(BaseModel):
-    speed_knots: float
+    speed_kmh: float
     direction_deg: float
     direction_cardinal: str
-    gusts_knots: float
+    gusts_kmh: float
 
 
 class WeatherReport(BaseModel):
@@ -54,10 +54,10 @@ def build_objective_report(
         beach=forecast.beach,
         timestamp=forecast.timestamp,
         wind=WindReport(
-            speed_knots=weather.wind_speed_knots,
+            speed_kmh=weather.wind_speed_kmh,
             direction_deg=weather.wind_direction_deg,
             direction_cardinal=degrees_to_cardinal(weather.wind_direction_deg),
-            gusts_knots=weather.wind_gusts_knots,
+            gusts_kmh=weather.wind_gusts_kmh,
         ),
         weather=WeatherReport(
             temperature_c=weather.temperature_c,

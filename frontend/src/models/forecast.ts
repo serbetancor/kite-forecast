@@ -26,10 +26,10 @@ export interface SeaReport {
 }
 
 export interface WindReport {
-  speed_knots: number
+  speed_kmh: number
   direction_deg: number
   direction_cardinal: string
-  gusts_knots: number
+  gusts_kmh: number
 }
 
 export interface WindScoreReport {
@@ -70,8 +70,8 @@ export interface KiteSizingCell {
 
 export interface KiteSizingMatrix {
   timestamp: string
-  wind_speed_knots: number
-  wind_gusts_knots: number
+  wind_speed_kmh: number
+  wind_gusts_kmh: number
   weights_kg: number[]
   kite_sizes_m2: number[]
   cells: KiteSizingCell[]

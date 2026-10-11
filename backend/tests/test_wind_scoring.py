@@ -11,10 +11,10 @@ from kite_forecast.scoring.wind import (
 CONDITIONS = WindConditions(
     preferred_directions_deg=(60.0,),
     direction_tolerance_deg=30.0,
-    min_speed_knots=15.0,
-    ideal_speed_knots=22.0,
-    max_speed_knots=30.0,
-    max_gust_knots=35.0,
+    min_speed_kmh=15.0,
+    ideal_speed_kmh=22.0,
+    max_speed_kmh=30.0,
+    max_gust_kmh=35.0,
     score_weights=WindScoreWeights(
         speed=0.5,
         direction=0.3,
@@ -89,9 +89,9 @@ def test_wind_gusts_above_maximum() -> None:
 
 def test_wind_score() -> None:
     score = score_wind(
-        speed_knots=22.0,
+        speed_kmh=22.0,
         direction_deg=60.0,
-        gust_speed_knots=30.0,
+        gust_speed_kmh=30.0,
         conditions=CONDITIONS,
     )
 
@@ -100,9 +100,9 @@ def test_wind_score() -> None:
 
 def test_wind_score_with_bad_direction() -> None:
     score = score_wind(
-        speed_knots=22.0,
+        speed_kmh=22.0,
         direction_deg=30.0,
-        gust_speed_knots=30.0,
+        gust_speed_kmh=30.0,
         conditions=CONDITIONS,
     )
 
@@ -111,9 +111,9 @@ def test_wind_score_with_bad_direction() -> None:
 
 def test_wind_score_with_excessive_gusts() -> None:
     score = score_wind(
-        speed_knots=22.0,
+        speed_kmh=22.0,
         direction_deg=60.0,
-        gust_speed_knots=40.0,
+        gust_speed_kmh=40.0,
         conditions=CONDITIONS,
     )
 

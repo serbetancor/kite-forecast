@@ -14,9 +14,9 @@ def score_hourly_forecast(
     conditions: SpotConditions,
 ) -> HourlyScore:
     wind = score_wind(
-        speed_knots=forecast.weather.wind_speed_knots,
+        speed_kmh=forecast.weather.wind_speed_kmh,
         direction_deg=forecast.weather.wind_direction_deg,
-        gust_speed_knots=forecast.weather.wind_gusts_knots,
+        gust_speed_kmh=forecast.weather.wind_gusts_kmh,
         conditions=conditions.wind,
     )
 

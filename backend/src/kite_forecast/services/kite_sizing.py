@@ -32,8 +32,8 @@ def _suitability_score(
 def build_kite_sizing_matrix(
     forecast: HourlyForecast,
 ) -> KiteSizingMatrix:
-    wind_speed = forecast.weather.wind_speed_knots
-    wind_gusts = forecast.weather.wind_gusts_knots
+    wind_speed = forecast.weather.wind_speed_kmh
+    wind_gusts = forecast.weather.wind_gusts_kmh
 
     weights = list(
         range(
@@ -68,8 +68,8 @@ def build_kite_sizing_matrix(
 
     return KiteSizingMatrix(
         timestamp=forecast.timestamp,
-        wind_speed_knots=wind_speed,
-        wind_gusts_knots=wind_gusts,
+        wind_speed_kmh=wind_speed,
+        wind_gusts_kmh=wind_gusts,
         weights_kg=weights,
         kite_sizes_m2=kite_sizes,
         cells=cells,
