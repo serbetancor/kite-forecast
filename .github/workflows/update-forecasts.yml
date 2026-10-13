@@ -49,24 +49,10 @@ jobs:
 
           RUN_DATE="$(TZ=Atlantic/Canary date +%F)"
           BRANCH_NAME="bot/forecasts-${RUN_DATE}"
-          MAIN_HEAD="$(git rev-parse origin/main)"
 
           git checkout -B "$BRANCH_NAME" origin/main
 
-          PREVIOUS_COMMIT_IS_BOT=false
-
-          if [ "$(git show -s --format=%ae "$MAIN_HEAD")" = \
-            "41898282+github-actions[bot]@users.noreply.github.com" ] \
-            && git show -s --format=%B "$MAIN_HEAD" \
-              | grep -Fxq "Forecast-Cache-Bot: true"; then
-            PREVIOUS_COMMIT_IS_BOT=true
-          fi
-
-          {
-            echo "branch_name=$BRANCH_NAME"
-            echo "main_head=$MAIN_HEAD"
-            echo "previous_commit_is_bot=$PREVIOUS_COMMIT_IS_BOT"
-          } >> "$GITHUB_OUTPUT"
+          echo "branch_name=$BRANCH_NAME" >> "$GITHUB_OUTPUT"
 
       - name: Update beaches sequentially
         working-directory: backend
@@ -217,21 +203,20 @@ jobs:
             exit 0
           fi
 
-          git commit \
-            -m "chore: update forecast scores cache" \
-            -m "Forecast-Cache-Bot: true"
-
+          git commit -m "chore: update forecast scores cache"
           git push origin "$BRANCH_NAME"
 
       - name: Check for changes
         id: changes
         shell: bash
+        env:
+          BRANCH_NAME: ${{ steps.prepare.outputs.branch_name }}
         run: |
           set -euo pipefail
 
           git fetch origin main
 
-          if git diff --quiet "origin/main...${{ steps.prepare.outputs.branch_name }}"; then
+          if git diff --quiet "origin/main...${BRANCH_NAME}"; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No forecast changes to publish."
           else
@@ -281,6 +266,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ steps.pr.outputs.number }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         shell: bash
         run: |
           set -euo pipefail
@@ -288,38 +274,7 @@ jobs:
           gh pr merge "$PR_NUMBER" \
             --squash \
             --delete-branch \
-            --subject "chore: update forecast cache" \
-            --body "Forecast-Cache-Bot: true"
-
-      - name: Consolidate consecutive bot updates
-        if: steps.changes.outputs.changed == 'true' && steps.prepare.outputs.previous_commit_is_bot == 'true'
-        env:
-          PREVIOUS_MAIN_HEAD: ${{ steps.prepare.outputs.main_head }}
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          git fetch origin main
-          git checkout -B main origin/main
-
-          MERGED_HEAD="$(git rev-parse origin/main)"
-          MERGED_PARENT="$(git rev-parse "${MERGED_HEAD}^")"
-
-          # Never rewrite main if the merge did not land directly
-          # on the exact commit that this workflow inspected.
-          if [ "$MERGED_PARENT" != "$PREVIOUS_MAIN_HEAD" ]; then
-            echo "::error::Unexpected main history. Refusing to rewrite it."
-            exit 1
-          fi
-
-          PREVIOUS_PARENT="$(git rev-parse "${PREVIOUS_MAIN_HEAD}^")"
-
-          # Keep the latest forecast tree but replace the two
-          # consecutive bot commits with a single commit.
-          git reset --soft "$PREVIOUS_PARENT"
-
-          git commit \
-            -m "chore: update forecast cache" \
-            -m "Forecast-Cache-Bot: true"
-
-          git push --force-with-lease origin main
+            --subject "chore: update forecast cache (#${PR_NUMBER})" \
+            --body "$(printf '%s\n\n%s' \
+              'Forecast-Cache-Bot: true' \
+              "Pull request: https://github.com/${GITHUB_REPOSITORY}/pull/${PR_NUMBER}")"

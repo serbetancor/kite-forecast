@@ -8,11 +8,11 @@ authors = [
 ]
 requires-python = ">=3.13"
 dependencies = [
-    "fastapi>=0.142.2",
-    "httpx>=0.28.1",
-    "pydantic>=2.13.5",
-    "tzdata>=2026.5",
-    "uvicorn>=0.54.0",
+    "fastapi==0.142.2",
+    "httpx==0.28.1",
+    "pydantic==2.13.5",
+    "tzdata==2026.5",
+    "uvicorn==0.54.0",
 ]
 
 [project.scripts]
@@ -24,12 +24,12 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
-    "ipykernel>=7.4.0",
-    "matplotlib>=3.11.2",
-    "numpy>=2.5.3",
-    "pyright>=1.1.414",
-    "pytest>=9.1.1",
-    "ruff>=0.16.10",
+    "ipykernel==7.4.0",
+    "matplotlib==3.11.2",
+    "numpy==2.5.4",
+    "pyright==1.1.414",
+    "pytest==9.1.1",
+    "ruff==0.17.0",
 ]
 
 [tool.pyright]

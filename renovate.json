@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "schedule": ["every sunday"],
+  "semanticCommits": "enabled",
+  "packageRules": [
+    {
+      "description": "Group frontend minor and patch updates",
+      "matchFileNames": ["frontend/**"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "frontend minor dependencies"
+    },
+    {
+      "description": "Group backend minor and patch updates",
+      "matchFileNames": ["backend/**"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "backend minor dependencies"
+    }
+  ]
+}
