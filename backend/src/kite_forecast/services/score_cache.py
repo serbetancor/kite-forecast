@@ -76,6 +76,12 @@ class ScoreCacheService:
                 if self._normalize_datetime(entry.datetime).date() == target_date
             ]
 
+        entries = [
+            entry
+            for entry in entries
+            if 7 <= self._normalize_datetime(entry.datetime).hour <= 19
+        ]
+
         return sorted(
             entries,
             key=lambda entry: (

@@ -79,7 +79,7 @@ async def fetch_beach_forecast(beach_id: str) -> CachedForecast:
                 "longitude": beach.location.longitude,
                 "hourly": WEATHER_HOURLY_FIELDS,
                 "forecast_days": 7,
-                "timezone": "Europe/Madrid",
+                "timezone": "Atlantic/Canary",
             }
         )
     )
@@ -93,7 +93,7 @@ async def fetch_beach_forecast(beach_id: str) -> CachedForecast:
                 "longitude": beach.location.longitude,
                 "hourly": MARINE_HOURLY_FIELDS,
                 "forecast_days": 7,
-                "timezone": "Europe/Madrid",
+                "timezone": "Atlantic/Canary",
             }
         )
     )
