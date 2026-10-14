@@ -100,7 +100,7 @@ class OpenMeteoMarineProvider:
             "ocean_current_direction"
             f"&start_date={timestamp.date()}"
             f"&end_date={timestamp.date()}"
-            "&timezone=Europe%2FMadrid"
+            "&timezone=Atlantic%2FCanary"
         )
 
         data = await get_json(url)

@@ -17,7 +17,7 @@ def test_to_marine_observations() -> None:
     response = OpenMeteoMarineResponse(
         latitude=27.791664,
         longitude=-15.458328,
-        timezone="Europe/Madrid",
+        timezone="Atlantic/Canary",
         hourly=OpenMeteoMarineHourly(
             time=[
                 "2026-10-03T12:00",
@@ -56,7 +56,7 @@ def test_to_marine_forecast() -> None:
     response = OpenMeteoMarineResponse(
         latitude=27.791664,
         longitude=-15.458328,
-        timezone="Europe/Madrid",
+        timezone="Atlantic/Canary",
         hourly=OpenMeteoMarineHourly(
             time=["2026-10-03T12:00"],
             wave_height=[1.24],
@@ -84,7 +84,7 @@ def test_get_forecast() -> None:
     response = OpenMeteoMarineResponse(
         latitude=27.791664,
         longitude=-15.458328,
-        timezone="Europe/Madrid",
+        timezone="Atlantic/Canary",
         hourly=OpenMeteoMarineHourly(
             time=[
                 "2026-10-03T12:00",

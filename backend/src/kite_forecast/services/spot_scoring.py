@@ -169,7 +169,7 @@ def score_forecast(forecast: HourlyForecast) -> HourlyScore:
     waves = score_waves(forecast, conditions)
 
     return HourlyScore(
-        total=wind.total * 0.7 + waves.total * 0.3,
+        total=wind.total * 0.8 + waves.total * 0.2,
         wind=WindScore(
             total=wind.total,
             speed=wind.speed,

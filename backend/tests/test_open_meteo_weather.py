@@ -10,7 +10,7 @@ def test_to_weather_observations() -> None:
     response = OpenMeteoWeatherResponse(
         latitude=27.87346,
         longitude=-15.4053955,
-        timezone="Europe/Madrid",
+        timezone="Atlantic/Canary",
         hourly=OpenMeteoWeatherHourly(
             time=[
                 "2026-10-03T12:00",
@@ -35,5 +35,5 @@ def test_to_weather_observations() -> None:
     assert first.timestamp.isoformat() == "2026-10-03T12:00:00"
     assert first.wind_speed_kn == 28.2
     assert first.wind_direction_deg == 13.0
-    assert first.WIND_GUSTS_KN == 59.0
+    assert first.wind_gusts_kn == 59.0
     assert first.temperature_c == 23.3
