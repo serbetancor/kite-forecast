@@ -1,51 +1,21 @@
-from datetime import datetime
-
-from pydantic import BaseModel
-
-from kite_forecast.models.beach import Beach
 from kite_forecast.models.forecast import HourlyForecast
+from kite_forecast.models.report import (
+    ObjectiveReport,
+    SeaReport,
+    SwellReport,
+    WavesReport,
+    WeatherReport,
+    WindReport,
+)
 from kite_forecast.models.score import HourlyScore
 from kite_forecast.utils.directions import degrees_to_cardinal
+from kite_forecast.models.report import TideReport
 
 
-class WindReport(BaseModel):
-    speed_kn: float
-    direction_deg: float
-    direction_cardinal: str
-    gusts_kn: float
-
-
-class WeatherReport(BaseModel):
-    temperature_c: float
-
-
-class WavesReport(BaseModel):
-    height_m: float
-    direction_deg: float
-    direction_cardinal: str
-    period_s: float
-
-
-class SeaReport(BaseModel):
-    level_m: float
-    current_velocity_kmh: float
-    current_direction_deg: float
-    current_direction_cardinal: str
-
-
-class ObjectiveReport(BaseModel):
-    beach: Beach
-    timestamp: datetime
-    wind: WindReport
-    weather: WeatherReport
-    waves: WavesReport
-    sea: SeaReport
-    score: HourlyScore
-
-
-def build_objective_report(
+def build_report(
     forecast: HourlyForecast,
     score: HourlyScore,
+    tide: TideReport,
 ) -> ObjectiveReport:
     weather = forecast.weather
     marine = forecast.marine
@@ -68,6 +38,13 @@ def build_objective_report(
             direction_cardinal=degrees_to_cardinal(marine.wave_direction_deg),
             period_s=marine.wave_period_s,
         ),
+        swell=SwellReport(
+            height_m=marine.swell_wave_height_m,
+            direction_deg=marine.swell_wave_direction_deg,
+            direction_cardinal=degrees_to_cardinal(marine.swell_wave_direction_deg),
+            period_s=marine.swell_wave_period_s,
+        ),
+        tide=tide,
         sea=SeaReport(
             level_m=marine.sea_level_height_m,
             current_velocity_kmh=marine.current_velocity_kmh,

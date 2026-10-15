@@ -7,8 +7,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from kite_forecast.config.beaches import BEACHES
-from kite_forecast.models.cached_forecast import CachedForecast
-from kite_forecast.models.forecast import HourlyForecast
+from kite_forecast.models.forecast import CachedForecast, HourlyForecast
 from kite_forecast.models.scored_forecast import ScoreCache, ScoredHour
 from kite_forecast.services.spot_scoring import score_forecast
 

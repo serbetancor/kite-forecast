@@ -4,13 +4,11 @@ from kite_forecast.models.beach import Beach
 from kite_forecast.models.forecast import HourlyForecast
 from kite_forecast.models.kite_sizing import KiteSizingMatrix
 from kite_forecast.providers.forecast_builder import build_hourly_forecasts
-from kite_forecast.reports.objective import (
-    ObjectiveReport,
-    build_objective_report,
-)
+from kite_forecast.providers.report_builder import ObjectiveReport, build_report
 from kite_forecast.services.forecast_cache import ForecastCache
 from kite_forecast.services.kite_sizing import build_kite_sizing_matrix
 from kite_forecast.services.score_cache import ScoreCacheService
+from kite_forecast.services.tides import TideService
 
 
 class ForecastService:
@@ -23,6 +21,7 @@ class ForecastService:
         self.score_cache = (
             score_cache if score_cache is not None else ScoreCacheService()
         )
+        self.tide_service = TideService(self.cache)
 
     async def _get_hourly_forecast(
         self,
@@ -50,7 +49,13 @@ class ForecastService:
         forecast = await self._get_hourly_forecast(beach, timestamp)
         score = self.score_cache.get_score(beach.id, forecast.timestamp)
 
-        return build_objective_report(forecast, score)
+        tide = self.tide_service.get_tide_report(beach, timestamp)
+
+        return build_report(
+            forecast=forecast,
+            score=score,
+            tide=tide,
+        )
 
     async def get_kite_sizing(
         self,

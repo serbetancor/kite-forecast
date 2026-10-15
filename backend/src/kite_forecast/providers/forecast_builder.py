@@ -1,6 +1,8 @@
-from kite_forecast.models.forecast import HourlyForecast
-from kite_forecast.models.marine import MarineForecast
-from kite_forecast.models.weather import WeatherForecast
+from kite_forecast.models.forecast import (
+    HourlyForecast,
+    MarineForecast,
+    WeatherForecast,
+)
 
 
 def build_hourly_forecasts(

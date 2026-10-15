@@ -1,4 +1,4 @@
-from kite_forecast.models.weather import WeatherObservation
+from kite_forecast.models.forecast import WeatherObservation
 from kite_forecast.providers.open_meteo_weather import (
     OpenMeteoWeatherHourly,
     OpenMeteoWeatherResponse,
