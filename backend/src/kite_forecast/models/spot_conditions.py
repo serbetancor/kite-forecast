@@ -18,11 +18,26 @@ class WindScoreWeights(BaseModel):
 
 class WaveScoreWeights(BaseModel):
     height: float = Field(ge=0)
-    period: float = Field(ge=0)
     direction: float = Field(ge=0)
+    period: float = Field(ge=0)
 
     @model_validator(mode="after")
     def weights_must_sum_to_one(self) -> "WaveScoreWeights":
+        total = self.height + self.period + self.direction
+
+        if abs(total - 1.0) > 1e-9:
+            raise ValueError("Wave score weights must sum to 1")
+
+        return self
+
+
+class SwellScoreWeights(BaseModel):
+    height: float = Field(ge=0)
+    direction: float = Field(ge=0)
+    period: float = Field(ge=0)
+
+    @model_validator(mode="after")
+    def weights_must_sum_to_one(self) -> "SwellScoreWeights":
         total = self.height + self.period + self.direction
 
         if abs(total - 1.0) > 1e-9:
@@ -56,28 +71,21 @@ class WaveConditions(BaseModel):
     score_weights: WaveScoreWeights
 
 
+class SwellConditions(BaseModel):
+    preferred_directions_deg: tuple[float, ...]
+    direction_tolerance_deg: float = Field(gt=0, le=180)
+
+    min_height_m: float = Field(ge=0)
+    ideal_height_m: float = Field(ge=0)
+    max_height_m: float = Field(ge=0)
+
+    min_period_s: float = Field(ge=0)
+
+    score_weights: SwellScoreWeights
+
+
 class SpotConditions(BaseModel):
     beach_id: str
     wind: WindConditions
     waves: WaveConditions
-
-
-class WeatherScoreWeights(BaseModel):
-    temperature: float = Field(ge=0)
-
-    @model_validator(mode="after")
-    def weights_must_sum_to_one(self) -> "WeatherScoreWeights":
-        total = self.temperature
-
-        if abs(total - 1.0) > 1e-9:
-            raise ValueError("Weather score weights must sum to 1")
-
-        return self
-
-
-class WeatherConditions(BaseModel):
-    min_temperature_c: float
-    ideal_temperature_c: float
-    max_temperature_c: float
-
-    score_weights: WeatherScoreWeights
+    swell: SwellConditions

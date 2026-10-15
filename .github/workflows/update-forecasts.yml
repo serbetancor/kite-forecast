@@ -110,7 +110,7 @@ jobs:
           from pathlib import Path
 
           from kite_forecast.config.beaches import BEACHES
-          from kite_forecast.models.cached_forecast import CachedForecast
+          from kite_forecast.models.forecast import CachedForecast
 
           directory = Path("data/forecasts")
 

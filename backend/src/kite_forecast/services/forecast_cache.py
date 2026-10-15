@@ -3,7 +3,7 @@ from pathlib import Path
 from pydantic import ValidationError
 
 from kite_forecast.models.beach import Beach
-from kite_forecast.models.cached_forecast import CachedForecast
+from kite_forecast.models.forecast import CachedForecast
 
 
 class ForecastCacheError(RuntimeError):

@@ -13,11 +13,18 @@ class WindScore(ComponentScore):
 
 class WaveScore(ComponentScore):
     height: float = Field(ge=0, le=100)
-    period: float = Field(ge=0, le=100)
     direction: float = Field(ge=0, le=100)
+    period: float = Field(ge=0, le=100)
+
+
+class SwellScore(ComponentScore):
+    height: float = Field(ge=0, le=100)
+    direction: float = Field(ge=0, le=100)
+    period: float = Field(ge=0, le=100)
 
 
 class HourlyScore(BaseModel):
     total: float = Field(ge=0, le=100)
     wind: WindScore
     waves: WaveScore
+    swell: SwellScore

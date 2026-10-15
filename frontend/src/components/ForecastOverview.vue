@@ -3,12 +3,18 @@ import { computed } from "vue"
 
 import CurrentIcon from "../assets/icons/CurrentIcon.vue"
 import TemperatureIcon from "../assets/icons/TemperatureIcon.vue"
+import TideIcon from "../assets/icons/TideIcon.vue"
 import WavesIcon from "../assets/icons/WavesIcon.vue"
 import WindIcon from "../assets/icons/WindIcon.vue"
 import Skeleton from "../components/Skeleton.vue"
+import WeatherMetricCard from "../components/WeatherMetricCard.vue"
 import type { ObjectiveReport } from "../models/forecast"
-import { formatDirection, formatTimestamp } from "../utils/formatters"
-import WeatherMetricCard from "./WeatherMetricCard.vue"
+import { formatTideTrend } from "../utils/formatters"
+import {
+  formatDirection,
+  formatTime,
+  formatTimestamp,
+} from "../utils/formatters"
 
 const props = defineProps<{
   forecast: ObjectiveReport
@@ -21,7 +27,7 @@ const metricCards = computed(() => [
   {
     title: "Viento",
     icon: WindIcon,
-    iconBackground: "bg-sky-50",
+    iconBackground: "bg-white/50",
     value: props.forecast.wind.speed_kn,
     unit: "kn",
     detail: `Rachas: ${props.forecast.wind.gusts_kn} kn`,
@@ -29,6 +35,33 @@ const metricCards = computed(() => [
       props.forecast.wind.direction_deg,
       props.forecast.wind.direction_cardinal,
     ),
+    score: props.forecast.score.wind.total,
+  },
+  {
+    title: "Oleaje",
+    icon: WavesIcon,
+    iconBackground: "bg-white/50",
+    value: props.forecast.waves.height_m,
+    unit: "m",
+    detail: `Periodo: ${props.forecast.waves.period_s} s`,
+    direction: formatDirection(
+      props.forecast.waves.direction_deg,
+      props.forecast.waves.direction_cardinal,
+    ),
+    score: props.forecast.score.waves.total,
+  },
+  {
+    title: "Mar de fondo",
+    icon: WavesIcon,
+    iconBackground: "bg-white/50",
+    value: props.forecast.swell.height_m,
+    unit: "m",
+    detail: `Periodo: ${props.forecast.swell.period_s} s`,
+    direction: formatDirection(
+      props.forecast.swell.direction_deg,
+      props.forecast.swell.direction_cardinal,
+    ),
+    score: props.forecast.score.swell.total,
   },
   {
     title: "Temperatura",
@@ -39,28 +72,26 @@ const metricCards = computed(() => [
     detail: "Temperatura del aire",
   },
   {
-    title: "Oleaje",
-    icon: WavesIcon,
-    iconBackground: "bg-sky-50",
-    value: props.forecast.waves.height_m,
-    unit: "m",
-    detail: `Periodo: ${props.forecast.waves.period_s} s`,
-    direction: formatDirection(
-      props.forecast.waves.direction_deg,
-      props.forecast.waves.direction_cardinal,
-    ),
-  },
-  {
     title: "Corriente",
     icon: CurrentIcon,
     iconBackground: "bg-sky-50",
     value: props.forecast.sea.current_velocity_kmh,
     unit: "km/h",
-    detail: `Nivel del mar: ${props.forecast.sea.level_m} m`,
     direction: formatDirection(
       props.forecast.sea.current_direction_deg,
       props.forecast.sea.current_direction_cardinal,
     ),
+  },
+  {
+    title: "Marea",
+    icon: TideIcon,
+    iconBackground: "bg-sky-50",
+    text: formatTideTrend(props.forecast.tide.trend),
+    detail: [
+      `Nivel del mar: ${props.forecast.sea.level_m} m`,
+      `Próxima pleamar: ${formatTime(props.forecast.tide.next_high_tide.timestamp)}`,
+      `Próxima bajamar: ${formatTime(props.forecast.tide.next_low_tide.timestamp)}`,
+    ].join("\n"),
   },
 ])
 </script>
@@ -103,7 +134,7 @@ const metricCards = computed(() => [
     </div>
 
     <div
-      class="grid grid-cols-2 gap-3 sm:gap-4 xl:grid-cols-4"
+      class="grid grid-cols-2 gap-3 sm:gap-4 xl:grid-cols-3"
       :aria-busy="loading"
     >
       <template v-if="loading">
@@ -137,9 +168,11 @@ const metricCards = computed(() => [
           :icon="metric.icon"
           :icon-background="metric.iconBackground"
           :value="metric.value"
+          :text="metric.text"
           :unit="metric.unit"
           :detail="metric.detail"
           :direction="metric.direction"
+          :score="metric.score"
         />
       </template>
     </div>

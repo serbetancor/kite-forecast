@@ -7,11 +7,21 @@ export interface Beach {
   }
 }
 
-export interface WeatherReport {
-  temperature_c: number
+export interface WindReport {
+  speed_kn: number
+  direction_deg: number
+  direction_cardinal: string
+  gusts_kn: number
 }
 
 export interface WavesReport {
+  height_m: number
+  direction_deg: number
+  direction_cardinal: string
+  period_s: number
+}
+
+export interface SwellReport {
   height_m: number
   direction_deg: number
   direction_cardinal: string
@@ -25,11 +35,22 @@ export interface SeaReport {
   current_direction_cardinal: string
 }
 
-export interface WindReport {
-  speed_kn: number
-  direction_deg: number
-  direction_cardinal: string
-  gusts_kn: number
+export type TideTrend =
+  "high_tide" | "low_tide" | "rising" | "falling" | "stable"
+
+export interface TideObservation {
+  timestamp: string
+  level_m: number
+}
+
+export interface TideReport {
+  trend: TideTrend
+  next_high_tide: TideObservation
+  next_low_tide: TideObservation
+}
+
+export interface WeatherReport {
+  temperature_c: number
 }
 
 export interface WindScoreReport {
@@ -46,10 +67,18 @@ export interface WavesScoreReport {
   direction: number
 }
 
+export interface SwellScoreReport {
+  total: number
+  height: number
+  period: number
+  direction: number
+}
+
 export interface ScoreReport {
   total: number
   wind: WindScoreReport
   waves: WavesScoreReport
+  swell: SwellScoreReport
 }
 
 export interface ScoredHour {
@@ -57,13 +86,16 @@ export interface ScoredHour {
   datetime: string
   score: ScoreReport
 }
+
 export interface ObjectiveReport {
   beach: Beach
   timestamp: string
   wind: WindReport
-  weather: WeatherReport
   waves: WavesReport
+  swell: SwellReport
   sea: SeaReport
+  tide: TideReport
+  weather: WeatherReport
   score: ScoreReport
 }
 

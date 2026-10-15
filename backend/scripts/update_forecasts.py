@@ -6,7 +6,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 
 from kite_forecast.config.beaches import BEACHES
-from kite_forecast.models.cached_forecast import CachedForecast
+from kite_forecast.models.forecast import CachedForecast
 from kite_forecast.providers.client import get_json
 from kite_forecast.providers.open_meteo_marine import (
     OpenMeteoMarineHourly,
@@ -27,8 +27,8 @@ WEATHER_HOURLY_FIELDS = (
 
 MARINE_HOURLY_FIELDS = (
     "wave_height,wave_direction,wave_period,"
-    "sea_level_height_msl,ocean_current_velocity,"
-    "ocean_current_direction"
+    "swell_wave_height,swell_wave_direction,swell_wave_period,"
+    "sea_level_height_msl,ocean_current_velocity,ocean_current_direction"
 )
 
 MINIMUM_HOURLY_OBSERVATIONS = 24 * 6

@@ -8,1184 +8,1184 @@
         "longitude": -15.4631
       }
     },
-    "model_latitude": 27.803162,
-    "model_longitude": -15.489319,
+    "model_latitude": 27.833794,
+    "model_longitude": -15.443922,
     "observations": [
       {
         "timestamp": "2026-10-15T00:00:00",
-        "wind_speed_kn": 14.2,
-        "wind_direction_deg": 24.0,
-        "wind_gusts_kn": 26.6,
-        "temperature_c": 24.6
+        "wind_speed_kn": 22.4,
+        "wind_direction_deg": 28.0,
+        "wind_gusts_kn": 36.0,
+        "temperature_c": 23.9
       },
       {
         "timestamp": "2026-10-15T01:00:00",
-        "wind_speed_kn": 14.1,
-        "wind_direction_deg": 21.0,
-        "wind_gusts_kn": 27.4,
-        "temperature_c": 24.7
-      },
-      {
-        "timestamp": "2026-10-15T02:00:00",
-        "wind_speed_kn": 13.0,
-        "wind_direction_deg": 20.0,
-        "wind_gusts_kn": 26.6,
-        "temperature_c": 24.8
-      },
-      {
-        "timestamp": "2026-10-15T03:00:00",
-        "wind_speed_kn": 11.3,
-        "wind_direction_deg": 27.0,
-        "wind_gusts_kn": 24.8,
-        "temperature_c": 24.8
-      },
-      {
-        "timestamp": "2026-10-15T04:00:00",
-        "wind_speed_kn": 20.7,
-        "wind_direction_deg": 41.0,
-        "wind_gusts_kn": 37.4,
+        "wind_speed_kn": 23.3,
+        "wind_direction_deg": 22.0,
+        "wind_gusts_kn": 35.6,
         "temperature_c": 24.0
       },
       {
+        "timestamp": "2026-10-15T02:00:00",
+        "wind_speed_kn": 21.5,
+        "wind_direction_deg": 23.0,
+        "wind_gusts_kn": 36.0,
+        "temperature_c": 24.2
+      },
+      {
+        "timestamp": "2026-10-15T03:00:00",
+        "wind_speed_kn": 21.7,
+        "wind_direction_deg": 32.0,
+        "wind_gusts_kn": 34.6,
+        "temperature_c": 23.7
+      },
+      {
+        "timestamp": "2026-10-15T04:00:00",
+        "wind_speed_kn": 23.4,
+        "wind_direction_deg": 29.0,
+        "wind_gusts_kn": 35.3,
+        "temperature_c": 23.8
+      },
+      {
         "timestamp": "2026-10-15T05:00:00",
-        "wind_speed_kn": 20.8,
-        "wind_direction_deg": 43.0,
-        "wind_gusts_kn": 40.3,
+        "wind_speed_kn": 23.4,
+        "wind_direction_deg": 31.0,
+        "wind_gusts_kn": 37.1,
         "temperature_c": 23.5
       },
       {
         "timestamp": "2026-10-15T06:00:00",
-        "wind_speed_kn": 19.6,
-        "wind_direction_deg": 43.0,
-        "wind_gusts_kn": 38.5,
-        "temperature_c": 23.4
+        "wind_speed_kn": 22.2,
+        "wind_direction_deg": 32.0,
+        "wind_gusts_kn": 37.1,
+        "temperature_c": 23.6
       },
       {
         "timestamp": "2026-10-15T07:00:00",
-        "wind_speed_kn": 16.2,
-        "wind_direction_deg": 45.0,
-        "wind_gusts_kn": 36.4,
-        "temperature_c": 23.2
-      },
-      {
-        "timestamp": "2026-10-15T08:00:00",
-        "wind_speed_kn": 14.1,
-        "wind_direction_deg": 50.0,
-        "wind_gusts_kn": 30.6,
-        "temperature_c": 23.0
-      },
-      {
-        "timestamp": "2026-10-15T09:00:00",
-        "wind_speed_kn": 15.1,
-        "wind_direction_deg": 62.0,
-        "wind_gusts_kn": 28.8,
+        "wind_speed_kn": 20.3,
+        "wind_direction_deg": 27.0,
+        "wind_gusts_kn": 34.9,
         "temperature_c": 24.1
       },
       {
+        "timestamp": "2026-10-15T08:00:00",
+        "wind_speed_kn": 17.9,
+        "wind_direction_deg": 28.0,
+        "wind_gusts_kn": 32.8,
+        "temperature_c": 24.7
+      },
+      {
+        "timestamp": "2026-10-15T09:00:00",
+        "wind_speed_kn": 16.7,
+        "wind_direction_deg": 37.0,
+        "wind_gusts_kn": 28.8,
+        "temperature_c": 25.2
+      },
+      {
         "timestamp": "2026-10-15T10:00:00",
-        "wind_speed_kn": 16.6,
-        "wind_direction_deg": 67.0,
-        "wind_gusts_kn": 33.1,
-        "temperature_c": 25.4
+        "wind_speed_kn": 18.9,
+        "wind_direction_deg": 42.0,
+        "wind_gusts_kn": 29.9,
+        "temperature_c": 25.8
       },
       {
         "timestamp": "2026-10-15T11:00:00",
-        "wind_speed_kn": 15.2,
-        "wind_direction_deg": 64.0,
-        "wind_gusts_kn": 33.1,
-        "temperature_c": 27.1
-      },
-      {
-        "timestamp": "2026-10-15T12:00:00",
-        "wind_speed_kn": 15.0,
-        "wind_direction_deg": 56.0,
-        "wind_gusts_kn": 32.8,
-        "temperature_c": 28.7
-      },
-      {
-        "timestamp": "2026-10-15T13:00:00",
-        "wind_speed_kn": 15.7,
-        "wind_direction_deg": 63.0,
-        "wind_gusts_kn": 34.6,
-        "temperature_c": 29.9
-      },
-      {
-        "timestamp": "2026-10-15T14:00:00",
-        "wind_speed_kn": 17.6,
-        "wind_direction_deg": 72.0,
-        "wind_gusts_kn": 37.8,
-        "temperature_c": 29.9
-      },
-      {
-        "timestamp": "2026-10-15T15:00:00",
-        "wind_speed_kn": 18.2,
-        "wind_direction_deg": 67.0,
-        "wind_gusts_kn": 38.5,
-        "temperature_c": 29.3
-      },
-      {
-        "timestamp": "2026-10-15T16:00:00",
-        "wind_speed_kn": 17.6,
-        "wind_direction_deg": 61.0,
-        "wind_gusts_kn": 38.5,
-        "temperature_c": 28.9
-      },
-      {
-        "timestamp": "2026-10-15T17:00:00",
-        "wind_speed_kn": 17.4,
-        "wind_direction_deg": 59.0,
-        "wind_gusts_kn": 36.4,
-        "temperature_c": 27.6
-      },
-      {
-        "timestamp": "2026-10-15T18:00:00",
-        "wind_speed_kn": 16.7,
-        "wind_direction_deg": 60.0,
-        "wind_gusts_kn": 34.2,
-        "temperature_c": 26.6
-      },
-      {
-        "timestamp": "2026-10-15T19:00:00",
-        "wind_speed_kn": 14.5,
-        "wind_direction_deg": 55.0,
-        "wind_gusts_kn": 32.4,
+        "wind_speed_kn": 20.4,
+        "wind_direction_deg": 44.0,
+        "wind_gusts_kn": 33.5,
         "temperature_c": 26.2
       },
       {
+        "timestamp": "2026-10-15T12:00:00",
+        "wind_speed_kn": 20.4,
+        "wind_direction_deg": 46.0,
+        "wind_gusts_kn": 34.6,
+        "temperature_c": 26.9
+      },
+      {
+        "timestamp": "2026-10-15T13:00:00",
+        "wind_speed_kn": 19.6,
+        "wind_direction_deg": 44.0,
+        "wind_gusts_kn": 33.8,
+        "temperature_c": 27.3
+      },
+      {
+        "timestamp": "2026-10-15T14:00:00",
+        "wind_speed_kn": 17.3,
+        "wind_direction_deg": 36.0,
+        "wind_gusts_kn": 32.4,
+        "temperature_c": 28.1
+      },
+      {
+        "timestamp": "2026-10-15T15:00:00",
+        "wind_speed_kn": 13.9,
+        "wind_direction_deg": 37.0,
+        "wind_gusts_kn": 28.8,
+        "temperature_c": 29.6
+      },
+      {
+        "timestamp": "2026-10-15T16:00:00",
+        "wind_speed_kn": 15.3,
+        "wind_direction_deg": 47.0,
+        "wind_gusts_kn": 26.3,
+        "temperature_c": 29.3
+      },
+      {
+        "timestamp": "2026-10-15T17:00:00",
+        "wind_speed_kn": 13.5,
+        "wind_direction_deg": 44.0,
+        "wind_gusts_kn": 25.6,
+        "temperature_c": 28.2
+      },
+      {
+        "timestamp": "2026-10-15T18:00:00",
+        "wind_speed_kn": 14.8,
+        "wind_direction_deg": 34.0,
+        "wind_gusts_kn": 24.8,
+        "temperature_c": 26.9
+      },
+      {
+        "timestamp": "2026-10-15T19:00:00",
+        "wind_speed_kn": 14.2,
+        "wind_direction_deg": 30.0,
+        "wind_gusts_kn": 24.8,
+        "temperature_c": 26.1
+      },
+      {
         "timestamp": "2026-10-15T20:00:00",
-        "wind_speed_kn": 11.4,
-        "wind_direction_deg": 49.0,
-        "wind_gusts_kn": 27.4,
-        "temperature_c": 25.4
+        "wind_speed_kn": 11.1,
+        "wind_direction_deg": 29.0,
+        "wind_gusts_kn": 23.4,
+        "temperature_c": 25.6
       },
       {
         "timestamp": "2026-10-15T21:00:00",
-        "wind_speed_kn": 8.8,
-        "wind_direction_deg": 41.0,
-        "wind_gusts_kn": 20.9,
+        "wind_speed_kn": 11.8,
+        "wind_direction_deg": 23.0,
+        "wind_gusts_kn": 19.1,
         "temperature_c": 25.5
       },
       {
         "timestamp": "2026-10-15T22:00:00",
-        "wind_speed_kn": 7.8,
-        "wind_direction_deg": 38.0,
-        "wind_gusts_kn": 16.6,
-        "temperature_c": 25.4
+        "wind_speed_kn": 11.6,
+        "wind_direction_deg": 26.0,
+        "wind_gusts_kn": 19.1,
+        "temperature_c": 25.6
       },
       {
         "timestamp": "2026-10-15T23:00:00",
-        "wind_speed_kn": 8.0,
-        "wind_direction_deg": 31.0,
-        "wind_gusts_kn": 16.2,
+        "wind_speed_kn": 12.9,
+        "wind_direction_deg": 30.0,
+        "wind_gusts_kn": 20.5,
         "temperature_c": 25.3
       },
       {
         "timestamp": "2026-10-16T00:00:00",
-        "wind_speed_kn": 7.4,
-        "wind_direction_deg": 22.0,
-        "wind_gusts_kn": 16.6,
-        "temperature_c": 25.2
+        "wind_speed_kn": 13.0,
+        "wind_direction_deg": 24.0,
+        "wind_gusts_kn": 20.9,
+        "temperature_c": 25.1
       },
       {
         "timestamp": "2026-10-16T01:00:00",
-        "wind_speed_kn": 8.3,
-        "wind_direction_deg": 18.0,
-        "wind_gusts_kn": 17.6,
+        "wind_speed_kn": 13.6,
+        "wind_direction_deg": 22.0,
+        "wind_gusts_kn": 21.6,
         "temperature_c": 25.3
       },
       {
         "timestamp": "2026-10-16T02:00:00",
-        "wind_speed_kn": 8.7,
-        "wind_direction_deg": 14.0,
-        "wind_gusts_kn": 18.4,
+        "wind_speed_kn": 15.0,
+        "wind_direction_deg": 24.0,
+        "wind_gusts_kn": 23.8,
         "temperature_c": 25.3
       },
       {
         "timestamp": "2026-10-16T03:00:00",
-        "wind_speed_kn": 8.8,
-        "wind_direction_deg": 19.0,
-        "wind_gusts_kn": 19.1,
+        "wind_speed_kn": 16.1,
+        "wind_direction_deg": 24.0,
+        "wind_gusts_kn": 25.6,
         "temperature_c": 25.2
       },
       {
         "timestamp": "2026-10-16T04:00:00",
-        "wind_speed_kn": 10.4,
-        "wind_direction_deg": 18.0,
-        "wind_gusts_kn": 21.6,
-        "temperature_c": 25.5
+        "wind_speed_kn": 16.9,
+        "wind_direction_deg": 27.0,
+        "wind_gusts_kn": 27.0,
+        "temperature_c": 25.0
       },
       {
         "timestamp": "2026-10-16T05:00:00",
-        "wind_speed_kn": 12.0,
-        "wind_direction_deg": 22.0,
-        "wind_gusts_kn": 24.1,
-        "temperature_c": 25.5
+        "wind_speed_kn": 18.7,
+        "wind_direction_deg": 28.0,
+        "wind_gusts_kn": 30.2,
+        "temperature_c": 24.8
       },
       {
         "timestamp": "2026-10-16T06:00:00",
-        "wind_speed_kn": 14.2,
-        "wind_direction_deg": 30.0,
-        "wind_gusts_kn": 28.1,
-        "temperature_c": 25.1
+        "wind_speed_kn": 19.2,
+        "wind_direction_deg": 28.0,
+        "wind_gusts_kn": 31.3,
+        "temperature_c": 24.6
       },
       {
         "timestamp": "2026-10-16T07:00:00",
-        "wind_speed_kn": 18.5,
-        "wind_direction_deg": 40.0,
-        "wind_gusts_kn": 34.9,
-        "temperature_c": 24.7
+        "wind_speed_kn": 19.7,
+        "wind_direction_deg": 31.0,
+        "wind_gusts_kn": 31.7,
+        "temperature_c": 24.4
       },
       {
         "timestamp": "2026-10-16T08:00:00",
-        "wind_speed_kn": 19.5,
-        "wind_direction_deg": 39.0,
-        "wind_gusts_kn": 37.1,
-        "temperature_c": 24.1
+        "wind_speed_kn": 19.7,
+        "wind_direction_deg": 31.0,
+        "wind_gusts_kn": 32.0,
+        "temperature_c": 24.2
       },
       {
         "timestamp": "2026-10-16T09:00:00",
-        "wind_speed_kn": 19.9,
-        "wind_direction_deg": 44.0,
-        "wind_gusts_kn": 36.4,
-        "temperature_c": 25.0
+        "wind_speed_kn": 19.1,
+        "wind_direction_deg": 32.0,
+        "wind_gusts_kn": 32.0,
+        "temperature_c": 24.8
       },
       {
         "timestamp": "2026-10-16T10:00:00",
         "wind_speed_kn": 20.2,
-        "wind_direction_deg": 57.0,
-        "wind_gusts_kn": 39.2,
-        "temperature_c": 26.7
-      },
-      {
-        "timestamp": "2026-10-16T11:00:00",
-        "wind_speed_kn": 21.1,
-        "wind_direction_deg": 65.0,
-        "wind_gusts_kn": 42.1,
-        "temperature_c": 27.5
-      },
-      {
-        "timestamp": "2026-10-16T12:00:00",
-        "wind_speed_kn": 22.1,
-        "wind_direction_deg": 71.0,
-        "wind_gusts_kn": 44.6,
-        "temperature_c": 27.9
-      },
-      {
-        "timestamp": "2026-10-16T13:00:00",
-        "wind_speed_kn": 22.6,
-        "wind_direction_deg": 75.0,
-        "wind_gusts_kn": 45.4,
-        "temperature_c": 28.0
-      },
-      {
-        "timestamp": "2026-10-16T14:00:00",
-        "wind_speed_kn": 22.1,
-        "wind_direction_deg": 75.0,
-        "wind_gusts_kn": 45.7,
-        "temperature_c": 27.9
-      },
-      {
-        "timestamp": "2026-10-16T15:00:00",
-        "wind_speed_kn": 21.1,
-        "wind_direction_deg": 76.0,
-        "wind_gusts_kn": 45.4,
-        "temperature_c": 28.6
-      },
-      {
-        "timestamp": "2026-10-16T16:00:00",
-        "wind_speed_kn": 19.0,
-        "wind_direction_deg": 71.0,
-        "wind_gusts_kn": 43.6,
-        "temperature_c": 28.8
-      },
-      {
-        "timestamp": "2026-10-16T17:00:00",
-        "wind_speed_kn": 17.0,
-        "wind_direction_deg": 71.0,
-        "wind_gusts_kn": 39.6,
-        "temperature_c": 28.8
-      },
-      {
-        "timestamp": "2026-10-16T18:00:00",
-        "wind_speed_kn": 14.4,
-        "wind_direction_deg": 72.0,
-        "wind_gusts_kn": 35.3,
-        "temperature_c": 27.9
-      },
-      {
-        "timestamp": "2026-10-16T19:00:00",
-        "wind_speed_kn": 12.3,
-        "wind_direction_deg": 58.0,
-        "wind_gusts_kn": 29.9,
-        "temperature_c": 27.2
-      },
-      {
-        "timestamp": "2026-10-16T20:00:00",
-        "wind_speed_kn": 9.6,
-        "wind_direction_deg": 53.0,
-        "wind_gusts_kn": 24.5,
-        "temperature_c": 26.2
-      },
-      {
-        "timestamp": "2026-10-16T21:00:00",
-        "wind_speed_kn": 7.7,
-        "wind_direction_deg": 36.0,
-        "wind_gusts_kn": 19.4,
-        "temperature_c": 26.1
-      },
-      {
-        "timestamp": "2026-10-16T22:00:00",
-        "wind_speed_kn": 8.9,
-        "wind_direction_deg": 32.0,
-        "wind_gusts_kn": 19.1,
-        "temperature_c": 25.9
-      },
-      {
-        "timestamp": "2026-10-16T23:00:00",
-        "wind_speed_kn": 7.6,
-        "wind_direction_deg": 28.0,
-        "wind_gusts_kn": 18.7,
+        "wind_direction_deg": 39.0,
+        "wind_gusts_kn": 32.8,
         "temperature_c": 25.5
       },
       {
-        "timestamp": "2026-10-17T00:00:00",
-        "wind_speed_kn": 8.6,
-        "wind_direction_deg": 26.0,
-        "wind_gusts_kn": 18.4,
-        "temperature_c": 25.2
+        "timestamp": "2026-10-16T11:00:00",
+        "wind_speed_kn": 22.0,
+        "wind_direction_deg": 38.0,
+        "wind_gusts_kn": 36.4,
+        "temperature_c": 26.7
       },
       {
-        "timestamp": "2026-10-17T01:00:00",
-        "wind_speed_kn": 9.2,
-        "wind_direction_deg": 26.0,
-        "wind_gusts_kn": 19.4,
-        "temperature_c": 24.7
+        "timestamp": "2026-10-16T12:00:00",
+        "wind_speed_kn": 22.7,
+        "wind_direction_deg": 43.0,
+        "wind_gusts_kn": 38.2,
+        "temperature_c": 27.6
       },
       {
-        "timestamp": "2026-10-17T02:00:00",
-        "wind_speed_kn": 7.8,
-        "wind_direction_deg": 13.0,
-        "wind_gusts_kn": 19.1,
-        "temperature_c": 24.1
+        "timestamp": "2026-10-16T13:00:00",
+        "wind_speed_kn": 22.7,
+        "wind_direction_deg": 48.0,
+        "wind_gusts_kn": 38.2,
+        "temperature_c": 27.9
       },
       {
-        "timestamp": "2026-10-17T03:00:00",
-        "wind_speed_kn": 6.9,
-        "wind_direction_deg": 9.0,
-        "wind_gusts_kn": 16.2,
-        "temperature_c": 23.5
+        "timestamp": "2026-10-16T14:00:00",
+        "wind_speed_kn": 22.2,
+        "wind_direction_deg": 48.0,
+        "wind_gusts_kn": 37.8,
+        "temperature_c": 28.1
       },
       {
-        "timestamp": "2026-10-17T04:00:00",
-        "wind_speed_kn": 6.4,
-        "wind_direction_deg": 8.0,
-        "wind_gusts_kn": 14.4,
-        "temperature_c": 23.1
-      },
-      {
-        "timestamp": "2026-10-17T05:00:00",
-        "wind_speed_kn": 6.1,
-        "wind_direction_deg": 3.0,
-        "wind_gusts_kn": 13.3,
-        "temperature_c": 22.8
-      },
-      {
-        "timestamp": "2026-10-17T06:00:00",
-        "wind_speed_kn": 5.8,
-        "wind_direction_deg": 360.0,
-        "wind_gusts_kn": 12.6,
-        "temperature_c": 22.5
-      },
-      {
-        "timestamp": "2026-10-17T07:00:00",
-        "wind_speed_kn": 5.2,
-        "wind_direction_deg": 356.0,
-        "wind_gusts_kn": 11.5,
-        "temperature_c": 22.2
-      },
-      {
-        "timestamp": "2026-10-17T08:00:00",
-        "wind_speed_kn": 5.2,
-        "wind_direction_deg": 360.0,
-        "wind_gusts_kn": 10.8,
-        "temperature_c": 21.9
-      },
-      {
-        "timestamp": "2026-10-17T09:00:00",
-        "wind_speed_kn": 9.2,
-        "wind_direction_deg": 11.0,
-        "wind_gusts_kn": 14.4,
-        "temperature_c": 24.1
-      },
-      {
-        "timestamp": "2026-10-17T10:00:00",
-        "wind_speed_kn": 11.0,
-        "wind_direction_deg": 49.0,
-        "wind_gusts_kn": 22.7,
-        "temperature_c": 27.0
-      },
-      {
-        "timestamp": "2026-10-17T11:00:00",
-        "wind_speed_kn": 12.3,
-        "wind_direction_deg": 68.0,
-        "wind_gusts_kn": 27.4,
+        "timestamp": "2026-10-16T15:00:00",
+        "wind_speed_kn": 20.9,
+        "wind_direction_deg": 42.0,
+        "wind_gusts_kn": 37.1,
         "temperature_c": 28.3
       },
       {
-        "timestamp": "2026-10-17T12:00:00",
-        "wind_speed_kn": 14.6,
-        "wind_direction_deg": 74.0,
-        "wind_gusts_kn": 32.8,
-        "temperature_c": 29.0
+        "timestamp": "2026-10-16T16:00:00",
+        "wind_speed_kn": 22.5,
+        "wind_direction_deg": 39.0,
+        "wind_gusts_kn": 37.4,
+        "temperature_c": 28.4
       },
       {
-        "timestamp": "2026-10-17T13:00:00",
-        "wind_speed_kn": 15.5,
-        "wind_direction_deg": 77.0,
-        "wind_gusts_kn": 35.3,
-        "temperature_c": 29.2
+        "timestamp": "2026-10-16T17:00:00",
+        "wind_speed_kn": 22.5,
+        "wind_direction_deg": 39.0,
+        "wind_gusts_kn": 38.2,
+        "temperature_c": 28.0
       },
       {
-        "timestamp": "2026-10-17T14:00:00",
-        "wind_speed_kn": 14.6,
-        "wind_direction_deg": 76.0,
-        "wind_gusts_kn": 35.3,
-        "temperature_c": 29.3
+        "timestamp": "2026-10-16T18:00:00",
+        "wind_speed_kn": 20.8,
+        "wind_direction_deg": 37.0,
+        "wind_gusts_kn": 37.8,
+        "temperature_c": 27.1
       },
       {
-        "timestamp": "2026-10-17T15:00:00",
-        "wind_speed_kn": 13.7,
-        "wind_direction_deg": 76.0,
-        "wind_gusts_kn": 34.6,
-        "temperature_c": 29.1
+        "timestamp": "2026-10-16T19:00:00",
+        "wind_speed_kn": 18.0,
+        "wind_direction_deg": 37.0,
+        "wind_gusts_kn": 34.2,
+        "temperature_c": 26.3
       },
       {
-        "timestamp": "2026-10-17T16:00:00",
-        "wind_speed_kn": 11.2,
-        "wind_direction_deg": 78.0,
-        "wind_gusts_kn": 32.8,
-        "temperature_c": 28.7
+        "timestamp": "2026-10-16T20:00:00",
+        "wind_speed_kn": 13.5,
+        "wind_direction_deg": 34.0,
+        "wind_gusts_kn": 29.5,
+        "temperature_c": 25.4
       },
       {
-        "timestamp": "2026-10-17T17:00:00",
-        "wind_speed_kn": 8.5,
-        "wind_direction_deg": 83.0,
-        "wind_gusts_kn": 28.1,
-        "temperature_c": 27.8
+        "timestamp": "2026-10-16T21:00:00",
+        "wind_speed_kn": 11.7,
+        "wind_direction_deg": 34.0,
+        "wind_gusts_kn": 21.6,
+        "temperature_c": 25.1
       },
       {
-        "timestamp": "2026-10-17T18:00:00",
-        "wind_speed_kn": 6.5,
-        "wind_direction_deg": 77.0,
-        "wind_gusts_kn": 23.4,
-        "temperature_c": 26.6
+        "timestamp": "2026-10-16T22:00:00",
+        "wind_speed_kn": 12.8,
+        "wind_direction_deg": 32.0,
+        "wind_gusts_kn": 20.2,
+        "temperature_c": 24.8
       },
       {
-        "timestamp": "2026-10-17T19:00:00",
-        "wind_speed_kn": 4.8,
-        "wind_direction_deg": 42.0,
-        "wind_gusts_kn": 18.4,
-        "temperature_c": 25.3
+        "timestamp": "2026-10-16T23:00:00",
+        "wind_speed_kn": 14.9,
+        "wind_direction_deg": 32.0,
+        "wind_gusts_kn": 23.8,
+        "temperature_c": 24.8
       },
       {
-        "timestamp": "2026-10-17T20:00:00",
-        "wind_speed_kn": 7.5,
-        "wind_direction_deg": 24.0,
-        "wind_gusts_kn": 14.8,
+        "timestamp": "2026-10-17T00:00:00",
+        "wind_speed_kn": 15.9,
+        "wind_direction_deg": 33.0,
+        "wind_gusts_kn": 25.2,
+        "temperature_c": 24.5
+      },
+      {
+        "timestamp": "2026-10-17T01:00:00",
+        "wind_speed_kn": 15.4,
+        "wind_direction_deg": 33.0,
+        "wind_gusts_kn": 25.2,
         "temperature_c": 24.3
       },
       {
+        "timestamp": "2026-10-17T02:00:00",
+        "wind_speed_kn": 14.8,
+        "wind_direction_deg": 29.0,
+        "wind_gusts_kn": 24.5,
+        "temperature_c": 24.0
+      },
+      {
+        "timestamp": "2026-10-17T03:00:00",
+        "wind_speed_kn": 14.3,
+        "wind_direction_deg": 28.0,
+        "wind_gusts_kn": 23.4,
+        "temperature_c": 23.7
+      },
+      {
+        "timestamp": "2026-10-17T04:00:00",
+        "wind_speed_kn": 15.8,
+        "wind_direction_deg": 30.0,
+        "wind_gusts_kn": 25.2,
+        "temperature_c": 23.2
+      },
+      {
+        "timestamp": "2026-10-17T05:00:00",
+        "wind_speed_kn": 16.4,
+        "wind_direction_deg": 29.0,
+        "wind_gusts_kn": 26.6,
+        "temperature_c": 23.1
+      },
+      {
+        "timestamp": "2026-10-17T06:00:00",
+        "wind_speed_kn": 16.9,
+        "wind_direction_deg": 29.0,
+        "wind_gusts_kn": 27.0,
+        "temperature_c": 22.9
+      },
+      {
+        "timestamp": "2026-10-17T07:00:00",
+        "wind_speed_kn": 18.0,
+        "wind_direction_deg": 33.0,
+        "wind_gusts_kn": 28.4,
+        "temperature_c": 22.5
+      },
+      {
+        "timestamp": "2026-10-17T08:00:00",
+        "wind_speed_kn": 18.8,
+        "wind_direction_deg": 32.0,
+        "wind_gusts_kn": 29.9,
+        "temperature_c": 22.4
+      },
+      {
+        "timestamp": "2026-10-17T09:00:00",
+        "wind_speed_kn": 18.2,
+        "wind_direction_deg": 34.0,
+        "wind_gusts_kn": 29.5,
+        "temperature_c": 23.2
+      },
+      {
+        "timestamp": "2026-10-17T10:00:00",
+        "wind_speed_kn": 20.3,
+        "wind_direction_deg": 37.0,
+        "wind_gusts_kn": 33.1,
+        "temperature_c": 24.9
+      },
+      {
+        "timestamp": "2026-10-17T11:00:00",
+        "wind_speed_kn": 21.1,
+        "wind_direction_deg": 37.0,
+        "wind_gusts_kn": 34.6,
+        "temperature_c": 26.5
+      },
+      {
+        "timestamp": "2026-10-17T12:00:00",
+        "wind_speed_kn": 21.0,
+        "wind_direction_deg": 38.0,
+        "wind_gusts_kn": 35.6,
+        "temperature_c": 28.0
+      },
+      {
+        "timestamp": "2026-10-17T13:00:00",
+        "wind_speed_kn": 19.1,
+        "wind_direction_deg": 44.0,
+        "wind_gusts_kn": 34.6,
+        "temperature_c": 28.9
+      },
+      {
+        "timestamp": "2026-10-17T14:00:00",
+        "wind_speed_kn": 18.1,
+        "wind_direction_deg": 44.0,
+        "wind_gusts_kn": 32.0,
+        "temperature_c": 29.0
+      },
+      {
+        "timestamp": "2026-10-17T15:00:00",
+        "wind_speed_kn": 13.2,
+        "wind_direction_deg": 35.0,
+        "wind_gusts_kn": 30.2,
+        "temperature_c": 28.7
+      },
+      {
+        "timestamp": "2026-10-17T16:00:00",
+        "wind_speed_kn": 9.2,
+        "wind_direction_deg": 45.0,
+        "wind_gusts_kn": 23.0,
+        "temperature_c": 28.5
+      },
+      {
+        "timestamp": "2026-10-17T17:00:00",
+        "wind_speed_kn": 9.0,
+        "wind_direction_deg": 53.0,
+        "wind_gusts_kn": 17.3,
+        "temperature_c": 28.0
+      },
+      {
+        "timestamp": "2026-10-17T18:00:00",
+        "wind_speed_kn": 12.2,
+        "wind_direction_deg": 34.0,
+        "wind_gusts_kn": 20.9,
+        "temperature_c": 27.2
+      },
+      {
+        "timestamp": "2026-10-17T19:00:00",
+        "wind_speed_kn": 15.4,
+        "wind_direction_deg": 33.0,
+        "wind_gusts_kn": 24.8,
+        "temperature_c": 25.9
+      },
+      {
+        "timestamp": "2026-10-17T20:00:00",
+        "wind_speed_kn": 15.6,
+        "wind_direction_deg": 29.0,
+        "wind_gusts_kn": 25.6,
+        "temperature_c": 24.2
+      },
+      {
         "timestamp": "2026-10-17T21:00:00",
-        "wind_speed_kn": 10.7,
+        "wind_speed_kn": 14.7,
+        "wind_direction_deg": 28.0,
+        "wind_gusts_kn": 25.2,
+        "temperature_c": 23.7
+      },
+      {
+        "timestamp": "2026-10-17T22:00:00",
+        "wind_speed_kn": 15.5,
+        "wind_direction_deg": 28.0,
+        "wind_gusts_kn": 24.5,
+        "temperature_c": 23.5
+      },
+      {
+        "timestamp": "2026-10-17T23:00:00",
+        "wind_speed_kn": 14.3,
+        "wind_direction_deg": 25.0,
+        "wind_gusts_kn": 24.5,
+        "temperature_c": 23.4
+      },
+      {
+        "timestamp": "2026-10-18T00:00:00",
+        "wind_speed_kn": 13.7,
         "wind_direction_deg": 23.0,
+        "wind_gusts_kn": 23.0,
+        "temperature_c": 23.2
+      },
+      {
+        "timestamp": "2026-10-18T01:00:00",
+        "wind_speed_kn": 12.0,
+        "wind_direction_deg": 16.0,
+        "wind_gusts_kn": 21.6,
+        "temperature_c": 22.9
+      },
+      {
+        "timestamp": "2026-10-18T02:00:00",
+        "wind_speed_kn": 12.5,
+        "wind_direction_deg": 18.0,
+        "wind_gusts_kn": 19.8,
+        "temperature_c": 22.8
+      },
+      {
+        "timestamp": "2026-10-18T03:00:00",
+        "wind_speed_kn": 14.7,
+        "wind_direction_deg": 31.0,
+        "wind_gusts_kn": 23.4,
+        "temperature_c": 22.6
+      },
+      {
+        "timestamp": "2026-10-18T04:00:00",
+        "wind_speed_kn": 16.3,
+        "wind_direction_deg": 31.0,
+        "wind_gusts_kn": 26.3,
+        "temperature_c": 22.4
+      },
+      {
+        "timestamp": "2026-10-18T05:00:00",
+        "wind_speed_kn": 17.2,
+        "wind_direction_deg": 33.0,
+        "wind_gusts_kn": 27.4,
+        "temperature_c": 22.4
+      },
+      {
+        "timestamp": "2026-10-18T06:00:00",
+        "wind_speed_kn": 16.4,
+        "wind_direction_deg": 33.0,
+        "wind_gusts_kn": 27.4,
+        "temperature_c": 22.3
+      },
+      {
+        "timestamp": "2026-10-18T07:00:00",
+        "wind_speed_kn": 15.6,
+        "wind_direction_deg": 34.0,
+        "wind_gusts_kn": 25.9,
+        "temperature_c": 22.2
+      },
+      {
+        "timestamp": "2026-10-18T08:00:00",
+        "wind_speed_kn": 16.9,
+        "wind_direction_deg": 34.0,
+        "wind_gusts_kn": 27.4,
+        "temperature_c": 22.0
+      },
+      {
+        "timestamp": "2026-10-18T09:00:00",
+        "wind_speed_kn": 16.6,
+        "wind_direction_deg": 34.0,
+        "wind_gusts_kn": 27.0,
+        "temperature_c": 22.7
+      },
+      {
+        "timestamp": "2026-10-18T10:00:00",
+        "wind_speed_kn": 20.6,
+        "wind_direction_deg": 29.0,
+        "wind_gusts_kn": 33.5,
+        "temperature_c": 24.2
+      },
+      {
+        "timestamp": "2026-10-18T11:00:00",
+        "wind_speed_kn": 21.9,
+        "wind_direction_deg": 33.0,
+        "wind_gusts_kn": 36.4,
+        "temperature_c": 25.5
+      },
+      {
+        "timestamp": "2026-10-18T12:00:00",
+        "wind_speed_kn": 27.6,
+        "wind_direction_deg": 40.0,
+        "wind_gusts_kn": 45.7,
+        "temperature_c": 26.4
+      },
+      {
+        "timestamp": "2026-10-18T13:00:00",
+        "wind_speed_kn": 30.1,
+        "wind_direction_deg": 41.0,
+        "wind_gusts_kn": 50.4,
+        "temperature_c": 25.9
+      },
+      {
+        "timestamp": "2026-10-18T14:00:00",
+        "wind_speed_kn": 29.6,
+        "wind_direction_deg": 40.0,
+        "wind_gusts_kn": 50.8,
+        "temperature_c": 27.0
+      },
+      {
+        "timestamp": "2026-10-18T15:00:00",
+        "wind_speed_kn": 26.8,
+        "wind_direction_deg": 42.0,
+        "wind_gusts_kn": 49.3,
+        "temperature_c": 27.5
+      },
+      {
+        "timestamp": "2026-10-18T16:00:00",
+        "wind_speed_kn": 26.2,
+        "wind_direction_deg": 43.0,
+        "wind_gusts_kn": 44.3,
+        "temperature_c": 27.5
+      },
+      {
+        "timestamp": "2026-10-18T17:00:00",
+        "wind_speed_kn": 29.2,
+        "wind_direction_deg": 39.0,
+        "wind_gusts_kn": 48.6,
+        "temperature_c": 26.5
+      },
+      {
+        "timestamp": "2026-10-18T18:00:00",
+        "wind_speed_kn": 28.1,
+        "wind_direction_deg": 36.0,
+        "wind_gusts_kn": 49.3,
+        "temperature_c": 25.1
+      },
+      {
+        "timestamp": "2026-10-18T19:00:00",
+        "wind_speed_kn": 25.0,
+        "wind_direction_deg": 36.0,
+        "wind_gusts_kn": 46.4,
+        "temperature_c": 24.0
+      },
+      {
+        "timestamp": "2026-10-18T20:00:00",
+        "wind_speed_kn": 22.8,
+        "wind_direction_deg": 35.0,
+        "wind_gusts_kn": 28.1,
+        "temperature_c": 23.3
+      },
+      {
+        "timestamp": "2026-10-18T21:00:00",
+        "wind_speed_kn": 19.5,
+        "wind_direction_deg": 34.0,
+        "wind_gusts_kn": 28.1,
+        "temperature_c": 22.8
+      },
+      {
+        "timestamp": "2026-10-18T22:00:00",
+        "wind_speed_kn": 16.7,
+        "wind_direction_deg": 33.0,
+        "wind_gusts_kn": 28.1,
+        "temperature_c": 22.5
+      },
+      {
+        "timestamp": "2026-10-18T23:00:00",
+        "wind_speed_kn": 14.5,
+        "wind_direction_deg": 30.0,
+        "wind_gusts_kn": 20.2,
+        "temperature_c": 22.2
+      },
+      {
+        "timestamp": "2026-10-19T00:00:00",
+        "wind_speed_kn": 12.9,
+        "wind_direction_deg": 27.0,
+        "wind_gusts_kn": 20.2,
+        "temperature_c": 22.1
+      },
+      {
+        "timestamp": "2026-10-19T01:00:00",
+        "wind_speed_kn": 11.6,
+        "wind_direction_deg": 22.0,
+        "wind_gusts_kn": 20.2,
+        "temperature_c": 21.9
+      },
+      {
+        "timestamp": "2026-10-19T02:00:00",
+        "wind_speed_kn": 10.9,
+        "wind_direction_deg": 17.0,
+        "wind_gusts_kn": 16.9,
+        "temperature_c": 21.6
+      },
+      {
+        "timestamp": "2026-10-19T03:00:00",
+        "wind_speed_kn": 10.7,
+        "wind_direction_deg": 14.0,
+        "wind_gusts_kn": 16.9,
+        "temperature_c": 21.4
+      },
+      {
+        "timestamp": "2026-10-19T04:00:00",
+        "wind_speed_kn": 10.2,
+        "wind_direction_deg": 8.0,
+        "wind_gusts_kn": 16.9,
+        "temperature_c": 21.1
+      },
+      {
+        "timestamp": "2026-10-19T05:00:00",
+        "wind_speed_kn": 9.4,
+        "wind_direction_deg": 358.0,
+        "wind_gusts_kn": 13.3,
+        "temperature_c": 20.7
+      },
+      {
+        "timestamp": "2026-10-19T06:00:00",
+        "wind_speed_kn": 8.6,
+        "wind_direction_deg": 345.0,
+        "wind_gusts_kn": 13.3,
+        "temperature_c": 20.2
+      },
+      {
+        "timestamp": "2026-10-19T07:00:00",
+        "wind_speed_kn": 7.9,
+        "wind_direction_deg": 336.0,
+        "wind_gusts_kn": 13.3,
+        "temperature_c": 20.1
+      },
+      {
+        "timestamp": "2026-10-19T08:00:00",
+        "wind_speed_kn": 6.5,
+        "wind_direction_deg": 341.0,
+        "wind_gusts_kn": 10.8,
+        "temperature_c": 20.7
+      },
+      {
+        "timestamp": "2026-10-19T09:00:00",
+        "wind_speed_kn": 4.7,
+        "wind_direction_deg": 356.0,
+        "wind_gusts_kn": 10.8,
+        "temperature_c": 21.8
+      },
+      {
+        "timestamp": "2026-10-19T10:00:00",
+        "wind_speed_kn": 3.2,
+        "wind_direction_deg": 27.0,
+        "wind_gusts_kn": 10.8,
+        "temperature_c": 22.7
+      },
+      {
+        "timestamp": "2026-10-19T11:00:00",
+        "wind_speed_kn": 2.2,
+        "wind_direction_deg": 90.0,
+        "wind_gusts_kn": 13.7,
+        "temperature_c": 23.6
+      },
+      {
+        "timestamp": "2026-10-19T12:00:00",
+        "wind_speed_kn": 4.3,
+        "wind_direction_deg": 138.0,
+        "wind_gusts_kn": 13.7,
+        "temperature_c": 24.3
+      },
+      {
+        "timestamp": "2026-10-19T13:00:00",
+        "wind_speed_kn": 6.4,
+        "wind_direction_deg": 153.0,
+        "wind_gusts_kn": 13.7,
+        "temperature_c": 24.7
+      },
+      {
+        "timestamp": "2026-10-19T14:00:00",
+        "wind_speed_kn": 7.1,
+        "wind_direction_deg": 165.0,
+        "wind_gusts_kn": 20.2,
+        "temperature_c": 24.6
+      },
+      {
+        "timestamp": "2026-10-19T15:00:00",
+        "wind_speed_kn": 6.8,
+        "wind_direction_deg": 177.0,
+        "wind_gusts_kn": 20.2,
+        "temperature_c": 24.1
+      },
+      {
+        "timestamp": "2026-10-19T16:00:00",
+        "wind_speed_kn": 6.1,
+        "wind_direction_deg": 180.0,
+        "wind_gusts_kn": 20.2,
+        "temperature_c": 23.7
+      },
+      {
+        "timestamp": "2026-10-19T17:00:00",
+        "wind_speed_kn": 5.5,
+        "wind_direction_deg": 157.0,
+        "wind_gusts_kn": 13.3,
+        "temperature_c": 23.5
+      },
+      {
+        "timestamp": "2026-10-19T18:00:00",
+        "wind_speed_kn": 6.0,
+        "wind_direction_deg": 123.0,
+        "wind_gusts_kn": 13.3,
+        "temperature_c": 23.4
+      },
+      {
+        "timestamp": "2026-10-19T19:00:00",
+        "wind_speed_kn": 7.0,
+        "wind_direction_deg": 102.0,
+        "wind_gusts_kn": 13.3,
+        "temperature_c": 23.1
+      },
+      {
+        "timestamp": "2026-10-19T20:00:00",
+        "wind_speed_kn": 6.2,
+        "wind_direction_deg": 80.0,
+        "wind_gusts_kn": 10.1,
+        "temperature_c": 22.7
+      },
+      {
+        "timestamp": "2026-10-19T21:00:00",
+        "wind_speed_kn": 5.6,
+        "wind_direction_deg": 45.0,
+        "wind_gusts_kn": 10.1,
+        "temperature_c": 22.1
+      },
+      {
+        "timestamp": "2026-10-19T22:00:00",
+        "wind_speed_kn": 6.3,
+        "wind_direction_deg": 13.0,
+        "wind_gusts_kn": 10.1,
+        "temperature_c": 21.6
+      },
+      {
+        "timestamp": "2026-10-19T23:00:00",
+        "wind_speed_kn": 6.6,
+        "wind_direction_deg": 351.0,
+        "wind_gusts_kn": 12.6,
+        "temperature_c": 21.0
+      },
+      {
+        "timestamp": "2026-10-20T00:00:00",
+        "wind_speed_kn": 7.0,
+        "wind_direction_deg": 325.0,
+        "wind_gusts_kn": 12.6,
+        "temperature_c": 20.4
+      },
+      {
+        "timestamp": "2026-10-20T01:00:00",
+        "wind_speed_kn": 7.9,
+        "wind_direction_deg": 313.0,
+        "wind_gusts_kn": 12.6,
+        "temperature_c": 20.0
+      },
+      {
+        "timestamp": "2026-10-20T02:00:00",
+        "wind_speed_kn": 8.7,
+        "wind_direction_deg": 312.0,
+        "wind_gusts_kn": 14.0,
+        "temperature_c": 19.7
+      },
+      {
+        "timestamp": "2026-10-20T03:00:00",
+        "wind_speed_kn": 8.9,
+        "wind_direction_deg": 313.0,
+        "wind_gusts_kn": 14.0,
+        "temperature_c": 19.5
+      },
+      {
+        "timestamp": "2026-10-20T04:00:00",
+        "wind_speed_kn": 8.9,
+        "wind_direction_deg": 317.0,
+        "wind_gusts_kn": 14.0,
+        "temperature_c": 19.4
+      },
+      {
+        "timestamp": "2026-10-20T05:00:00",
+        "wind_speed_kn": 8.9,
+        "wind_direction_deg": 317.0,
+        "wind_gusts_kn": 14.0,
+        "temperature_c": 19.3
+      },
+      {
+        "timestamp": "2026-10-20T06:00:00",
+        "wind_speed_kn": 8.9,
+        "wind_direction_deg": 317.0,
+        "wind_gusts_kn": 14.0,
+        "temperature_c": 19.2
+      },
+      {
+        "timestamp": "2026-10-20T07:00:00",
+        "wind_speed_kn": 8.2,
+        "wind_direction_deg": 319.0,
+        "wind_gusts_kn": 14.0,
+        "temperature_c": 19.4
+      },
+      {
+        "timestamp": "2026-10-20T08:00:00",
+        "wind_speed_kn": 7.5,
+        "wind_direction_deg": 325.0,
+        "wind_gusts_kn": 15.5,
+        "temperature_c": 20.3
+      },
+      {
+        "timestamp": "2026-10-20T09:00:00",
+        "wind_speed_kn": 6.6,
+        "wind_direction_deg": 338.0,
+        "wind_gusts_kn": 15.5,
+        "temperature_c": 21.6
+      },
+      {
+        "timestamp": "2026-10-20T10:00:00",
+        "wind_speed_kn": 5.4,
+        "wind_direction_deg": 360.0,
+        "wind_gusts_kn": 15.5,
+        "temperature_c": 22.7
+      },
+      {
+        "timestamp": "2026-10-20T11:00:00",
+        "wind_speed_kn": 4.8,
+        "wind_direction_deg": 56.0,
+        "wind_gusts_kn": 22.6,
+        "temperature_c": 23.5
+      },
+      {
+        "timestamp": "2026-10-20T12:00:00",
+        "wind_speed_kn": 8.6,
+        "wind_direction_deg": 88.0,
+        "wind_gusts_kn": 21.8,
+        "temperature_c": 24.1
+      },
+      {
+        "timestamp": "2026-10-20T13:00:00",
+        "wind_speed_kn": 11.7,
+        "wind_direction_deg": 92.0,
+        "wind_gusts_kn": 21.0,
+        "temperature_c": 24.6
+      },
+      {
+        "timestamp": "2026-10-20T14:00:00",
+        "wind_speed_kn": 12.2,
+        "wind_direction_deg": 90.0,
+        "wind_gusts_kn": 21.2,
+        "temperature_c": 24.6
+      },
+      {
+        "timestamp": "2026-10-20T15:00:00",
+        "wind_speed_kn": 11.9,
+        "wind_direction_deg": 88.0,
+        "wind_gusts_kn": 21.2,
+        "temperature_c": 24.5
+      },
+      {
+        "timestamp": "2026-10-20T16:00:00",
+        "wind_speed_kn": 11.6,
+        "wind_direction_deg": 85.0,
+        "wind_gusts_kn": 21.2,
+        "temperature_c": 24.3
+      },
+      {
+        "timestamp": "2026-10-20T17:00:00",
+        "wind_speed_kn": 11.5,
+        "wind_direction_deg": 76.0,
         "wind_gusts_kn": 20.5,
         "temperature_c": 23.9
       },
       {
-        "timestamp": "2026-10-17T22:00:00",
-        "wind_speed_kn": 9.4,
-        "wind_direction_deg": 20.0,
-        "wind_gusts_kn": 21.2,
-        "temperature_c": 23.6
+        "timestamp": "2026-10-20T18:00:00",
+        "wind_speed_kn": 11.8,
+        "wind_direction_deg": 63.0,
+        "wind_gusts_kn": 20.5,
+        "temperature_c": 23.5
       },
       {
-        "timestamp": "2026-10-17T23:00:00",
-        "wind_speed_kn": 7.9,
-        "wind_direction_deg": 27.0,
-        "wind_gusts_kn": 18.7,
-        "temperature_c": 23.2
+        "timestamp": "2026-10-20T19:00:00",
+        "wind_speed_kn": 11.8,
+        "wind_direction_deg": 52.0,
+        "wind_gusts_kn": 20.5,
+        "temperature_c": 23.1
       },
       {
-        "timestamp": "2026-10-18T00:00:00",
-        "wind_speed_kn": 8.1,
-        "wind_direction_deg": 25.0,
-        "wind_gusts_kn": 17.3,
-        "temperature_c": 22.7
-      },
-      {
-        "timestamp": "2026-10-18T01:00:00",
-        "wind_speed_kn": 7.5,
-        "wind_direction_deg": 21.0,
+        "timestamp": "2026-10-20T20:00:00",
+        "wind_speed_kn": 11.2,
+        "wind_direction_deg": 42.0,
         "wind_gusts_kn": 17.6,
         "temperature_c": 22.7
       },
       {
-        "timestamp": "2026-10-18T02:00:00",
-        "wind_speed_kn": 7.2,
-        "wind_direction_deg": 18.0,
-        "wind_gusts_kn": 16.9,
-        "temperature_c": 22.4
-      },
-      {
-        "timestamp": "2026-10-18T03:00:00",
-        "wind_speed_kn": 8.3,
-        "wind_direction_deg": 14.0,
-        "wind_gusts_kn": 18.4,
-        "temperature_c": 22.2
-      },
-      {
-        "timestamp": "2026-10-18T04:00:00",
-        "wind_speed_kn": 9.7,
-        "wind_direction_deg": 24.0,
-        "wind_gusts_kn": 20.9,
-        "temperature_c": 22.1
-      },
-      {
-        "timestamp": "2026-10-18T05:00:00",
-        "wind_speed_kn": 8.8,
-        "wind_direction_deg": 19.0,
-        "wind_gusts_kn": 20.9,
-        "temperature_c": 21.9
-      },
-      {
-        "timestamp": "2026-10-18T06:00:00",
-        "wind_speed_kn": 8.7,
-        "wind_direction_deg": 18.0,
-        "wind_gusts_kn": 20.9,
-        "temperature_c": 21.6
-      },
-      {
-        "timestamp": "2026-10-18T07:00:00",
-        "wind_speed_kn": 7.2,
-        "wind_direction_deg": 19.0,
-        "wind_gusts_kn": 19.8,
-        "temperature_c": 21.6
-      },
-      {
-        "timestamp": "2026-10-18T08:00:00",
-        "wind_speed_kn": 9.0,
-        "wind_direction_deg": 33.0,
-        "wind_gusts_kn": 19.8,
-        "temperature_c": 21.3
-      },
-      {
-        "timestamp": "2026-10-18T09:00:00",
-        "wind_speed_kn": 13.0,
-        "wind_direction_deg": 34.0,
-        "wind_gusts_kn": 26.3,
-        "temperature_c": 22.3
-      },
-      {
-        "timestamp": "2026-10-18T10:00:00",
-        "wind_speed_kn": 16.9,
-        "wind_direction_deg": 36.0,
-        "wind_gusts_kn": 33.8,
-        "temperature_c": 23.9
-      },
-      {
-        "timestamp": "2026-10-18T11:00:00",
-        "wind_speed_kn": 17.9,
-        "wind_direction_deg": 36.0,
-        "wind_gusts_kn": 36.7,
-        "temperature_c": 25.9
-      },
-      {
-        "timestamp": "2026-10-18T12:00:00",
-        "wind_speed_kn": 18.0,
-        "wind_direction_deg": 50.0,
-        "wind_gusts_kn": 38.2,
-        "temperature_c": 27.0
-      },
-      {
-        "timestamp": "2026-10-18T13:00:00",
-        "wind_speed_kn": 17.0,
-        "wind_direction_deg": 54.0,
-        "wind_gusts_kn": 38.5,
-        "temperature_c": 27.3
-      },
-      {
-        "timestamp": "2026-10-18T14:00:00",
-        "wind_speed_kn": 15.7,
-        "wind_direction_deg": 53.0,
-        "wind_gusts_kn": 38.9,
-        "temperature_c": 27.8
-      },
-      {
-        "timestamp": "2026-10-18T15:00:00",
-        "wind_speed_kn": 13.8,
-        "wind_direction_deg": 48.0,
-        "wind_gusts_kn": 38.5,
-        "temperature_c": 28.1
-      },
-      {
-        "timestamp": "2026-10-18T16:00:00",
-        "wind_speed_kn": 11.5,
-        "wind_direction_deg": 44.0,
-        "wind_gusts_kn": 37.4,
-        "temperature_c": 27.9
-      },
-      {
-        "timestamp": "2026-10-18T17:00:00",
-        "wind_speed_kn": 7.9,
-        "wind_direction_deg": 43.0,
-        "wind_gusts_kn": 35.3,
-        "temperature_c": 27.2
-      },
-      {
-        "timestamp": "2026-10-18T18:00:00",
-        "wind_speed_kn": 3.8,
-        "wind_direction_deg": 45.0,
-        "wind_gusts_kn": 32.4,
-        "temperature_c": 26.0
-      },
-      {
-        "timestamp": "2026-10-18T19:00:00",
-        "wind_speed_kn": 1.3,
-        "wind_direction_deg": 56.0,
-        "wind_gusts_kn": 28.4,
-        "temperature_c": 25.0
-      },
-      {
-        "timestamp": "2026-10-18T20:00:00",
-        "wind_speed_kn": 1.5,
-        "wind_direction_deg": 54.0,
-        "wind_gusts_kn": 22.0,
-        "temperature_c": 24.2
-      },
-      {
-        "timestamp": "2026-10-18T21:00:00",
-        "wind_speed_kn": 3.3,
-        "wind_direction_deg": 49.0,
-        "wind_gusts_kn": 14.4,
-        "temperature_c": 23.5
-      },
-      {
-        "timestamp": "2026-10-18T22:00:00",
-        "wind_speed_kn": 4.3,
-        "wind_direction_deg": 45.0,
-        "wind_gusts_kn": 9.0,
-        "temperature_c": 22.9
-      },
-      {
-        "timestamp": "2026-10-18T23:00:00",
-        "wind_speed_kn": 3.2,
-        "wind_direction_deg": 34.0,
-        "wind_gusts_kn": 7.9,
-        "temperature_c": 22.5
-      },
-      {
-        "timestamp": "2026-10-19T00:00:00",
-        "wind_speed_kn": 2.0,
-        "wind_direction_deg": 355.0,
-        "wind_gusts_kn": 9.0,
-        "temperature_c": 22.3
-      },
-      {
-        "timestamp": "2026-10-19T01:00:00",
-        "wind_speed_kn": 1.8,
-        "wind_direction_deg": 307.0,
-        "wind_gusts_kn": 9.4,
-        "temperature_c": 22.0
-      },
-      {
-        "timestamp": "2026-10-19T02:00:00",
-        "wind_speed_kn": 1.1,
-        "wind_direction_deg": 279.0,
-        "wind_gusts_kn": 7.9,
-        "temperature_c": 21.4
-      },
-      {
-        "timestamp": "2026-10-19T03:00:00",
-        "wind_speed_kn": 0.9,
-        "wind_direction_deg": 191.0,
-        "wind_gusts_kn": 5.8,
-        "temperature_c": 20.6
-      },
-      {
-        "timestamp": "2026-10-19T04:00:00",
-        "wind_speed_kn": 1.5,
-        "wind_direction_deg": 150.0,
-        "wind_gusts_kn": 4.7,
-        "temperature_c": 20.1
-      },
-      {
-        "timestamp": "2026-10-19T05:00:00",
-        "wind_speed_kn": 1.1,
-        "wind_direction_deg": 108.0,
-        "wind_gusts_kn": 5.8,
-        "temperature_c": 19.9
-      },
-      {
-        "timestamp": "2026-10-19T06:00:00",
-        "wind_speed_kn": 1.7,
-        "wind_direction_deg": 41.0,
-        "wind_gusts_kn": 7.9,
-        "temperature_c": 19.9
-      },
-      {
-        "timestamp": "2026-10-19T07:00:00",
-        "wind_speed_kn": 2.7,
-        "wind_direction_deg": 28.0,
-        "wind_gusts_kn": 9.7,
-        "temperature_c": 20.2
-      },
-      {
-        "timestamp": "2026-10-19T08:00:00",
-        "wind_speed_kn": 3.0,
-        "wind_direction_deg": 33.0,
-        "wind_gusts_kn": 10.4,
-        "temperature_c": 20.8
-      },
-      {
-        "timestamp": "2026-10-19T09:00:00",
-        "wind_speed_kn": 3.0,
-        "wind_direction_deg": 38.0,
-        "wind_gusts_kn": 10.4,
-        "temperature_c": 21.7
-      },
-      {
-        "timestamp": "2026-10-19T10:00:00",
-        "wind_speed_kn": 2.5,
-        "wind_direction_deg": 60.0,
-        "wind_gusts_kn": 11.9,
-        "temperature_c": 22.5
-      },
-      {
-        "timestamp": "2026-10-19T11:00:00",
-        "wind_speed_kn": 2.7,
-        "wind_direction_deg": 113.0,
-        "wind_gusts_kn": 15.5,
-        "temperature_c": 22.9
-      },
-      {
-        "timestamp": "2026-10-19T12:00:00",
-        "wind_speed_kn": 5.0,
-        "wind_direction_deg": 145.0,
-        "wind_gusts_kn": 20.2,
-        "temperature_c": 23.2
-      },
-      {
-        "timestamp": "2026-10-19T13:00:00",
-        "wind_speed_kn": 6.8,
-        "wind_direction_deg": 155.0,
-        "wind_gusts_kn": 23.4,
-        "temperature_c": 23.4
-      },
-      {
-        "timestamp": "2026-10-19T14:00:00",
-        "wind_speed_kn": 6.6,
-        "wind_direction_deg": 163.0,
-        "wind_gusts_kn": 24.1,
-        "temperature_c": 23.5
-      },
-      {
-        "timestamp": "2026-10-19T15:00:00",
-        "wind_speed_kn": 5.4,
-        "wind_direction_deg": 176.0,
-        "wind_gusts_kn": 23.4,
-        "temperature_c": 23.5
-      },
-      {
-        "timestamp": "2026-10-19T16:00:00",
-        "wind_speed_kn": 4.9,
-        "wind_direction_deg": 188.0,
-        "wind_gusts_kn": 22.3,
-        "temperature_c": 23.4
-      },
-      {
-        "timestamp": "2026-10-19T17:00:00",
-        "wind_speed_kn": 5.0,
-        "wind_direction_deg": 195.0,
-        "wind_gusts_kn": 22.0,
-        "temperature_c": 23.0
-      },
-      {
-        "timestamp": "2026-10-19T18:00:00",
-        "wind_speed_kn": 5.2,
-        "wind_direction_deg": 196.0,
-        "wind_gusts_kn": 21.2,
-        "temperature_c": 22.4
-      },
-      {
-        "timestamp": "2026-10-19T19:00:00",
-        "wind_speed_kn": 5.5,
-        "wind_direction_deg": 197.0,
-        "wind_gusts_kn": 20.2,
-        "temperature_c": 22.0
-      },
-      {
-        "timestamp": "2026-10-19T20:00:00",
-        "wind_speed_kn": 5.5,
-        "wind_direction_deg": 197.0,
-        "wind_gusts_kn": 18.4,
-        "temperature_c": 21.7
-      },
-      {
-        "timestamp": "2026-10-19T21:00:00",
-        "wind_speed_kn": 5.1,
-        "wind_direction_deg": 198.0,
-        "wind_gusts_kn": 16.6,
-        "temperature_c": 21.5
-      },
-      {
-        "timestamp": "2026-10-19T22:00:00",
-        "wind_speed_kn": 4.7,
-        "wind_direction_deg": 198.0,
-        "wind_gusts_kn": 14.8,
-        "temperature_c": 21.3
-      },
-      {
-        "timestamp": "2026-10-19T23:00:00",
-        "wind_speed_kn": 3.8,
-        "wind_direction_deg": 197.0,
-        "wind_gusts_kn": 13.7,
-        "temperature_c": 21.1
-      },
-      {
-        "timestamp": "2026-10-20T00:00:00",
-        "wind_speed_kn": 2.6,
-        "wind_direction_deg": 196.0,
-        "wind_gusts_kn": 12.6,
-        "temperature_c": 20.9
-      },
-      {
-        "timestamp": "2026-10-20T01:00:00",
-        "wind_speed_kn": 1.9,
-        "wind_direction_deg": 197.0,
-        "wind_gusts_kn": 11.9,
-        "temperature_c": 20.7
-      },
-      {
-        "timestamp": "2026-10-20T02:00:00",
-        "wind_speed_kn": 1.9,
-        "wind_direction_deg": 209.0,
-        "wind_gusts_kn": 10.8,
-        "temperature_c": 20.6
-      },
-      {
-        "timestamp": "2026-10-20T03:00:00",
-        "wind_speed_kn": 2.0,
-        "wind_direction_deg": 225.0,
-        "wind_gusts_kn": 9.7,
-        "temperature_c": 20.4
-      },
-      {
-        "timestamp": "2026-10-20T04:00:00",
-        "wind_speed_kn": 2.6,
-        "wind_direction_deg": 236.0,
-        "wind_gusts_kn": 9.0,
-        "temperature_c": 20.3
-      },
-      {
-        "timestamp": "2026-10-20T05:00:00",
-        "wind_speed_kn": 2.8,
-        "wind_direction_deg": 252.0,
-        "wind_gusts_kn": 9.0,
-        "temperature_c": 20.1
-      },
-      {
-        "timestamp": "2026-10-20T06:00:00",
-        "wind_speed_kn": 3.4,
-        "wind_direction_deg": 267.0,
-        "wind_gusts_kn": 9.4,
-        "temperature_c": 20.0
-      },
-      {
-        "timestamp": "2026-10-20T07:00:00",
-        "wind_speed_kn": 4.5,
-        "wind_direction_deg": 265.0,
-        "wind_gusts_kn": 11.2,
-        "temperature_c": 20.3
-      },
-      {
-        "timestamp": "2026-10-20T08:00:00",
-        "wind_speed_kn": 6.4,
-        "wind_direction_deg": 254.0,
-        "wind_gusts_kn": 15.1,
-        "temperature_c": 21.1
-      },
-      {
-        "timestamp": "2026-10-20T09:00:00",
-        "wind_speed_kn": 8.9,
-        "wind_direction_deg": 242.0,
-        "wind_gusts_kn": 20.2,
-        "temperature_c": 22.4
-      },
-      {
-        "timestamp": "2026-10-20T10:00:00",
-        "wind_speed_kn": 11.6,
-        "wind_direction_deg": 235.0,
-        "wind_gusts_kn": 25.6,
-        "temperature_c": 23.4
-      },
-      {
-        "timestamp": "2026-10-20T11:00:00",
-        "wind_speed_kn": 14.3,
-        "wind_direction_deg": 227.0,
-        "wind_gusts_kn": 31.0,
-        "temperature_c": 24.2
-      },
-      {
-        "timestamp": "2026-10-20T12:00:00",
-        "wind_speed_kn": 17.0,
-        "wind_direction_deg": 220.0,
-        "wind_gusts_kn": 36.7,
-        "temperature_c": 24.8
-      },
-      {
-        "timestamp": "2026-10-20T13:00:00",
-        "wind_speed_kn": 19.4,
-        "wind_direction_deg": 218.0,
-        "wind_gusts_kn": 41.0,
-        "temperature_c": 25.2
-      },
-      {
-        "timestamp": "2026-10-20T14:00:00",
-        "wind_speed_kn": 21.3,
-        "wind_direction_deg": 221.0,
-        "wind_gusts_kn": 43.6,
-        "temperature_c": 25.5
-      },
-      {
-        "timestamp": "2026-10-20T15:00:00",
-        "wind_speed_kn": 22.8,
-        "wind_direction_deg": 225.0,
-        "wind_gusts_kn": 45.4,
-        "temperature_c": 25.5
-      },
-      {
-        "timestamp": "2026-10-20T16:00:00",
-        "wind_speed_kn": 22.3,
-        "wind_direction_deg": 227.0,
-        "wind_gusts_kn": 46.1,
-        "temperature_c": 25.4
-      },
-      {
-        "timestamp": "2026-10-20T17:00:00",
-        "wind_speed_kn": 18.2,
-        "wind_direction_deg": 228.0,
-        "wind_gusts_kn": 46.1,
-        "temperature_c": 25.0
-      },
-      {
-        "timestamp": "2026-10-20T18:00:00",
-        "wind_speed_kn": 12.4,
-        "wind_direction_deg": 227.0,
-        "wind_gusts_kn": 45.7,
-        "temperature_c": 24.3
-      },
-      {
-        "timestamp": "2026-10-20T19:00:00",
-        "wind_speed_kn": 7.9,
-        "wind_direction_deg": 225.0,
-        "wind_gusts_kn": 45.4,
-        "temperature_c": 23.9
-      },
-      {
-        "timestamp": "2026-10-20T20:00:00",
-        "wind_speed_kn": 4.7,
-        "wind_direction_deg": 196.0,
-        "wind_gusts_kn": 27.4,
-        "temperature_c": 22.6
-      },
-      {
         "timestamp": "2026-10-20T21:00:00",
-        "wind_speed_kn": 3.6,
-        "wind_direction_deg": 210.0,
-        "wind_gusts_kn": 25.6,
-        "temperature_c": 22.3
+        "wind_speed_kn": 10.3,
+        "wind_direction_deg": 29.0,
+        "wind_gusts_kn": 17.6,
+        "temperature_c": 22.4
       },
       {
         "timestamp": "2026-10-20T22:00:00",
-        "wind_speed_kn": 2.5,
-        "wind_direction_deg": 240.0,
-        "wind_gusts_kn": 23.0,
+        "wind_speed_kn": 9.9,
+        "wind_direction_deg": 19.0,
+        "wind_gusts_kn": 17.6,
         "temperature_c": 22.1
       },
       {
         "timestamp": "2026-10-20T23:00:00",
-        "wind_speed_kn": 2.4,
-        "wind_direction_deg": 279.0,
-        "wind_gusts_kn": 20.2,
+        "wind_speed_kn": 9.6,
+        "wind_direction_deg": 13.0,
+        "wind_gusts_kn": 16.2,
         "temperature_c": 21.8
       },
       {
         "timestamp": "2026-10-21T00:00:00",
-        "wind_speed_kn": 3.1,
-        "wind_direction_deg": 306.0,
-        "wind_gusts_kn": 18.0,
-        "temperature_c": 21.4
+        "wind_speed_kn": 9.1,
+        "wind_direction_deg": 9.0,
+        "wind_gusts_kn": 16.2,
+        "temperature_c": 21.6
       },
       {
         "timestamp": "2026-10-21T01:00:00",
-        "wind_speed_kn": 3.7,
-        "wind_direction_deg": 317.0,
-        "wind_gusts_kn": 15.8,
-        "temperature_c": 21.1
+        "wind_speed_kn": 9.0,
+        "wind_direction_deg": 5.0,
+        "wind_gusts_kn": 16.2,
+        "temperature_c": 21.3
       },
       {
         "timestamp": "2026-10-21T02:00:00",
-        "wind_speed_kn": 4.2,
-        "wind_direction_deg": 320.0,
-        "wind_gusts_kn": 14.0,
-        "temperature_c": 20.7
+        "wind_speed_kn": 9.1,
+        "wind_direction_deg": 353.0,
+        "wind_gusts_kn": 17.6,
+        "temperature_c": 21.0
       },
       {
         "timestamp": "2026-10-21T03:00:00",
-        "wind_speed_kn": 4.5,
-        "wind_direction_deg": 320.0,
-        "wind_gusts_kn": 11.9,
-        "temperature_c": 20.1
+        "wind_speed_kn": 9.4,
+        "wind_direction_deg": 342.0,
+        "wind_gusts_kn": 17.6,
+        "temperature_c": 20.7
       },
       {
         "timestamp": "2026-10-21T04:00:00",
-        "wind_speed_kn": 4.6,
-        "wind_direction_deg": 318.0,
-        "wind_gusts_kn": 9.7,
-        "temperature_c": 19.6
+        "wind_speed_kn": 10.2,
+        "wind_direction_deg": 337.0,
+        "wind_gusts_kn": 17.6,
+        "temperature_c": 20.5
       },
       {
         "timestamp": "2026-10-21T05:00:00",
-        "wind_speed_kn": 4.3,
-        "wind_direction_deg": 318.0,
-        "wind_gusts_kn": 8.3,
-        "temperature_c": 19.1
+        "wind_speed_kn": 10.4,
+        "wind_direction_deg": 340.0,
+        "wind_gusts_kn": 19.1,
+        "temperature_c": 20.4
       },
       {
         "timestamp": "2026-10-21T06:00:00",
-        "wind_speed_kn": 3.8,
-        "wind_direction_deg": 319.0,
-        "wind_gusts_kn": 7.6,
-        "temperature_c": 18.9
+        "wind_speed_kn": 10.4,
+        "wind_direction_deg": 346.0,
+        "wind_gusts_kn": 19.1,
+        "temperature_c": 20.4
       },
       {
         "timestamp": "2026-10-21T07:00:00",
-        "wind_speed_kn": 2.8,
-        "wind_direction_deg": 325.0,
-        "wind_gusts_kn": 7.9,
-        "temperature_c": 19.1
+        "wind_speed_kn": 10.5,
+        "wind_direction_deg": 354.0,
+        "wind_gusts_kn": 19.1,
+        "temperature_c": 20.6
       },
       {
         "timestamp": "2026-10-21T08:00:00",
-        "wind_speed_kn": 1.4,
-        "wind_direction_deg": 360.0,
-        "wind_gusts_kn": 10.1,
-        "temperature_c": 19.8
+        "wind_speed_kn": 11.3,
+        "wind_direction_deg": 7.0,
+        "wind_gusts_kn": 24.5,
+        "temperature_c": 21.1
       },
       {
         "timestamp": "2026-10-21T09:00:00",
-        "wind_speed_kn": 2.3,
-        "wind_direction_deg": 86.0,
-        "wind_gusts_kn": 13.7,
-        "temperature_c": 20.9
+        "wind_speed_kn": 12.6,
+        "wind_direction_deg": 20.0,
+        "wind_gusts_kn": 24.5,
+        "temperature_c": 21.8
       },
       {
         "timestamp": "2026-10-21T10:00:00",
-        "wind_speed_kn": 5.2,
-        "wind_direction_deg": 104.0,
-        "wind_gusts_kn": 18.4,
-        "temperature_c": 22.3
+        "wind_speed_kn": 14.3,
+        "wind_direction_deg": 28.0,
+        "wind_gusts_kn": 24.5,
+        "temperature_c": 22.5
       },
       {
         "timestamp": "2026-10-21T11:00:00",
-        "wind_speed_kn": 8.1,
-        "wind_direction_deg": 108.0,
-        "wind_gusts_kn": 23.0,
-        "temperature_c": 23.7
+        "wind_speed_kn": 16.6,
+        "wind_direction_deg": 34.0,
+        "wind_gusts_kn": 33.8,
+        "temperature_c": 23.0
       },
       {
         "timestamp": "2026-10-21T12:00:00",
-        "wind_speed_kn": 10.5,
-        "wind_direction_deg": 109.0,
-        "wind_gusts_kn": 27.0,
-        "temperature_c": 24.8
+        "wind_speed_kn": 18.4,
+        "wind_direction_deg": 39.0,
+        "wind_gusts_kn": 33.8,
+        "temperature_c": 23.4
       },
       {
         "timestamp": "2026-10-21T13:00:00",
-        "wind_speed_kn": 12.1,
-        "wind_direction_deg": 107.0,
-        "wind_gusts_kn": 29.9,
-        "temperature_c": 25.5
+        "wind_speed_kn": 19.7,
+        "wind_direction_deg": 40.0,
+        "wind_gusts_kn": 33.8,
+        "temperature_c": 23.7
       },
       {
         "timestamp": "2026-10-21T14:00:00",
-        "wind_speed_kn": 12.6,
-        "wind_direction_deg": 103.0,
-        "wind_gusts_kn": 31.3,
-        "temperature_c": 25.7
+        "wind_speed_kn": 19.5,
+        "wind_direction_deg": 39.0,
+        "wind_gusts_kn": 33.8,
+        "temperature_c": 24.1
       },
       {
         "timestamp": "2026-10-21T15:00:00",
-        "wind_speed_kn": 12.7,
-        "wind_direction_deg": 97.0,
-        "wind_gusts_kn": 31.7,
-        "temperature_c": 25.5
+        "wind_speed_kn": 18.2,
+        "wind_direction_deg": 38.0,
+        "wind_gusts_kn": 33.8,
+        "temperature_c": 24.4
       },
       {
         "timestamp": "2026-10-21T16:00:00",
-        "wind_speed_kn": 12.6,
-        "wind_direction_deg": 90.0,
-        "wind_gusts_kn": 31.7,
-        "temperature_c": 25.0
-      },
-      {
-        "timestamp": "2026-10-21T17:00:00",
-        "wind_speed_kn": 12.5,
-        "wind_direction_deg": 82.0,
-        "wind_gusts_kn": 31.3,
+        "wind_speed_kn": 17.1,
+        "wind_direction_deg": 35.0,
+        "wind_gusts_kn": 33.8,
         "temperature_c": 24.5
       },
       {
+        "timestamp": "2026-10-21T17:00:00",
+        "wind_speed_kn": 17.0,
+        "wind_direction_deg": 32.0,
+        "wind_gusts_kn": 32.0,
+        "temperature_c": 24.2
+      },
+      {
         "timestamp": "2026-10-21T18:00:00",
-        "wind_speed_kn": 12.4,
-        "wind_direction_deg": 73.0,
-        "wind_gusts_kn": 31.0,
-        "temperature_c": 23.9
+        "wind_speed_kn": 16.8,
+        "wind_direction_deg": 28.0,
+        "wind_gusts_kn": 32.0,
+        "temperature_c": 23.6
       },
       {
         "timestamp": "2026-10-21T19:00:00",
-        "wind_speed_kn": 12.4,
-        "wind_direction_deg": 66.0,
-        "wind_gusts_kn": 30.6,
-        "temperature_c": 23.5
+        "wind_speed_kn": 16.6,
+        "wind_direction_deg": 24.0,
+        "wind_gusts_kn": 32.0,
+        "temperature_c": 23.1
       },
       {
         "timestamp": "2026-10-21T20:00:00",
-        "wind_speed_kn": 12.3,
-        "wind_direction_deg": 60.0,
-        "wind_gusts_kn": 30.2,
-        "temperature_c": 23.2
+        "wind_speed_kn": 15.6,
+        "wind_direction_deg": 19.0,
+        "wind_gusts_kn": 24.5,
+        "temperature_c": 22.7
       },
       {
         "timestamp": "2026-10-21T21:00:00",
-        "wind_speed_kn": 12.2,
-        "wind_direction_deg": 53.0,
-        "wind_gusts_kn": 30.2,
-        "temperature_c": 22.9
+        "wind_speed_kn": 14.1,
+        "wind_direction_deg": 13.0,
+        "wind_gusts_kn": 24.5,
+        "temperature_c": 22.3
       },
       {
         "timestamp": "2026-10-21T22:00:00",
-        "wind_speed_kn": 12.0,
-        "wind_direction_deg": 46.0,
-        "wind_gusts_kn": 29.5,
-        "temperature_c": 22.6
+        "wind_speed_kn": 13.0,
+        "wind_direction_deg": 6.0,
+        "wind_gusts_kn": 24.5,
+        "temperature_c": 22.0
       },
       {
         "timestamp": "2026-10-21T23:00:00",
-        "wind_speed_kn": 11.8,
-        "wind_direction_deg": 39.0,
-        "wind_gusts_kn": 29.2,
-        "temperature_c": 22.3
+        "wind_speed_kn": 12.2,
+        "wind_direction_deg": 358.0,
+        "wind_gusts_kn": 21.2,
+        "temperature_c": 21.8
       }
     ]
   },
@@ -1204,28 +1204,37 @@
       {
         "timestamp": "2026-10-15T00:00:00",
         "wave_height_m": 0.7,
-        "wave_direction_deg": 49.0,
-        "wave_period_s": 5.85,
+        "wave_direction_deg": 50.0,
+        "wave_period_s": 6.2,
+        "swell_wave_height_m": 0.5,
+        "swell_wave_direction_deg": 53.0,
+        "swell_wave_period_s": 4.8,
         "sea_level_height_m": -0.34,
-        "current_velocity_kmh": 1.1,
-        "current_direction_deg": 342.0
+        "current_velocity_kmh": 0.9,
+        "current_direction_deg": 349.0
       },
       {
         "timestamp": "2026-10-15T01:00:00",
         "wave_height_m": 0.7,
-        "wave_direction_deg": 44.0,
-        "wave_period_s": 5.8,
-        "sea_level_height_m": -0.01,
+        "wave_direction_deg": 45.0,
+        "wave_period_s": 6.05,
+        "swell_wave_height_m": 0.46,
+        "swell_wave_direction_deg": 52.0,
+        "swell_wave_period_s": 5.1,
+        "sea_level_height_m": 0.0,
         "current_velocity_kmh": 0.2,
         "current_direction_deg": 0.0
       },
       {
         "timestamp": "2026-10-15T02:00:00",
-        "wave_height_m": 0.72,
+        "wave_height_m": 0.74,
         "wave_direction_deg": 44.0,
-        "wave_period_s": 5.65,
+        "wave_period_s": 5.8,
+        "swell_wave_height_m": 0.44,
+        "swell_wave_direction_deg": 50.0,
+        "swell_wave_period_s": 5.75,
         "sea_level_height_m": 0.29,
-        "current_velocity_kmh": 0.9,
+        "current_velocity_kmh": 1.1,
         "current_direction_deg": 180.0
       },
       {
@@ -1233,51 +1242,69 @@
         "wave_height_m": 0.76,
         "wave_direction_deg": 44.0,
         "wave_period_s": 5.5,
+        "swell_wave_height_m": 0.4,
+        "swell_wave_direction_deg": 48.0,
+        "swell_wave_period_s": 6.5,
         "sea_level_height_m": 0.48,
-        "current_velocity_kmh": 2.0,
-        "current_direction_deg": 180.0
+        "current_velocity_kmh": 2.2,
+        "current_direction_deg": 185.0
       },
       {
         "timestamp": "2026-10-15T04:00:00",
-        "wave_height_m": 0.78,
-        "wave_direction_deg": 44.0,
-        "wave_period_s": 5.4,
+        "wave_height_m": 0.8,
+        "wave_direction_deg": 43.0,
+        "wave_period_s": 5.3,
+        "swell_wave_height_m": 0.38,
+        "swell_wave_direction_deg": 46.0,
+        "swell_wave_period_s": 6.85,
         "sea_level_height_m": 0.51,
-        "current_velocity_kmh": 2.7,
-        "current_direction_deg": 184.0
-      },
-      {
-        "timestamp": "2026-10-15T05:00:00",
-        "wave_height_m": 0.76,
-        "wave_direction_deg": 46.0,
-        "wave_period_s": 5.45,
-        "sea_level_height_m": 0.37,
-        "current_velocity_kmh": 3.1,
+        "current_velocity_kmh": 2.9,
         "current_direction_deg": 187.0
       },
       {
-        "timestamp": "2026-10-15T06:00:00",
-        "wave_height_m": 0.74,
-        "wave_direction_deg": 49.0,
-        "wave_period_s": 5.55,
-        "sea_level_height_m": 0.1,
+        "timestamp": "2026-10-15T05:00:00",
+        "wave_height_m": 0.78,
+        "wave_direction_deg": 45.0,
+        "wave_period_s": 5.3,
+        "swell_wave_height_m": 0.4,
+        "swell_wave_direction_deg": 47.0,
+        "swell_wave_period_s": 6.3,
+        "sea_level_height_m": 0.37,
         "current_velocity_kmh": 3.3,
         "current_direction_deg": 186.0
       },
       {
+        "timestamp": "2026-10-15T06:00:00",
+        "wave_height_m": 0.76,
+        "wave_direction_deg": 47.0,
+        "wave_period_s": 5.4,
+        "swell_wave_height_m": 0.42,
+        "swell_wave_direction_deg": 49.0,
+        "swell_wave_period_s": 5.35,
+        "sea_level_height_m": 0.1,
+        "current_velocity_kmh": 3.3,
+        "current_direction_deg": 189.0
+      },
+      {
         "timestamp": "2026-10-15T07:00:00",
-        "wave_height_m": 0.72,
-        "wave_direction_deg": 51.0,
-        "wave_period_s": 5.65,
+        "wave_height_m": 0.74,
+        "wave_direction_deg": 49.0,
+        "wave_period_s": 5.5,
+        "swell_wave_height_m": 0.44,
+        "swell_wave_direction_deg": 50.0,
+        "swell_wave_period_s": 4.7,
         "sea_level_height_m": -0.24,
         "current_velocity_kmh": 3.0,
-        "current_direction_deg": 194.0
+        "current_direction_deg": 197.0
       },
       {
         "timestamp": "2026-10-15T08:00:00",
-        "wave_height_m": 0.7,
-        "wave_direction_deg": 57.0,
-        "wave_period_s": 5.75,
+        "wave_height_m": 0.72,
+        "wave_direction_deg": 53.0,
+        "wave_period_s": 5.6,
+        "swell_wave_height_m": 0.42,
+        "swell_wave_direction_deg": 44.0,
+        "swell_wave_period_s": 4.8,
         "sea_level_height_m": -0.55,
         "current_velocity_kmh": 2.3,
         "current_direction_deg": 212.0
@@ -1285,17 +1312,23 @@
       {
         "timestamp": "2026-10-15T09:00:00",
         "wave_height_m": 0.68,
-        "wave_direction_deg": 62.0,
-        "wave_period_s": 5.9,
+        "wave_direction_deg": 58.0,
+        "wave_period_s": 5.7,
+        "swell_wave_height_m": 0.4,
+        "swell_wave_direction_deg": 38.0,
+        "swell_wave_period_s": 5.25,
         "sea_level_height_m": -0.76,
-        "current_velocity_kmh": 1.6,
-        "current_direction_deg": 243.0
+        "current_velocity_kmh": 1.8,
+        "current_direction_deg": 246.0
       },
       {
         "timestamp": "2026-10-15T10:00:00",
         "wave_height_m": 0.66,
-        "wave_direction_deg": 68.0,
-        "wave_period_s": 6.0,
+        "wave_direction_deg": 62.0,
+        "wave_period_s": 5.85,
+        "swell_wave_height_m": 0.38,
+        "swell_wave_direction_deg": 32.0,
+        "swell_wave_period_s": 5.5,
         "sea_level_height_m": -0.82,
         "current_velocity_kmh": 1.5,
         "current_direction_deg": 284.0
@@ -1303,161 +1336,215 @@
       {
         "timestamp": "2026-10-15T11:00:00",
         "wave_height_m": 0.64,
-        "wave_direction_deg": 71.0,
-        "wave_period_s": 6.1,
+        "wave_direction_deg": 66.0,
+        "wave_period_s": 6.0,
+        "swell_wave_height_m": 0.36,
+        "swell_wave_direction_deg": 54.0,
+        "swell_wave_period_s": 5.35,
         "sea_level_height_m": -0.73,
-        "current_velocity_kmh": 1.5,
-        "current_direction_deg": 315.0
+        "current_velocity_kmh": 1.4,
+        "current_direction_deg": 320.0
       },
       {
         "timestamp": "2026-10-15T12:00:00",
-        "wave_height_m": 0.64,
-        "wave_direction_deg": 73.0,
-        "wave_period_s": 6.2,
+        "wave_height_m": 0.62,
+        "wave_direction_deg": 70.0,
+        "wave_period_s": 6.15,
+        "swell_wave_height_m": 0.36,
+        "swell_wave_direction_deg": 75.0,
+        "swell_wave_period_s": 5.05,
         "sea_level_height_m": -0.51,
         "current_velocity_kmh": 1.2,
         "current_direction_deg": 333.0
       },
       {
         "timestamp": "2026-10-15T13:00:00",
-        "wave_height_m": 0.62,
-        "wave_direction_deg": 76.0,
+        "wave_height_m": 0.6,
+        "wave_direction_deg": 74.0,
         "wave_period_s": 6.25,
+        "swell_wave_height_m": 0.34,
+        "swell_wave_direction_deg": 97.0,
+        "swell_wave_period_s": 4.9,
         "sea_level_height_m": -0.23,
         "current_velocity_kmh": 0.6,
         "current_direction_deg": 326.0
       },
       {
         "timestamp": "2026-10-15T14:00:00",
-        "wave_height_m": 0.6,
-        "wave_direction_deg": 77.0,
-        "wave_period_s": 6.2,
+        "wave_height_m": 0.58,
+        "wave_direction_deg": 75.0,
+        "wave_period_s": 6.3,
+        "swell_wave_height_m": 0.32,
+        "swell_wave_direction_deg": 74.0,
+        "swell_wave_period_s": 5.05,
         "sea_level_height_m": 0.04,
         "current_velocity_kmh": 0.5,
         "current_direction_deg": 225.0
       },
       {
         "timestamp": "2026-10-15T15:00:00",
-        "wave_height_m": 0.6,
-        "wave_direction_deg": 77.0,
-        "wave_period_s": 6.15,
-        "sea_level_height_m": 0.25,
-        "current_velocity_kmh": 1.5,
-        "current_direction_deg": 194.0
+        "wave_height_m": 0.58,
+        "wave_direction_deg": 76.0,
+        "wave_period_s": 6.3,
+        "swell_wave_height_m": 0.32,
+        "swell_wave_direction_deg": 52.0,
+        "swell_wave_period_s": 5.3,
+        "sea_level_height_m": 0.24,
+        "current_velocity_kmh": 1.7,
+        "current_direction_deg": 193.0
       },
       {
         "timestamp": "2026-10-15T16:00:00",
-        "wave_height_m": 0.58,
-        "wave_direction_deg": 78.0,
-        "wave_period_s": 6.1,
+        "wave_height_m": 0.56,
+        "wave_direction_deg": 77.0,
+        "wave_period_s": 6.35,
+        "swell_wave_height_m": 0.3,
+        "swell_wave_direction_deg": 29.0,
+        "swell_wave_period_s": 5.5,
         "sea_level_height_m": 0.32,
         "current_velocity_kmh": 2.4,
         "current_direction_deg": 193.0
       },
       {
         "timestamp": "2026-10-15T17:00:00",
-        "wave_height_m": 0.56,
-        "wave_direction_deg": 77.0,
-        "wave_period_s": 6.1,
-        "sea_level_height_m": 0.26,
-        "current_velocity_kmh": 2.8,
+        "wave_height_m": 0.54,
+        "wave_direction_deg": 76.0,
+        "wave_period_s": 6.4,
+        "swell_wave_height_m": 0.28,
+        "swell_wave_direction_deg": 30.0,
+        "swell_wave_period_s": 5.4,
+        "sea_level_height_m": 0.25,
+        "current_velocity_kmh": 2.9,
         "current_direction_deg": 191.0
       },
       {
         "timestamp": "2026-10-15T18:00:00",
-        "wave_height_m": 0.56,
-        "wave_direction_deg": 76.0,
-        "wave_period_s": 6.15,
-        "sea_level_height_m": 0.07,
-        "current_velocity_kmh": 3.0,
-        "current_direction_deg": 194.0
+        "wave_height_m": 0.54,
+        "wave_direction_deg": 75.0,
+        "wave_period_s": 6.5,
+        "swell_wave_height_m": 0.28,
+        "swell_wave_direction_deg": 31.0,
+        "swell_wave_period_s": 5.25,
+        "sea_level_height_m": 0.06,
+        "current_velocity_kmh": 3.1,
+        "current_direction_deg": 193.0
       },
       {
         "timestamp": "2026-10-15T19:00:00",
-        "wave_height_m": 0.54,
-        "wave_direction_deg": 75.0,
-        "wave_period_s": 6.2,
-        "sea_level_height_m": -0.19,
-        "current_velocity_kmh": 3.0,
-        "current_direction_deg": 194.0
+        "wave_height_m": 0.52,
+        "wave_direction_deg": 74.0,
+        "wave_period_s": 6.55,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 32.0,
+        "swell_wave_period_s": 5.3,
+        "sea_level_height_m": -0.2,
+        "current_velocity_kmh": 3.2,
+        "current_direction_deg": 196.0
       },
       {
         "timestamp": "2026-10-15T20:00:00",
-        "wave_height_m": 0.52,
-        "wave_direction_deg": 74.0,
-        "wave_period_s": 6.3,
-        "sea_level_height_m": -0.46,
-        "current_velocity_kmh": 2.6,
-        "current_direction_deg": 205.0
+        "wave_height_m": 0.5,
+        "wave_direction_deg": 72.0,
+        "wave_period_s": 6.65,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 31.0,
+        "swell_wave_period_s": 5.85,
+        "sea_level_height_m": -0.47,
+        "current_velocity_kmh": 2.8,
+        "current_direction_deg": 207.0
       },
       {
         "timestamp": "2026-10-15T21:00:00",
         "wave_height_m": 0.5,
-        "wave_direction_deg": 72.0,
-        "wave_period_s": 6.45,
-        "sea_level_height_m": -0.65,
-        "current_velocity_kmh": 1.9,
-        "current_direction_deg": 229.0
+        "wave_direction_deg": 70.0,
+        "wave_period_s": 6.75,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 29.0,
+        "swell_wave_period_s": 6.6,
+        "sea_level_height_m": -0.66,
+        "current_velocity_kmh": 2.0,
+        "current_direction_deg": 225.0
       },
       {
         "timestamp": "2026-10-15T22:00:00",
         "wave_height_m": 0.48,
-        "wave_direction_deg": 71.0,
-        "wave_period_s": 6.55,
-        "sea_level_height_m": -0.71,
+        "wave_direction_deg": 68.0,
+        "wave_period_s": 6.8,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 28.0,
+        "swell_wave_period_s": 7.15,
+        "sea_level_height_m": -0.72,
         "current_velocity_kmh": 1.5,
         "current_direction_deg": 263.0
       },
       {
         "timestamp": "2026-10-15T23:00:00",
         "wave_height_m": 0.48,
-        "wave_direction_deg": 68.0,
-        "wave_period_s": 6.65,
-        "sea_level_height_m": -0.64,
-        "current_velocity_kmh": 1.3,
-        "current_direction_deg": 304.0
+        "wave_direction_deg": 64.0,
+        "wave_period_s": 6.85,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 28.0,
+        "swell_wave_period_s": 7.2,
+        "sea_level_height_m": -0.65,
+        "current_velocity_kmh": 1.2,
+        "current_direction_deg": 297.0
       },
       {
         "timestamp": "2026-10-16T00:00:00",
-        "wave_height_m": 0.46,
-        "wave_direction_deg": 65.0,
-        "wave_period_s": 6.75,
-        "sea_level_height_m": -0.45,
-        "current_velocity_kmh": 1.0,
-        "current_direction_deg": 329.0
+        "wave_height_m": 0.48,
+        "wave_direction_deg": 61.0,
+        "wave_period_s": 6.9,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 29.0,
+        "swell_wave_period_s": 7.05,
+        "sea_level_height_m": -0.46,
+        "current_velocity_kmh": 0.9,
+        "current_direction_deg": 323.0
       },
       {
         "timestamp": "2026-10-16T01:00:00",
-        "wave_height_m": 0.46,
-        "wave_direction_deg": 62.0,
-        "wave_period_s": 6.75,
-        "sea_level_height_m": -0.19,
+        "wave_height_m": 0.48,
+        "wave_direction_deg": 57.0,
+        "wave_period_s": 6.85,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 29.0,
+        "swell_wave_period_s": 7.05,
+        "sea_level_height_m": -0.2,
         "current_velocity_kmh": 0.6,
         "current_direction_deg": 342.0
       },
       {
         "timestamp": "2026-10-16T02:00:00",
-        "wave_height_m": 0.48,
-        "wave_direction_deg": 56.0,
-        "wave_period_s": 6.6,
-        "sea_level_height_m": 0.08,
-        "current_velocity_kmh": 0.3,
-        "current_direction_deg": 225.0
+        "wave_height_m": 0.5,
+        "wave_direction_deg": 53.0,
+        "wave_period_s": 6.65,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 331.0,
+        "swell_wave_period_s": 7.6,
+        "sea_level_height_m": 0.07,
+        "current_velocity_kmh": 0.4,
+        "current_direction_deg": 180.0
       },
       {
         "timestamp": "2026-10-16T03:00:00",
-        "wave_height_m": 0.48,
-        "wave_direction_deg": 51.0,
-        "wave_period_s": 6.4,
+        "wave_height_m": 0.5,
+        "wave_direction_deg": 48.0,
+        "wave_period_s": 6.35,
+        "swell_wave_height_m": 0.24,
+        "swell_wave_direction_deg": 273.0,
+        "swell_wave_period_s": 8.35,
         "sea_level_height_m": 0.28,
         "current_velocity_kmh": 1.3,
         "current_direction_deg": 180.0
       },
       {
         "timestamp": "2026-10-16T04:00:00",
-        "wave_height_m": 0.5,
-        "wave_direction_deg": 45.0,
-        "wave_period_s": 6.15,
+        "wave_height_m": 0.52,
+        "wave_direction_deg": 44.0,
+        "wave_period_s": 6.05,
+        "swell_wave_height_m": 0.24,
+        "swell_wave_direction_deg": 215.0,
+        "swell_wave_period_s": 8.65,
         "sea_level_height_m": 0.38,
         "current_velocity_kmh": 2.2,
         "current_direction_deg": 185.0
@@ -1465,44 +1552,59 @@
       {
         "timestamp": "2026-10-16T05:00:00",
         "wave_height_m": 0.54,
-        "wave_direction_deg": 45.0,
-        "wave_period_s": 5.85,
+        "wave_direction_deg": 43.0,
+        "wave_period_s": 5.8,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 160.0,
+        "swell_wave_period_s": 8.05,
         "sea_level_height_m": 0.35,
-        "current_velocity_kmh": 2.7,
-        "current_direction_deg": 188.0
+        "current_velocity_kmh": 2.9,
+        "current_direction_deg": 187.0
       },
       {
         "timestamp": "2026-10-16T06:00:00",
-        "wave_height_m": 0.58,
-        "wave_direction_deg": 44.0,
-        "wave_period_s": 5.45,
+        "wave_height_m": 0.56,
+        "wave_direction_deg": 42.0,
+        "wave_period_s": 5.6,
+        "swell_wave_height_m": 0.28,
+        "swell_wave_direction_deg": 105.0,
+        "swell_wave_period_s": 7.0,
         "sea_level_height_m": 0.2,
-        "current_velocity_kmh": 2.9,
-        "current_direction_deg": 191.0
+        "current_velocity_kmh": 3.1,
+        "current_direction_deg": 190.0
       },
       {
         "timestamp": "2026-10-16T07:00:00",
-        "wave_height_m": 0.62,
-        "wave_direction_deg": 44.0,
-        "wave_period_s": 5.2,
+        "wave_height_m": 0.58,
+        "wave_direction_deg": 41.0,
+        "wave_period_s": 5.45,
+        "swell_wave_height_m": 0.3,
+        "swell_wave_direction_deg": 50.0,
+        "swell_wave_period_s": 6.25,
         "sea_level_height_m": -0.04,
-        "current_velocity_kmh": 3.0,
-        "current_direction_deg": 194.0
+        "current_velocity_kmh": 3.1,
+        "current_direction_deg": 193.0
       },
       {
         "timestamp": "2026-10-16T08:00:00",
-        "wave_height_m": 0.6,
-        "wave_direction_deg": 48.0,
-        "wave_period_s": 5.1,
+        "wave_height_m": 0.58,
+        "wave_direction_deg": 44.0,
+        "wave_period_s": 5.35,
+        "swell_wave_height_m": 0.3,
+        "swell_wave_direction_deg": 53.0,
+        "swell_wave_period_s": 6.05,
         "sea_level_height_m": -0.32,
-        "current_velocity_kmh": 2.7,
-        "current_direction_deg": 200.0
+        "current_velocity_kmh": 2.9,
+        "current_direction_deg": 202.0
       },
       {
         "timestamp": "2026-10-16T09:00:00",
-        "wave_height_m": 0.6,
-        "wave_direction_deg": 52.0,
-        "wave_period_s": 5.1,
+        "wave_height_m": 0.58,
+        "wave_direction_deg": 48.0,
+        "wave_period_s": 5.35,
+        "swell_wave_height_m": 0.28,
+        "swell_wave_direction_deg": 55.0,
+        "swell_wave_period_s": 6.15,
         "sea_level_height_m": -0.54,
         "current_velocity_kmh": 2.3,
         "current_direction_deg": 219.0
@@ -1510,170 +1612,227 @@
       {
         "timestamp": "2026-10-16T10:00:00",
         "wave_height_m": 0.58,
-        "wave_direction_deg": 56.0,
-        "wave_period_s": 5.15,
-        "sea_level_height_m": -0.68,
+        "wave_direction_deg": 51.0,
+        "wave_period_s": 5.3,
+        "swell_wave_height_m": 0.28,
+        "swell_wave_direction_deg": 58.0,
+        "swell_wave_period_s": 6.25,
+        "sea_level_height_m": -0.67,
         "current_velocity_kmh": 1.7,
         "current_direction_deg": 252.0
       },
       {
         "timestamp": "2026-10-16T11:00:00",
         "wave_height_m": 0.58,
-        "wave_direction_deg": 62.0,
-        "wave_period_s": 5.15,
-        "sea_level_height_m": -0.69,
-        "current_velocity_kmh": 1.5,
-        "current_direction_deg": 291.0
+        "wave_direction_deg": 56.0,
+        "wave_period_s": 5.25,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 68.0,
+        "swell_wave_period_s": 6.35,
+        "sea_level_height_m": -0.68,
+        "current_velocity_kmh": 1.7,
+        "current_direction_deg": 283.0
       },
       {
         "timestamp": "2026-10-16T12:00:00",
-        "wave_height_m": 0.56,
-        "wave_direction_deg": 69.0,
+        "wave_height_m": 0.58,
+        "wave_direction_deg": 60.0,
         "wave_period_s": 5.2,
+        "swell_wave_height_m": 0.24,
+        "swell_wave_direction_deg": 77.0,
+        "swell_wave_period_s": 6.5,
         "sea_level_height_m": -0.58,
-        "current_velocity_kmh": 1.4,
-        "current_direction_deg": 310.0
+        "current_velocity_kmh": 1.5,
+        "current_direction_deg": 306.0
       },
       {
         "timestamp": "2026-10-16T13:00:00",
-        "wave_height_m": 0.56,
-        "wave_direction_deg": 75.0,
-        "wave_period_s": 5.3,
-        "sea_level_height_m": -0.4,
-        "current_velocity_kmh": 1.2,
-        "current_direction_deg": 321.0
+        "wave_height_m": 0.58,
+        "wave_direction_deg": 65.0,
+        "wave_period_s": 5.2,
+        "swell_wave_height_m": 0.22,
+        "swell_wave_direction_deg": 87.0,
+        "swell_wave_period_s": 6.55,
+        "sea_level_height_m": -0.39,
+        "current_velocity_kmh": 1.3,
+        "current_direction_deg": 315.0
       },
       {
         "timestamp": "2026-10-16T14:00:00",
-        "wave_height_m": 0.54,
-        "wave_direction_deg": 79.0,
-        "wave_period_s": 5.45,
-        "sea_level_height_m": -0.18,
-        "current_velocity_kmh": 0.9,
-        "current_direction_deg": 307.0
+        "wave_height_m": 0.58,
+        "wave_direction_deg": 68.0,
+        "wave_period_s": 5.2,
+        "swell_wave_height_m": 0.24,
+        "swell_wave_direction_deg": 91.0,
+        "swell_wave_period_s": 6.55,
+        "sea_level_height_m": -0.17,
+        "current_velocity_kmh": 0.8,
+        "current_direction_deg": 297.0
       },
       {
         "timestamp": "2026-10-16T15:00:00",
-        "wave_height_m": 0.54,
-        "wave_direction_deg": 84.0,
-        "wave_period_s": 5.6,
-        "sea_level_height_m": 0.02,
-        "current_velocity_kmh": 0.6,
-        "current_direction_deg": 236.0
+        "wave_height_m": 0.56,
+        "wave_direction_deg": 72.0,
+        "wave_period_s": 5.25,
+        "swell_wave_height_m": 0.24,
+        "swell_wave_direction_deg": 94.0,
+        "swell_wave_period_s": 6.5,
+        "sea_level_height_m": 0.03,
+        "current_velocity_kmh": 0.8,
+        "current_direction_deg": 243.0
       },
       {
         "timestamp": "2026-10-16T16:00:00",
-        "wave_height_m": 0.52,
-        "wave_direction_deg": 88.0,
-        "wave_period_s": 5.75,
+        "wave_height_m": 0.56,
+        "wave_direction_deg": 75.0,
+        "wave_period_s": 5.35,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 98.0,
+        "swell_wave_period_s": 6.3,
         "sea_level_height_m": 0.15,
-        "current_velocity_kmh": 1.5,
-        "current_direction_deg": 210.0
+        "current_velocity_kmh": 1.7,
+        "current_direction_deg": 212.0
       },
       {
         "timestamp": "2026-10-16T17:00:00",
-        "wave_height_m": 0.5,
-        "wave_direction_deg": 86.0,
-        "wave_period_s": 5.9,
+        "wave_height_m": 0.54,
+        "wave_direction_deg": 75.0,
+        "wave_period_s": 5.5,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 94.0,
+        "swell_wave_period_s": 5.75,
         "sea_level_height_m": 0.17,
-        "current_velocity_kmh": 2.1,
-        "current_direction_deg": 200.0
+        "current_velocity_kmh": 2.2,
+        "current_direction_deg": 204.0
       },
       {
         "timestamp": "2026-10-16T18:00:00",
         "wave_height_m": 0.5,
-        "wave_direction_deg": 85.0,
-        "wave_period_s": 6.05,
+        "wave_direction_deg": 74.0,
+        "wave_period_s": 5.75,
+        "swell_wave_height_m": 0.28,
+        "swell_wave_direction_deg": 91.0,
+        "swell_wave_period_s": 5.1,
         "sea_level_height_m": 0.09,
-        "current_velocity_kmh": 2.4,
-        "current_direction_deg": 197.0
+        "current_velocity_kmh": 2.5,
+        "current_direction_deg": 201.0
       },
       {
         "timestamp": "2026-10-16T19:00:00",
         "wave_height_m": 0.48,
-        "wave_direction_deg": 83.0,
-        "wave_period_s": 6.15,
-        "sea_level_height_m": -0.06,
-        "current_velocity_kmh": 2.6,
-        "current_direction_deg": 196.0
-      },
-      {
-        "timestamp": "2026-10-16T20:00:00",
-        "wave_height_m": 0.48,
-        "wave_direction_deg": 78.0,
-        "wave_period_s": 6.25,
-        "sea_level_height_m": -0.26,
+        "wave_direction_deg": 74.0,
+        "wave_period_s": 5.95,
+        "swell_wave_height_m": 0.28,
+        "swell_wave_direction_deg": 87.0,
+        "swell_wave_period_s": 4.7,
+        "sea_level_height_m": -0.07,
         "current_velocity_kmh": 2.7,
         "current_direction_deg": 200.0
       },
       {
+        "timestamp": "2026-10-16T20:00:00",
+        "wave_height_m": 0.48,
+        "wave_direction_deg": 70.0,
+        "wave_period_s": 6.1,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 68.0,
+        "swell_wave_period_s": 4.85,
+        "sea_level_height_m": -0.27,
+        "current_velocity_kmh": 2.9,
+        "current_direction_deg": 202.0
+      },
+      {
         "timestamp": "2026-10-16T21:00:00",
         "wave_height_m": 0.46,
-        "wave_direction_deg": 74.0,
-        "wave_period_s": 6.35,
-        "sea_level_height_m": -0.45,
-        "current_velocity_kmh": 2.3,
-        "current_direction_deg": 209.0
+        "wave_direction_deg": 67.0,
+        "wave_period_s": 6.25,
+        "swell_wave_height_m": 0.24,
+        "swell_wave_direction_deg": 48.0,
+        "swell_wave_period_s": 5.25,
+        "sea_level_height_m": -0.46,
+        "current_velocity_kmh": 2.5,
+        "current_direction_deg": 210.0
       },
       {
         "timestamp": "2026-10-16T22:00:00",
         "wave_height_m": 0.46,
-        "wave_direction_deg": 69.0,
-        "wave_period_s": 6.4,
+        "wave_direction_deg": 63.0,
+        "wave_period_s": 6.35,
+        "swell_wave_height_m": 0.22,
+        "swell_wave_direction_deg": 29.0,
+        "swell_wave_period_s": 5.8,
         "sea_level_height_m": -0.57,
-        "current_velocity_kmh": 1.8,
-        "current_direction_deg": 233.0
+        "current_velocity_kmh": 1.9,
+        "current_direction_deg": 229.0
       },
       {
         "timestamp": "2026-10-16T23:00:00",
         "wave_height_m": 0.46,
-        "wave_direction_deg": 63.0,
-        "wave_period_s": 6.35,
+        "wave_direction_deg": 58.0,
+        "wave_period_s": 6.3,
+        "swell_wave_height_m": 0.22,
+        "swell_wave_direction_deg": 30.0,
+        "swell_wave_period_s": 6.6,
         "sea_level_height_m": -0.58,
         "current_velocity_kmh": 1.5,
-        "current_direction_deg": 263.0
+        "current_direction_deg": 256.0
       },
       {
         "timestamp": "2026-10-17T00:00:00",
         "wave_height_m": 0.48,
-        "wave_direction_deg": 56.0,
+        "wave_direction_deg": 52.0,
         "wave_period_s": 6.25,
-        "sea_level_height_m": -0.49,
+        "swell_wave_height_m": 0.22,
+        "swell_wave_direction_deg": 30.0,
+        "swell_wave_period_s": 7.5,
+        "sea_level_height_m": -0.5,
         "current_velocity_kmh": 1.1,
-        "current_direction_deg": 288.0
+        "current_direction_deg": 279.0
       },
       {
         "timestamp": "2026-10-17T01:00:00",
         "wave_height_m": 0.48,
-        "wave_direction_deg": 50.0,
+        "wave_direction_deg": 47.0,
         "wave_period_s": 6.15,
+        "swell_wave_height_m": 0.22,
+        "swell_wave_direction_deg": 31.0,
+        "swell_wave_period_s": 7.75,
         "sea_level_height_m": -0.33,
         "current_velocity_kmh": 0.8,
-        "current_direction_deg": 315.0
+        "current_direction_deg": 297.0
       },
       {
         "timestamp": "2026-10-17T02:00:00",
         "wave_height_m": 0.48,
-        "wave_direction_deg": 47.0,
+        "wave_direction_deg": 45.0,
         "wave_period_s": 6.1,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 36.0,
+        "swell_wave_period_s": 6.8,
         "sea_level_height_m": -0.12,
         "current_velocity_kmh": 0.4,
-        "current_direction_deg": 297.0
+        "current_direction_deg": 270.0
       },
       {
         "timestamp": "2026-10-17T03:00:00",
         "wave_height_m": 0.5,
-        "wave_direction_deg": 44.0,
-        "wave_period_s": 6.0,
-        "sea_level_height_m": 0.08,
-        "current_velocity_kmh": 0.6,
-        "current_direction_deg": 214.0
+        "wave_direction_deg": 42.0,
+        "wave_period_s": 6.05,
+        "swell_wave_height_m": 0.3,
+        "swell_wave_direction_deg": 42.0,
+        "swell_wave_period_s": 5.25,
+        "sea_level_height_m": 0.07,
+        "current_velocity_kmh": 0.8,
+        "current_direction_deg": 207.0
       },
       {
         "timestamp": "2026-10-17T04:00:00",
         "wave_height_m": 0.5,
-        "wave_direction_deg": 41.0,
-        "wave_period_s": 5.95,
+        "wave_direction_deg": 40.0,
+        "wave_period_s": 6.05,
+        "swell_wave_height_m": 0.34,
+        "swell_wave_direction_deg": 47.0,
+        "swell_wave_period_s": 4.1,
         "sea_level_height_m": 0.21,
         "current_velocity_kmh": 1.5,
         "current_direction_deg": 194.0
@@ -1681,422 +1840,563 @@
       {
         "timestamp": "2026-10-17T05:00:00",
         "wave_height_m": 0.5,
-        "wave_direction_deg": 40.0,
-        "wave_period_s": 5.9,
+        "wave_direction_deg": 39.0,
+        "wave_period_s": 6.05,
+        "swell_wave_height_m": 0.34,
+        "swell_wave_direction_deg": 45.0,
+        "swell_wave_period_s": 3.85,
         "sea_level_height_m": 0.27,
         "current_velocity_kmh": 2.2,
         "current_direction_deg": 189.0
       },
       {
         "timestamp": "2026-10-17T06:00:00",
-        "wave_height_m": 0.52,
-        "wave_direction_deg": 39.0,
-        "wave_period_s": 5.85,
-        "sea_level_height_m": 0.22,
+        "wave_height_m": 0.5,
+        "wave_direction_deg": 37.0,
+        "wave_period_s": 6.05,
+        "swell_wave_height_m": 0.36,
+        "swell_wave_direction_deg": 44.0,
+        "swell_wave_period_s": 4.0,
+        "sea_level_height_m": 0.23,
         "current_velocity_kmh": 2.5,
         "current_direction_deg": 188.0
       },
       {
         "timestamp": "2026-10-17T07:00:00",
-        "wave_height_m": 0.52,
-        "wave_direction_deg": 38.0,
-        "wave_period_s": 5.8,
-        "sea_level_height_m": 0.09,
+        "wave_height_m": 0.5,
+        "wave_direction_deg": 36.0,
+        "wave_period_s": 6.05,
+        "swell_wave_height_m": 0.36,
+        "swell_wave_direction_deg": 42.0,
+        "swell_wave_period_s": 4.15,
+        "sea_level_height_m": 0.1,
         "current_velocity_kmh": 2.8,
         "current_direction_deg": 191.0
       },
       {
         "timestamp": "2026-10-17T08:00:00",
-        "wave_height_m": 0.52,
-        "wave_direction_deg": 38.0,
-        "wave_period_s": 5.75,
+        "wave_height_m": 0.5,
+        "wave_direction_deg": 35.0,
+        "wave_period_s": 6.1,
+        "swell_wave_height_m": 0.36,
+        "swell_wave_direction_deg": 41.0,
+        "swell_wave_period_s": 4.05,
         "sea_level_height_m": -0.09,
         "current_velocity_kmh": 2.8,
         "current_direction_deg": 191.0
       },
       {
         "timestamp": "2026-10-17T09:00:00",
-        "wave_height_m": 0.54,
-        "wave_direction_deg": 37.0,
-        "wave_period_s": 5.7,
-        "sea_level_height_m": -0.3,
+        "wave_height_m": 0.5,
+        "wave_direction_deg": 34.0,
+        "wave_period_s": 6.15,
+        "swell_wave_height_m": 0.36,
+        "swell_wave_direction_deg": 40.0,
+        "swell_wave_period_s": 4.0,
+        "sea_level_height_m": -0.29,
         "current_velocity_kmh": 2.5,
         "current_direction_deg": 201.0
       },
       {
         "timestamp": "2026-10-17T10:00:00",
-        "wave_height_m": 0.54,
-        "wave_direction_deg": 37.0,
-        "wave_period_s": 5.65,
-        "sea_level_height_m": -0.46,
+        "wave_height_m": 0.5,
+        "wave_direction_deg": 33.0,
+        "wave_period_s": 6.15,
+        "swell_wave_height_m": 0.36,
+        "swell_wave_direction_deg": 39.0,
+        "swell_wave_period_s": 4.2,
+        "sea_level_height_m": -0.45,
         "current_velocity_kmh": 2.1,
         "current_direction_deg": 218.0
       },
       {
         "timestamp": "2026-10-17T11:00:00",
-        "wave_height_m": 0.54,
-        "wave_direction_deg": 37.0,
-        "wave_period_s": 5.65,
+        "wave_height_m": 0.5,
+        "wave_direction_deg": 33.0,
+        "wave_period_s": 6.1,
+        "swell_wave_height_m": 0.34,
+        "swell_wave_direction_deg": 39.0,
+        "swell_wave_period_s": 5.1,
         "sea_level_height_m": -0.54,
-        "current_velocity_kmh": 1.5,
-        "current_direction_deg": 249.0
+        "current_velocity_kmh": 1.6,
+        "current_direction_deg": 243.0
       },
       {
         "timestamp": "2026-10-17T12:00:00",
         "wave_height_m": 0.52,
-        "wave_direction_deg": 37.0,
-        "wave_period_s": 5.7,
-        "sea_level_height_m": -0.54,
+        "wave_direction_deg": 33.0,
+        "wave_period_s": 5.95,
+        "swell_wave_height_m": 0.32,
+        "swell_wave_direction_deg": 38.0,
+        "swell_wave_period_s": 6.25,
+        "sea_level_height_m": -0.53,
         "current_velocity_kmh": 1.3,
         "current_direction_deg": 278.0
       },
       {
         "timestamp": "2026-10-17T13:00:00",
         "wave_height_m": 0.52,
-        "wave_direction_deg": 37.0,
-        "wave_period_s": 5.7,
-        "sea_level_height_m": -0.46,
+        "wave_direction_deg": 33.0,
+        "wave_period_s": 5.85,
+        "swell_wave_height_m": 0.3,
+        "swell_wave_direction_deg": 38.0,
+        "swell_wave_period_s": 6.85,
+        "sea_level_height_m": -0.45,
         "current_velocity_kmh": 1.0,
         "current_direction_deg": 301.0
       },
       {
         "timestamp": "2026-10-17T14:00:00",
         "wave_height_m": 0.54,
-        "wave_direction_deg": 37.0,
-        "wave_period_s": 5.65,
-        "sea_level_height_m": -0.32,
-        "current_velocity_kmh": 0.9,
-        "current_direction_deg": 307.0
+        "wave_direction_deg": 34.0,
+        "wave_period_s": 5.75,
+        "swell_wave_height_m": 0.34,
+        "swell_wave_direction_deg": 39.0,
+        "swell_wave_period_s": 6.3,
+        "sea_level_height_m": -0.31,
+        "current_velocity_kmh": 0.8,
+        "current_direction_deg": 297.0
       },
       {
         "timestamp": "2026-10-17T15:00:00",
         "wave_height_m": 0.54,
-        "wave_direction_deg": 38.0,
-        "wave_period_s": 5.5,
-        "sea_level_height_m": -0.16,
+        "wave_direction_deg": 34.0,
+        "wave_period_s": 5.7,
+        "swell_wave_height_m": 0.36,
+        "swell_wave_direction_deg": 39.0,
+        "swell_wave_period_s": 5.15,
+        "sea_level_height_m": -0.15,
         "current_velocity_kmh": 0.7,
-        "current_direction_deg": 284.0
+        "current_direction_deg": 270.0
       },
       {
         "timestamp": "2026-10-17T16:00:00",
         "wave_height_m": 0.56,
-        "wave_direction_deg": 38.0,
-        "wave_period_s": 5.45,
+        "wave_direction_deg": 35.0,
+        "wave_period_s": 5.65,
+        "swell_wave_height_m": 0.4,
+        "swell_wave_direction_deg": 40.0,
+        "swell_wave_period_s": 4.3,
         "sea_level_height_m": -0.02,
-        "current_velocity_kmh": 0.9,
-        "current_direction_deg": 233.0
+        "current_velocity_kmh": 1.0,
+        "current_direction_deg": 225.0
       },
       {
         "timestamp": "2026-10-17T17:00:00",
         "wave_height_m": 0.56,
-        "wave_direction_deg": 37.0,
-        "wave_period_s": 5.45,
+        "wave_direction_deg": 35.0,
+        "wave_period_s": 5.65,
+        "swell_wave_height_m": 0.4,
+        "swell_wave_direction_deg": 40.0,
+        "swell_wave_period_s": 4.1,
         "sea_level_height_m": 0.06,
         "current_velocity_kmh": 1.7,
         "current_direction_deg": 212.0
       },
       {
         "timestamp": "2026-10-17T18:00:00",
-        "wave_height_m": 0.54,
-        "wave_direction_deg": 37.0,
-        "wave_period_s": 5.5,
+        "wave_height_m": 0.56,
+        "wave_direction_deg": 34.0,
+        "wave_period_s": 5.7,
+        "swell_wave_height_m": 0.42,
+        "swell_wave_direction_deg": 39.0,
+        "swell_wave_period_s": 4.2,
         "sea_level_height_m": 0.07,
         "current_velocity_kmh": 2.2,
         "current_direction_deg": 204.0
       },
       {
         "timestamp": "2026-10-17T19:00:00",
-        "wave_height_m": 0.54,
-        "wave_direction_deg": 36.0,
-        "wave_period_s": 5.55,
-        "sea_level_height_m": 0.01,
-        "current_velocity_kmh": 2.3,
-        "current_direction_deg": 203.0
+        "wave_height_m": 0.56,
+        "wave_direction_deg": 34.0,
+        "wave_period_s": 5.75,
+        "swell_wave_height_m": 0.42,
+        "swell_wave_direction_deg": 39.0,
+        "swell_wave_period_s": 4.25,
+        "sea_level_height_m": 0.02,
+        "current_velocity_kmh": 2.5,
+        "current_direction_deg": 201.0
       },
       {
         "timestamp": "2026-10-17T20:00:00",
-        "wave_height_m": 0.54,
-        "wave_direction_deg": 35.0,
-        "wave_period_s": 5.6,
+        "wave_height_m": 0.56,
+        "wave_direction_deg": 33.0,
+        "wave_period_s": 5.75,
+        "swell_wave_height_m": 0.42,
+        "swell_wave_direction_deg": 38.0,
+        "swell_wave_period_s": 4.05,
         "sea_level_height_m": -0.1,
-        "current_velocity_kmh": 2.5,
-        "current_direction_deg": 201.0
+        "current_velocity_kmh": 2.7,
+        "current_direction_deg": 200.0
       },
       {
         "timestamp": "2026-10-17T21:00:00",
-        "wave_height_m": 0.54,
-        "wave_direction_deg": 34.0,
-        "wave_period_s": 5.6,
-        "sea_level_height_m": -0.25,
-        "current_velocity_kmh": 2.5,
-        "current_direction_deg": 201.0
+        "wave_height_m": 0.56,
+        "wave_direction_deg": 33.0,
+        "wave_period_s": 5.75,
+        "swell_wave_height_m": 0.42,
+        "swell_wave_direction_deg": 38.0,
+        "swell_wave_period_s": 3.8,
+        "sea_level_height_m": -0.24,
+        "current_velocity_kmh": 2.7,
+        "current_direction_deg": 200.0
       },
       {
         "timestamp": "2026-10-17T22:00:00",
-        "wave_height_m": 0.54,
-        "wave_direction_deg": 33.0,
-        "wave_period_s": 5.65,
-        "sea_level_height_m": -0.38,
-        "current_velocity_kmh": 2.1,
-        "current_direction_deg": 211.0
+        "wave_height_m": 0.56,
+        "wave_direction_deg": 32.0,
+        "wave_period_s": 5.75,
+        "swell_wave_height_m": 0.42,
+        "swell_wave_direction_deg": 37.0,
+        "swell_wave_period_s": 3.65,
+        "sea_level_height_m": -0.37,
+        "current_velocity_kmh": 2.3,
+        "current_direction_deg": 212.0
       },
       {
         "timestamp": "2026-10-17T23:00:00",
-        "wave_height_m": 0.54,
+        "wave_height_m": 0.56,
         "wave_direction_deg": 33.0,
-        "wave_period_s": 5.7,
+        "wave_period_s": 5.75,
+        "swell_wave_height_m": 0.44,
+        "swell_wave_direction_deg": 37.0,
+        "swell_wave_period_s": 3.65,
         "sea_level_height_m": -0.45,
-        "current_velocity_kmh": 1.8,
-        "current_direction_deg": 233.0
+        "current_velocity_kmh": 1.9,
+        "current_direction_deg": 229.0
       },
       {
         "timestamp": "2026-10-18T00:00:00",
-        "wave_height_m": 0.52,
-        "wave_direction_deg": 34.0,
-        "wave_period_s": 5.75,
-        "sea_level_height_m": -0.45,
+        "wave_height_m": 0.56,
+        "wave_direction_deg": 33.0,
+        "wave_period_s": 5.8,
+        "swell_wave_height_m": 0.44,
+        "swell_wave_direction_deg": 38.0,
+        "swell_wave_period_s": 3.75,
+        "sea_level_height_m": -0.46,
         "current_velocity_kmh": 1.3,
-        "current_direction_deg": 262.0
+        "current_direction_deg": 254.0
       },
       {
         "timestamp": "2026-10-18T01:00:00",
-        "wave_height_m": 0.52,
+        "wave_height_m": 0.56,
         "wave_direction_deg": 34.0,
-        "wave_period_s": 5.85,
-        "sea_level_height_m": -0.38,
+        "wave_period_s": 5.8,
+        "swell_wave_height_m": 0.46,
+        "swell_wave_direction_deg": 38.0,
+        "swell_wave_period_s": 3.85,
+        "sea_level_height_m": -0.39,
         "current_velocity_kmh": 0.9,
         "current_direction_deg": 281.0
       },
       {
         "timestamp": "2026-10-18T02:00:00",
-        "wave_height_m": 0.5,
+        "wave_height_m": 0.56,
         "wave_direction_deg": 34.0,
-        "wave_period_s": 5.95,
-        "sea_level_height_m": -0.26,
+        "wave_period_s": 5.8,
+        "swell_wave_height_m": 0.46,
+        "swell_wave_direction_deg": 38.0,
+        "swell_wave_period_s": 3.9,
+        "sea_level_height_m": -0.27,
         "current_velocity_kmh": 0.6,
-        "current_direction_deg": 304.0
+        "current_direction_deg": 288.0
       },
       {
         "timestamp": "2026-10-18T03:00:00",
-        "wave_height_m": 0.5,
+        "wave_height_m": 0.58,
         "wave_direction_deg": 35.0,
-        "wave_period_s": 6.1,
+        "wave_period_s": 5.85,
+        "swell_wave_height_m": 0.48,
+        "swell_wave_direction_deg": 38.0,
+        "swell_wave_period_s": 3.95,
         "sea_level_height_m": -0.11,
         "current_velocity_kmh": 0.4,
-        "current_direction_deg": 297.0
+        "current_direction_deg": 270.0
       },
       {
         "timestamp": "2026-10-18T04:00:00",
-        "wave_height_m": 0.48,
+        "wave_height_m": 0.58,
         "wave_direction_deg": 35.0,
-        "wave_period_s": 6.15,
+        "wave_period_s": 5.85,
+        "swell_wave_height_m": 0.48,
+        "swell_wave_direction_deg": 38.0,
+        "swell_wave_period_s": 3.95,
         "sea_level_height_m": 0.04,
         "current_velocity_kmh": 0.6,
         "current_direction_deg": 198.0
       },
       {
         "timestamp": "2026-10-18T05:00:00",
-        "wave_height_m": 0.48,
+        "wave_height_m": 0.6,
         "wave_direction_deg": 35.0,
-        "wave_period_s": 6.1,
-        "sea_level_height_m": 0.14,
+        "wave_period_s": 5.85,
+        "swell_wave_height_m": 0.5,
+        "swell_wave_direction_deg": 40.0,
+        "swell_wave_period_s": 3.9,
+        "sea_level_height_m": 0.15,
         "current_velocity_kmh": 1.3,
         "current_direction_deg": 188.0
       },
       {
         "timestamp": "2026-10-18T06:00:00",
-        "wave_height_m": 0.5,
-        "wave_direction_deg": 36.0,
-        "wave_period_s": 6.05,
-        "sea_level_height_m": 0.19,
-        "current_velocity_kmh": 1.8,
-        "current_direction_deg": 191.0
+        "wave_height_m": 0.6,
+        "wave_direction_deg": 35.0,
+        "wave_period_s": 5.85,
+        "swell_wave_height_m": 0.5,
+        "swell_wave_direction_deg": 41.0,
+        "swell_wave_period_s": 3.85,
+        "sea_level_height_m": 0.2,
+        "current_velocity_kmh": 2.0,
+        "current_direction_deg": 190.0
       },
       {
         "timestamp": "2026-10-18T07:00:00",
-        "wave_height_m": 0.5,
-        "wave_direction_deg": 36.0,
-        "wave_period_s": 5.95,
-        "sea_level_height_m": 0.17,
-        "current_velocity_kmh": 2.2,
-        "current_direction_deg": 189.0
-      },
-      {
-        "timestamp": "2026-10-18T08:00:00",
-        "wave_height_m": 0.52,
-        "wave_direction_deg": 36.0,
-        "wave_period_s": 5.85,
-        "sea_level_height_m": 0.09,
+        "wave_height_m": 0.62,
+        "wave_direction_deg": 35.0,
+        "wave_period_s": 5.8,
+        "swell_wave_height_m": 0.52,
+        "swell_wave_direction_deg": 43.0,
+        "swell_wave_period_s": 3.9,
+        "sea_level_height_m": 0.18,
         "current_velocity_kmh": 2.4,
         "current_direction_deg": 189.0
       },
       {
-        "timestamp": "2026-10-18T09:00:00",
-        "wave_height_m": 0.54,
+        "timestamp": "2026-10-18T08:00:00",
+        "wave_height_m": 0.64,
         "wave_direction_deg": 35.0,
-        "wave_period_s": 5.8,
-        "sea_level_height_m": -0.05,
+        "wave_period_s": 5.7,
+        "swell_wave_height_m": 0.5,
+        "swell_wave_direction_deg": 43.0,
+        "swell_wave_period_s": 4.1,
+        "sea_level_height_m": 0.09,
         "current_velocity_kmh": 2.5,
         "current_direction_deg": 188.0
       },
       {
+        "timestamp": "2026-10-18T09:00:00",
+        "wave_height_m": 0.68,
+        "wave_direction_deg": 36.0,
+        "wave_period_s": 5.6,
+        "swell_wave_height_m": 0.48,
+        "swell_wave_direction_deg": 44.0,
+        "swell_wave_period_s": 4.35,
+        "sea_level_height_m": -0.04,
+        "current_velocity_kmh": 2.8,
+        "current_direction_deg": 191.0
+      },
+      {
         "timestamp": "2026-10-18T10:00:00",
-        "wave_height_m": 0.56,
-        "wave_direction_deg": 35.0,
-        "wave_period_s": 5.7,
+        "wave_height_m": 0.7,
+        "wave_direction_deg": 36.0,
+        "wave_period_s": 5.5,
+        "swell_wave_height_m": 0.46,
+        "swell_wave_direction_deg": 44.0,
+        "swell_wave_period_s": 4.55,
         "sea_level_height_m": -0.2,
-        "current_velocity_kmh": 2.3,
-        "current_direction_deg": 198.0
+        "current_velocity_kmh": 2.4,
+        "current_direction_deg": 197.0
       },
       {
         "timestamp": "2026-10-18T11:00:00",
-        "wave_height_m": 0.58,
-        "wave_direction_deg": 35.0,
-        "wave_period_s": 5.6,
+        "wave_height_m": 0.7,
+        "wave_direction_deg": 37.0,
+        "wave_period_s": 5.45,
+        "swell_wave_height_m": 0.48,
+        "swell_wave_direction_deg": 44.0,
+        "swell_wave_period_s": 4.6,
         "sea_level_height_m": -0.33,
-        "current_velocity_kmh": 1.8,
-        "current_direction_deg": 217.0
-      },
-      {
-        "timestamp": "2026-10-18T12:00:00",
-        "wave_height_m": 0.6,
-        "wave_direction_deg": 35.0,
-        "wave_period_s": 5.5,
-        "sea_level_height_m": -0.42,
-        "current_velocity_kmh": 1.4,
-        "current_direction_deg": 247.0
-      },
-      {
-        "timestamp": "2026-10-18T13:00:00",
-        "wave_height_m": 0.62,
-        "wave_direction_deg": 35.0,
-        "wave_period_s": 5.45,
-        "sea_level_height_m": -0.45,
-        "current_velocity_kmh": 1.1,
-        "current_direction_deg": 279.0
-      },
-      {
-        "timestamp": "2026-10-18T14:00:00",
-        "wave_height_m": 0.64,
-        "wave_direction_deg": 36.0,
-        "wave_period_s": 5.45,
-        "sea_level_height_m": -0.41,
-        "current_velocity_kmh": 0.8,
-        "current_direction_deg": 297.0
-      },
-      {
-        "timestamp": "2026-10-18T15:00:00",
-        "wave_height_m": 0.64,
-        "wave_direction_deg": 36.0,
-        "wave_period_s": 5.5,
-        "sea_level_height_m": -0.32,
-        "current_velocity_kmh": 0.6,
-        "current_direction_deg": 304.0
-      },
-      {
-        "timestamp": "2026-10-18T16:00:00",
-        "wave_height_m": 0.66,
-        "wave_direction_deg": 37.0,
-        "wave_period_s": 5.55,
-        "sea_level_height_m": -0.2,
-        "current_velocity_kmh": 0.5,
-        "current_direction_deg": 270.0
-      },
-      {
-        "timestamp": "2026-10-18T17:00:00",
-        "wave_height_m": 0.66,
-        "wave_direction_deg": 37.0,
-        "wave_period_s": 5.65,
-        "sea_level_height_m": -0.1,
-        "current_velocity_kmh": 0.8,
-        "current_direction_deg": 225.0
-      },
-      {
-        "timestamp": "2026-10-18T18:00:00",
-        "wave_height_m": 0.64,
-        "wave_direction_deg": 36.0,
-        "wave_period_s": 5.75,
-        "sea_level_height_m": -0.02,
-        "current_velocity_kmh": 1.2,
-        "current_direction_deg": 207.0
-      },
-      {
-        "timestamp": "2026-10-18T19:00:00",
-        "wave_height_m": 0.64,
-        "wave_direction_deg": 36.0,
-        "wave_period_s": 5.8,
-        "sea_level_height_m": 0.02,
-        "current_velocity_kmh": 1.7,
-        "current_direction_deg": 198.0
-      },
-      {
-        "timestamp": "2026-10-18T20:00:00",
-        "wave_height_m": 0.64,
-        "wave_direction_deg": 35.0,
-        "wave_period_s": 5.8,
-        "sea_level_height_m": 0.0,
-        "current_velocity_kmh": 2.1,
-        "current_direction_deg": 195.0
-      },
-      {
-        "timestamp": "2026-10-18T21:00:00",
-        "wave_height_m": 0.62,
-        "wave_direction_deg": 33.0,
-        "wave_period_s": 5.8,
-        "sea_level_height_m": -0.06,
-        "current_velocity_kmh": 2.2,
-        "current_direction_deg": 194.0
-      },
-      {
-        "timestamp": "2026-10-18T22:00:00",
-        "wave_height_m": 0.62,
-        "wave_direction_deg": 32.0,
-        "wave_period_s": 5.8,
-        "sea_level_height_m": -0.16,
-        "current_velocity_kmh": 2.3,
-        "current_direction_deg": 198.0
-      },
-      {
-        "timestamp": "2026-10-18T23:00:00",
-        "wave_height_m": 0.62,
-        "wave_direction_deg": 32.0,
-        "wave_period_s": 5.8,
-        "sea_level_height_m": -0.26,
         "current_velocity_kmh": 2.1,
         "current_direction_deg": 211.0
       },
       {
+        "timestamp": "2026-10-18T12:00:00",
+        "wave_height_m": 0.72,
+        "wave_direction_deg": 38.0,
+        "wave_period_s": 5.5,
+        "swell_wave_height_m": 0.5,
+        "swell_wave_direction_deg": 44.0,
+        "swell_wave_period_s": 4.65,
+        "sea_level_height_m": -0.41,
+        "current_velocity_kmh": 1.5,
+        "current_direction_deg": 234.0
+      },
+      {
+        "timestamp": "2026-10-18T13:00:00",
+        "wave_height_m": 0.72,
+        "wave_direction_deg": 39.0,
+        "wave_period_s": 5.5,
+        "swell_wave_height_m": 0.52,
+        "swell_wave_direction_deg": 44.0,
+        "swell_wave_period_s": 4.6,
+        "sea_level_height_m": -0.44,
+        "current_velocity_kmh": 1.1,
+        "current_direction_deg": 261.0
+      },
+      {
+        "timestamp": "2026-10-18T14:00:00",
+        "wave_height_m": 0.72,
+        "wave_direction_deg": 39.0,
+        "wave_period_s": 5.55,
+        "swell_wave_height_m": 0.54,
+        "swell_wave_direction_deg": 44.0,
+        "swell_wave_period_s": 4.5,
+        "sea_level_height_m": -0.4,
+        "current_velocity_kmh": 0.9,
+        "current_direction_deg": 281.0
+      },
+      {
+        "timestamp": "2026-10-18T15:00:00",
+        "wave_height_m": 0.7,
+        "wave_direction_deg": 39.0,
+        "wave_period_s": 5.55,
+        "swell_wave_height_m": 0.56,
+        "swell_wave_direction_deg": 45.0,
+        "swell_wave_period_s": 4.4,
+        "sea_level_height_m": -0.32,
+        "current_velocity_kmh": 0.7,
+        "current_direction_deg": 284.0
+      },
+      {
+        "timestamp": "2026-10-18T16:00:00",
+        "wave_height_m": 0.7,
+        "wave_direction_deg": 39.0,
+        "wave_period_s": 5.6,
+        "swell_wave_height_m": 0.58,
+        "swell_wave_direction_deg": 45.0,
+        "swell_wave_period_s": 4.3,
+        "sea_level_height_m": -0.2,
+        "current_velocity_kmh": 0.7,
+        "current_direction_deg": 256.0
+      },
+      {
+        "timestamp": "2026-10-18T17:00:00",
+        "wave_height_m": 0.68,
+        "wave_direction_deg": 39.0,
+        "wave_period_s": 5.65,
+        "swell_wave_height_m": 0.58,
+        "swell_wave_direction_deg": 45.0,
+        "swell_wave_period_s": 4.25,
+        "sea_level_height_m": -0.1,
+        "current_velocity_kmh": 1.0,
+        "current_direction_deg": 225.0
+      },
+      {
+        "timestamp": "2026-10-18T18:00:00",
+        "wave_height_m": 0.68,
+        "wave_direction_deg": 38.0,
+        "wave_period_s": 5.65,
+        "swell_wave_height_m": 0.6,
+        "swell_wave_direction_deg": 44.0,
+        "swell_wave_period_s": 4.2,
+        "sea_level_height_m": -0.02,
+        "current_velocity_kmh": 1.6,
+        "current_direction_deg": 207.0
+      },
+      {
+        "timestamp": "2026-10-18T19:00:00",
+        "wave_height_m": 0.66,
+        "wave_direction_deg": 38.0,
+        "wave_period_s": 5.7,
+        "swell_wave_height_m": 0.6,
+        "swell_wave_direction_deg": 44.0,
+        "swell_wave_period_s": 4.2,
+        "sea_level_height_m": 0.03,
+        "current_velocity_kmh": 1.9,
+        "current_direction_deg": 202.0
+      },
+      {
+        "timestamp": "2026-10-18T20:00:00",
+        "wave_height_m": 0.66,
+        "wave_direction_deg": 37.0,
+        "wave_period_s": 5.75,
+        "swell_wave_height_m": 0.6,
+        "swell_wave_direction_deg": 43.0,
+        "swell_wave_period_s": 4.2,
+        "sea_level_height_m": 0.01,
+        "current_velocity_kmh": 2.3,
+        "current_direction_deg": 198.0
+      },
+      {
+        "timestamp": "2026-10-18T21:00:00",
+        "wave_height_m": 0.64,
+        "wave_direction_deg": 37.0,
+        "wave_period_s": 5.85,
+        "swell_wave_height_m": 0.58,
+        "swell_wave_direction_deg": 43.0,
+        "swell_wave_period_s": 4.25,
+        "sea_level_height_m": -0.06,
+        "current_velocity_kmh": 2.4,
+        "current_direction_deg": 197.0
+      },
+      {
+        "timestamp": "2026-10-18T22:00:00",
+        "wave_height_m": 0.64,
+        "wave_direction_deg": 36.0,
+        "wave_period_s": 5.95,
+        "swell_wave_height_m": 0.58,
+        "swell_wave_direction_deg": 42.0,
+        "swell_wave_period_s": 4.3,
+        "sea_level_height_m": -0.16,
+        "current_velocity_kmh": 2.7,
+        "current_direction_deg": 200.0
+      },
+      {
+        "timestamp": "2026-10-18T23:00:00",
+        "wave_height_m": 0.64,
+        "wave_direction_deg": 36.0,
+        "wave_period_s": 6.0,
+        "swell_wave_height_m": 0.58,
+        "swell_wave_direction_deg": 42.0,
+        "swell_wave_period_s": 4.3,
+        "sea_level_height_m": -0.27,
+        "current_velocity_kmh": 2.3,
+        "current_direction_deg": 209.0
+      },
+      {
         "timestamp": "2026-10-19T00:00:00",
         "wave_height_m": 0.62,
-        "wave_direction_deg": 32.0,
-        "wave_period_s": 5.75,
-        "sea_level_height_m": -0.34,
-        "current_velocity_kmh": 1.7,
-        "current_direction_deg": 229.0
+        "wave_direction_deg": 35.0,
+        "wave_period_s": 6.05,
+        "swell_wave_height_m": 0.56,
+        "swell_wave_direction_deg": 43.0,
+        "swell_wave_period_s": 4.3,
+        "sea_level_height_m": -0.35,
+        "current_velocity_kmh": 1.8,
+        "current_direction_deg": 225.0
       },
       {
         "timestamp": "2026-10-19T01:00:00",
         "wave_height_m": 0.62,
-        "wave_direction_deg": 32.0,
-        "wave_period_s": 5.75,
+        "wave_direction_deg": 35.0,
+        "wave_period_s": 6.15,
+        "swell_wave_height_m": 0.56,
+        "swell_wave_direction_deg": 43.0,
+        "swell_wave_period_s": 4.35,
         "sea_level_height_m": -0.38,
-        "current_velocity_kmh": 1.3,
-        "current_direction_deg": 254.0
+        "current_velocity_kmh": 1.4,
+        "current_direction_deg": 247.0
       },
       {
         "timestamp": "2026-10-19T02:00:00",
         "wave_height_m": 0.6,
-        "wave_direction_deg": 32.0,
-        "wave_period_s": 5.8,
-        "sea_level_height_m": -0.36,
+        "wave_direction_deg": 34.0,
+        "wave_period_s": 6.25,
+        "swell_wave_height_m": 0.54,
+        "swell_wave_direction_deg": 40.0,
+        "swell_wave_period_s": 4.55,
+        "sea_level_height_m": -0.35,
         "current_velocity_kmh": 0.9,
         "current_direction_deg": 270.0
       },
       {
         "timestamp": "2026-10-19T03:00:00",
         "wave_height_m": 0.6,
-        "wave_direction_deg": 32.0,
-        "wave_period_s": 5.85,
+        "wave_direction_deg": 34.0,
+        "wave_period_s": 6.4,
+        "swell_wave_height_m": 0.54,
+        "swell_wave_direction_deg": 36.0,
+        "swell_wave_period_s": 4.8,
         "sea_level_height_m": -0.28,
         "current_velocity_kmh": 0.6,
         "current_direction_deg": 288.0
@@ -2104,26 +2404,35 @@
       {
         "timestamp": "2026-10-19T04:00:00",
         "wave_height_m": 0.58,
-        "wave_direction_deg": 32.0,
-        "wave_period_s": 5.95,
-        "sea_level_height_m": -0.17,
-        "current_velocity_kmh": 0.5,
+        "wave_direction_deg": 33.0,
+        "wave_period_s": 6.5,
+        "swell_wave_height_m": 0.52,
+        "swell_wave_direction_deg": 33.0,
+        "swell_wave_period_s": 5.0,
+        "sea_level_height_m": -0.16,
+        "current_velocity_kmh": 0.4,
         "current_direction_deg": 270.0
       },
       {
         "timestamp": "2026-10-19T05:00:00",
         "wave_height_m": 0.58,
         "wave_direction_deg": 32.0,
-        "wave_period_s": 6.0,
-        "sea_level_height_m": -0.04,
-        "current_velocity_kmh": 0.8,
+        "wave_period_s": 6.6,
+        "swell_wave_height_m": 0.52,
+        "swell_wave_direction_deg": 33.0,
+        "swell_wave_period_s": 5.1,
+        "sea_level_height_m": -0.03,
+        "current_velocity_kmh": 0.5,
         "current_direction_deg": 225.0
       },
       {
         "timestamp": "2026-10-19T06:00:00",
         "wave_height_m": 0.58,
-        "wave_direction_deg": 31.0,
-        "wave_period_s": 6.05,
+        "wave_direction_deg": 32.0,
+        "wave_period_s": 6.65,
+        "swell_wave_height_m": 0.52,
+        "swell_wave_direction_deg": 32.0,
+        "swell_wave_period_s": 5.2,
         "sea_level_height_m": 0.08,
         "current_velocity_kmh": 1.1,
         "current_direction_deg": 198.0
@@ -2132,7 +2441,10 @@
         "timestamp": "2026-10-19T07:00:00",
         "wave_height_m": 0.58,
         "wave_direction_deg": 31.0,
-        "wave_period_s": 6.15,
+        "wave_period_s": 6.75,
+        "swell_wave_height_m": 0.52,
+        "swell_wave_direction_deg": 32.0,
+        "swell_wave_period_s": 5.25,
         "sea_level_height_m": 0.16,
         "current_velocity_kmh": 1.7,
         "current_direction_deg": 193.0
@@ -2141,8 +2453,11 @@
         "timestamp": "2026-10-19T08:00:00",
         "wave_height_m": 0.58,
         "wave_direction_deg": 31.0,
-        "wave_period_s": 6.25,
-        "sea_level_height_m": 0.18,
+        "wave_period_s": 6.85,
+        "swell_wave_height_m": 0.52,
+        "swell_wave_direction_deg": 32.0,
+        "swell_wave_period_s": 5.3,
+        "sea_level_height_m": 0.19,
         "current_velocity_kmh": 2.0,
         "current_direction_deg": 190.0
       },
@@ -2150,8 +2465,11 @@
         "timestamp": "2026-10-19T09:00:00",
         "wave_height_m": 0.56,
         "wave_direction_deg": 30.0,
-        "wave_period_s": 6.4,
-        "sea_level_height_m": 0.14,
+        "wave_period_s": 6.9,
+        "swell_wave_height_m": 0.52,
+        "swell_wave_direction_deg": 31.0,
+        "swell_wave_period_s": 5.35,
+        "sea_level_height_m": 0.15,
         "current_velocity_kmh": 2.2,
         "current_direction_deg": 189.0
       },
@@ -2159,559 +2477,745 @@
         "timestamp": "2026-10-19T10:00:00",
         "wave_height_m": 0.56,
         "wave_direction_deg": 30.0,
-        "wave_period_s": 6.55,
-        "sea_level_height_m": 0.04,
+        "wave_period_s": 7.0,
+        "swell_wave_height_m": 0.52,
+        "swell_wave_direction_deg": 31.0,
+        "swell_wave_period_s": 5.4,
+        "sea_level_height_m": 0.05,
         "current_velocity_kmh": 2.4,
-        "current_direction_deg": 193.0
+        "current_direction_deg": 189.0
       },
       {
         "timestamp": "2026-10-19T11:00:00",
         "wave_height_m": 0.56,
         "wave_direction_deg": 29.0,
-        "wave_period_s": 6.75,
-        "sea_level_height_m": -0.1,
-        "current_velocity_kmh": 2.1,
-        "current_direction_deg": 200.0
+        "wave_period_s": 7.1,
+        "swell_wave_height_m": 0.52,
+        "swell_wave_direction_deg": 30.0,
+        "swell_wave_period_s": 5.5,
+        "sea_level_height_m": -0.09,
+        "current_velocity_kmh": 2.3,
+        "current_direction_deg": 198.0
       },
       {
         "timestamp": "2026-10-19T12:00:00",
         "wave_height_m": 0.56,
         "wave_direction_deg": 29.0,
-        "wave_period_s": 6.9,
-        "sea_level_height_m": -0.25,
+        "wave_period_s": 7.25,
+        "swell_wave_height_m": 0.52,
+        "swell_wave_direction_deg": 30.0,
+        "swell_wave_period_s": 5.65,
+        "sea_level_height_m": -0.24,
         "current_velocity_kmh": 1.7,
-        "current_direction_deg": 221.0
+        "current_direction_deg": 212.0
       },
       {
         "timestamp": "2026-10-19T13:00:00",
         "wave_height_m": 0.56,
         "wave_direction_deg": 28.0,
-        "wave_period_s": 7.1,
+        "wave_period_s": 7.35,
+        "swell_wave_height_m": 0.52,
+        "swell_wave_direction_deg": 29.0,
+        "swell_wave_period_s": 5.75,
         "sea_level_height_m": -0.37,
-        "current_velocity_kmh": 1.3,
-        "current_direction_deg": 254.0
+        "current_velocity_kmh": 1.2,
+        "current_direction_deg": 243.0
       },
       {
         "timestamp": "2026-10-19T14:00:00",
         "wave_height_m": 0.56,
         "wave_direction_deg": 27.0,
-        "wave_period_s": 7.25,
+        "wave_period_s": 7.45,
+        "swell_wave_height_m": 0.5,
+        "swell_wave_direction_deg": 29.0,
+        "swell_wave_period_s": 5.75,
         "sea_level_height_m": -0.44,
-        "current_velocity_kmh": 1.1,
-        "current_direction_deg": 288.0
+        "current_velocity_kmh": 0.9,
+        "current_direction_deg": 281.0
       },
       {
         "timestamp": "2026-10-19T15:00:00",
         "wave_height_m": 0.54,
         "wave_direction_deg": 27.0,
-        "wave_period_s": 7.4,
-        "sea_level_height_m": -0.45,
-        "current_velocity_kmh": 1.0,
-        "current_direction_deg": 315.0
+        "wave_period_s": 7.6,
+        "swell_wave_height_m": 0.5,
+        "swell_wave_direction_deg": 30.0,
+        "swell_wave_period_s": 5.7,
+        "sea_level_height_m": -0.44,
+        "current_velocity_kmh": 0.8,
+        "current_direction_deg": 297.0
       },
       {
         "timestamp": "2026-10-19T16:00:00",
         "wave_height_m": 0.54,
         "wave_direction_deg": 26.0,
-        "wave_period_s": 7.55,
+        "wave_period_s": 7.7,
+        "swell_wave_height_m": 0.48,
+        "swell_wave_direction_deg": 30.0,
+        "swell_wave_period_s": 5.7,
         "sea_level_height_m": -0.39,
-        "current_velocity_kmh": 1.2,
-        "current_direction_deg": 321.0
+        "current_velocity_kmh": 0.8,
+        "current_direction_deg": 315.0
       },
       {
         "timestamp": "2026-10-19T17:00:00",
         "wave_height_m": 0.54,
         "wave_direction_deg": 25.0,
-        "wave_period_s": 7.65,
+        "wave_period_s": 7.8,
+        "swell_wave_height_m": 0.48,
+        "swell_wave_direction_deg": 29.0,
+        "swell_wave_period_s": 5.75,
         "sea_level_height_m": -0.29,
-        "current_velocity_kmh": 0.9,
-        "current_direction_deg": 307.0
+        "current_velocity_kmh": 0.6,
+        "current_direction_deg": 288.0
       },
       {
         "timestamp": "2026-10-19T18:00:00",
         "wave_height_m": 0.52,
-        "wave_direction_deg": 25.0,
-        "wave_period_s": 7.75,
+        "wave_direction_deg": 24.0,
+        "wave_period_s": 7.9,
+        "swell_wave_height_m": 0.46,
+        "swell_wave_direction_deg": 28.0,
+        "swell_wave_period_s": 5.85,
         "sea_level_height_m": -0.17,
-        "current_velocity_kmh": 0.7,
-        "current_direction_deg": 270.0
+        "current_velocity_kmh": 0.6,
+        "current_direction_deg": 236.0
       },
       {
         "timestamp": "2026-10-19T19:00:00",
         "wave_height_m": 0.52,
-        "wave_direction_deg": 24.0,
-        "wave_period_s": 7.85,
+        "wave_direction_deg": 23.0,
+        "wave_period_s": 8.0,
+        "swell_wave_height_m": 0.46,
+        "swell_wave_direction_deg": 27.0,
+        "swell_wave_period_s": 5.9,
         "sea_level_height_m": -0.05,
-        "current_velocity_kmh": 0.9,
-        "current_direction_deg": 217.0
+        "current_velocity_kmh": 1.2,
+        "current_direction_deg": 207.0
       },
       {
         "timestamp": "2026-10-19T20:00:00",
         "wave_height_m": 0.52,
-        "wave_direction_deg": 24.0,
-        "wave_period_s": 7.95,
-        "sea_level_height_m": 0.04,
-        "current_velocity_kmh": 1.4,
-        "current_direction_deg": 203.0
+        "wave_direction_deg": 22.0,
+        "wave_period_s": 8.1,
+        "swell_wave_height_m": 0.46,
+        "swell_wave_direction_deg": 26.0,
+        "swell_wave_period_s": 5.95,
+        "sea_level_height_m": 0.03,
+        "current_velocity_kmh": 1.5,
+        "current_direction_deg": 201.0
       },
       {
         "timestamp": "2026-10-19T21:00:00",
-        "wave_height_m": 0.5,
-        "wave_direction_deg": 23.0,
-        "wave_period_s": 8.0,
-        "sea_level_height_m": 0.07,
-        "current_velocity_kmh": 1.7,
-        "current_direction_deg": 193.0
-      },
-      {
-        "timestamp": "2026-10-19T22:00:00",
-        "wave_height_m": 0.5,
-        "wave_direction_deg": 23.0,
-        "wave_period_s": 8.1,
-        "sea_level_height_m": 0.04,
+        "wave_height_m": 0.52,
+        "wave_direction_deg": 21.0,
+        "wave_period_s": 8.15,
+        "swell_wave_height_m": 0.44,
+        "swell_wave_direction_deg": 26.0,
+        "swell_wave_period_s": 6.0,
+        "sea_level_height_m": 0.06,
         "current_velocity_kmh": 2.0,
         "current_direction_deg": 190.0
       },
       {
+        "timestamp": "2026-10-19T22:00:00",
+        "wave_height_m": 0.52,
+        "wave_direction_deg": 20.0,
+        "wave_period_s": 8.25,
+        "swell_wave_height_m": 0.44,
+        "swell_wave_direction_deg": 25.0,
+        "swell_wave_period_s": 6.05,
+        "sea_level_height_m": 0.02,
+        "current_velocity_kmh": 2.4,
+        "current_direction_deg": 189.0
+      },
+      {
         "timestamp": "2026-10-19T23:00:00",
         "wave_height_m": 0.5,
-        "wave_direction_deg": 22.0,
-        "wave_period_s": 8.15,
+        "wave_direction_deg": 19.0,
+        "wave_period_s": 8.35,
+        "swell_wave_height_m": 0.42,
+        "swell_wave_direction_deg": 27.0,
+        "swell_wave_period_s": 6.1,
         "sea_level_height_m": -0.06,
-        "current_velocity_kmh": 2.2,
-        "current_direction_deg": 194.0
+        "current_velocity_kmh": 2.4,
+        "current_direction_deg": 193.0
       },
       {
         "timestamp": "2026-10-20T00:00:00",
-        "wave_height_m": 0.48,
-        "wave_direction_deg": 22.0,
-        "wave_period_s": 8.25,
-        "sea_level_height_m": -0.18,
+        "wave_height_m": 0.5,
+        "wave_direction_deg": 19.0,
+        "wave_period_s": 8.5,
+        "swell_wave_height_m": 0.42,
+        "swell_wave_direction_deg": 28.0,
+        "swell_wave_period_s": 6.15,
+        "sea_level_height_m": -0.19,
         "current_velocity_kmh": 2.0,
         "current_direction_deg": 207.0
       },
       {
         "timestamp": "2026-10-20T01:00:00",
         "wave_height_m": 0.48,
-        "wave_direction_deg": 21.0,
-        "wave_period_s": 8.3,
-        "sea_level_height_m": -0.31,
-        "current_velocity_kmh": 1.4,
-        "current_direction_deg": 230.0
+        "wave_direction_deg": 18.0,
+        "wave_period_s": 8.6,
+        "swell_wave_height_m": 0.4,
+        "swell_wave_direction_deg": 30.0,
+        "swell_wave_period_s": 6.2,
+        "sea_level_height_m": -0.3,
+        "current_velocity_kmh": 1.5,
+        "current_direction_deg": 225.0
       },
       {
         "timestamp": "2026-10-20T02:00:00",
         "wave_height_m": 0.48,
-        "wave_direction_deg": 20.0,
-        "wave_period_s": 8.35,
-        "sea_level_height_m": -0.39,
-        "current_velocity_kmh": 0.9,
-        "current_direction_deg": 259.0
+        "wave_direction_deg": 18.0,
+        "wave_period_s": 8.7,
+        "swell_wave_height_m": 0.4,
+        "swell_wave_direction_deg": 30.0,
+        "swell_wave_period_s": 6.25,
+        "sea_level_height_m": -0.38,
+        "current_velocity_kmh": 1.1,
+        "current_direction_deg": 261.0
       },
       {
         "timestamp": "2026-10-20T03:00:00",
-        "wave_height_m": 0.46,
-        "wave_direction_deg": 20.0,
-        "wave_period_s": 8.45,
-        "sea_level_height_m": -0.41,
-        "current_velocity_kmh": 0.8,
-        "current_direction_deg": 297.0
+        "wave_height_m": 0.48,
+        "wave_direction_deg": 17.0,
+        "wave_period_s": 8.8,
+        "swell_wave_height_m": 0.38,
+        "swell_wave_direction_deg": 30.0,
+        "swell_wave_period_s": 6.35,
+        "sea_level_height_m": -0.4,
+        "current_velocity_kmh": 0.7,
+        "current_direction_deg": 284.0
       },
       {
         "timestamp": "2026-10-20T04:00:00",
-        "wave_height_m": 0.46,
-        "wave_direction_deg": 19.0,
-        "wave_period_s": 8.5,
-        "sea_level_height_m": -0.36,
+        "wave_height_m": 0.48,
+        "wave_direction_deg": 17.0,
+        "wave_period_s": 8.85,
+        "swell_wave_height_m": 0.38,
+        "swell_wave_direction_deg": 30.0,
+        "swell_wave_period_s": 6.4,
+        "sea_level_height_m": -0.35,
         "current_velocity_kmh": 0.8,
         "current_direction_deg": 315.0
       },
       {
         "timestamp": "2026-10-20T05:00:00",
-        "wave_height_m": 0.46,
-        "wave_direction_deg": 18.0,
-        "wave_period_s": 8.55,
-        "sea_level_height_m": -0.25,
-        "current_velocity_kmh": 0.5,
-        "current_direction_deg": 315.0
+        "wave_height_m": 0.48,
+        "wave_direction_deg": 17.0,
+        "wave_period_s": 8.85,
+        "swell_wave_height_m": 0.38,
+        "swell_wave_direction_deg": 29.0,
+        "swell_wave_period_s": 6.4,
+        "sea_level_height_m": -0.24,
+        "current_velocity_kmh": 0.6,
+        "current_direction_deg": 304.0
       },
       {
         "timestamp": "2026-10-20T06:00:00",
-        "wave_height_m": 0.44,
-        "wave_direction_deg": 18.0,
-        "wave_period_s": 8.6,
-        "sea_level_height_m": -0.1,
+        "wave_height_m": 0.46,
+        "wave_direction_deg": 16.0,
+        "wave_period_s": 8.8,
+        "swell_wave_height_m": 0.38,
+        "swell_wave_direction_deg": 28.0,
+        "swell_wave_period_s": 6.4,
+        "sea_level_height_m": -0.09,
         "current_velocity_kmh": 0.4,
         "current_direction_deg": 243.0
       },
       {
         "timestamp": "2026-10-20T07:00:00",
-        "wave_height_m": 0.44,
-        "wave_direction_deg": 17.0,
-        "wave_period_s": 8.65,
-        "sea_level_height_m": 0.06,
-        "current_velocity_kmh": 1.0,
-        "current_direction_deg": 202.0
+        "wave_height_m": 0.46,
+        "wave_direction_deg": 16.0,
+        "wave_period_s": 8.8,
+        "swell_wave_height_m": 0.38,
+        "swell_wave_direction_deg": 27.0,
+        "swell_wave_period_s": 6.35,
+        "sea_level_height_m": 0.07,
+        "current_velocity_kmh": 0.8,
+        "current_direction_deg": 207.0
       },
       {
         "timestamp": "2026-10-20T08:00:00",
         "wave_height_m": 0.44,
-        "wave_direction_deg": 17.0,
-        "wave_period_s": 8.7,
-        "sea_level_height_m": 0.18,
+        "wave_direction_deg": 16.0,
+        "wave_period_s": 8.85,
+        "swell_wave_height_m": 0.36,
+        "swell_wave_direction_deg": 27.0,
+        "swell_wave_period_s": 6.25,
+        "sea_level_height_m": 0.19,
         "current_velocity_kmh": 1.5,
         "current_direction_deg": 187.0
       },
       {
         "timestamp": "2026-10-20T09:00:00",
-        "wave_height_m": 0.42,
-        "wave_direction_deg": 16.0,
-        "wave_period_s": 8.7,
-        "sea_level_height_m": 0.25,
+        "wave_height_m": 0.44,
+        "wave_direction_deg": 15.0,
+        "wave_period_s": 8.9,
+        "swell_wave_height_m": 0.34,
+        "swell_wave_direction_deg": 27.0,
+        "swell_wave_period_s": 6.1,
+        "sea_level_height_m": 0.26,
         "current_velocity_kmh": 1.8,
         "current_direction_deg": 186.0
       },
       {
         "timestamp": "2026-10-20T10:00:00",
         "wave_height_m": 0.42,
-        "wave_direction_deg": 16.0,
-        "wave_period_s": 8.75,
-        "sea_level_height_m": 0.23,
+        "wave_direction_deg": 15.0,
+        "wave_period_s": 8.95,
+        "swell_wave_height_m": 0.32,
+        "swell_wave_direction_deg": 27.0,
+        "swell_wave_period_s": 6.1,
+        "sea_level_height_m": 0.24,
         "current_velocity_kmh": 2.2,
         "current_direction_deg": 185.0
       },
       {
         "timestamp": "2026-10-20T11:00:00",
         "wave_height_m": 0.42,
-        "wave_direction_deg": 16.0,
-        "wave_period_s": 8.8,
+        "wave_direction_deg": 14.0,
+        "wave_period_s": 9.0,
+        "swell_wave_height_m": 0.32,
+        "swell_wave_direction_deg": 26.0,
+        "swell_wave_period_s": 6.35,
         "sea_level_height_m": 0.13,
-        "current_velocity_kmh": 2.2,
-        "current_direction_deg": 189.0
+        "current_velocity_kmh": 2.3,
+        "current_direction_deg": 184.0
       },
       {
         "timestamp": "2026-10-20T12:00:00",
         "wave_height_m": 0.42,
-        "wave_direction_deg": 15.0,
-        "wave_period_s": 8.85,
-        "sea_level_height_m": -0.05,
-        "current_velocity_kmh": 1.9,
-        "current_direction_deg": 197.0
+        "wave_direction_deg": 14.0,
+        "wave_period_s": 9.0,
+        "swell_wave_height_m": 0.32,
+        "swell_wave_direction_deg": 26.0,
+        "swell_wave_period_s": 6.75,
+        "sea_level_height_m": -0.04,
+        "current_velocity_kmh": 2.1,
+        "current_direction_deg": 195.0
       },
       {
         "timestamp": "2026-10-20T13:00:00",
         "wave_height_m": 0.42,
-        "wave_direction_deg": 15.0,
-        "wave_period_s": 8.9,
-        "sea_level_height_m": -0.25,
-        "current_velocity_kmh": 1.3,
-        "current_direction_deg": 225.0
+        "wave_direction_deg": 13.0,
+        "wave_period_s": 9.05,
+        "swell_wave_height_m": 0.32,
+        "swell_wave_direction_deg": 25.0,
+        "swell_wave_period_s": 7.05,
+        "sea_level_height_m": -0.24,
+        "current_velocity_kmh": 1.4,
+        "current_direction_deg": 220.0
       },
       {
         "timestamp": "2026-10-20T14:00:00",
         "wave_height_m": 0.42,
-        "wave_direction_deg": 15.0,
-        "wave_period_s": 8.95,
-        "sea_level_height_m": -0.43,
+        "wave_direction_deg": 13.0,
+        "wave_period_s": 9.1,
+        "swell_wave_height_m": 0.32,
+        "swell_wave_direction_deg": 25.0,
+        "swell_wave_period_s": 7.15,
+        "sea_level_height_m": -0.42,
         "current_velocity_kmh": 0.9,
-        "current_direction_deg": 281.0
+        "current_direction_deg": 270.0
       },
       {
         "timestamp": "2026-10-20T15:00:00",
         "wave_height_m": 0.4,
-        "wave_direction_deg": 14.0,
-        "wave_period_s": 8.95,
+        "wave_direction_deg": 12.0,
+        "wave_period_s": 9.1,
+        "swell_wave_height_m": 0.32,
+        "swell_wave_direction_deg": 24.0,
+        "swell_wave_period_s": 7.1,
         "sea_level_height_m": -0.54,
-        "current_velocity_kmh": 1.3,
+        "current_velocity_kmh": 1.0,
         "current_direction_deg": 315.0
       },
       {
         "timestamp": "2026-10-20T16:00:00",
         "wave_height_m": 0.4,
-        "wave_direction_deg": 14.0,
-        "wave_period_s": 9.0,
-        "sea_level_height_m": -0.58,
-        "current_velocity_kmh": 1.4,
-        "current_direction_deg": 337.0
+        "wave_direction_deg": 12.0,
+        "wave_period_s": 9.15,
+        "swell_wave_height_m": 0.32,
+        "swell_wave_direction_deg": 24.0,
+        "swell_wave_period_s": 7.1,
+        "sea_level_height_m": -0.57,
+        "current_velocity_kmh": 1.2,
+        "current_direction_deg": 333.0
       },
       {
         "timestamp": "2026-10-20T17:00:00",
         "wave_height_m": 0.4,
-        "wave_direction_deg": 14.0,
-        "wave_period_s": 9.0,
+        "wave_direction_deg": 12.0,
+        "wave_period_s": 9.15,
+        "swell_wave_height_m": 0.32,
+        "swell_wave_direction_deg": 24.0,
+        "swell_wave_period_s": 7.1,
         "sea_level_height_m": -0.51,
-        "current_velocity_kmh": 1.4,
-        "current_direction_deg": 337.0
+        "current_velocity_kmh": 1.2,
+        "current_direction_deg": 333.0
       },
       {
         "timestamp": "2026-10-20T18:00:00",
         "wave_height_m": 0.4,
-        "wave_direction_deg": 14.0,
-        "wave_period_s": 9.05,
-        "sea_level_height_m": -0.38,
-        "current_velocity_kmh": 1.0,
-        "current_direction_deg": 329.0
+        "wave_direction_deg": 11.0,
+        "wave_period_s": 9.2,
+        "swell_wave_height_m": 0.3,
+        "swell_wave_direction_deg": 23.0,
+        "swell_wave_period_s": 7.1,
+        "sea_level_height_m": -0.37,
+        "current_velocity_kmh": 0.8,
+        "current_direction_deg": 333.0
       },
       {
         "timestamp": "2026-10-20T19:00:00",
         "wave_height_m": 0.4,
-        "wave_direction_deg": 14.0,
-        "wave_period_s": 9.05,
-        "sea_level_height_m": -0.2,
+        "wave_direction_deg": 11.0,
+        "wave_period_s": 9.2,
+        "swell_wave_height_m": 0.3,
+        "swell_wave_direction_deg": 23.0,
+        "swell_wave_period_s": 7.1,
+        "sea_level_height_m": -0.19,
         "current_velocity_kmh": 0.4,
-        "current_direction_deg": 297.0
+        "current_direction_deg": 243.0
       },
       {
         "timestamp": "2026-10-20T20:00:00",
         "wave_height_m": 0.4,
-        "wave_direction_deg": 14.0,
-        "wave_period_s": 9.05,
-        "sea_level_height_m": -0.03,
-        "current_velocity_kmh": 0.8,
-        "current_direction_deg": 207.0
+        "wave_direction_deg": 11.0,
+        "wave_period_s": 9.25,
+        "swell_wave_height_m": 0.3,
+        "swell_wave_direction_deg": 23.0,
+        "swell_wave_period_s": 7.1,
+        "sea_level_height_m": -0.02,
+        "current_velocity_kmh": 1.0,
+        "current_direction_deg": 202.0
       },
       {
         "timestamp": "2026-10-20T21:00:00",
         "wave_height_m": 0.38,
-        "wave_direction_deg": 14.0,
-        "wave_period_s": 9.05,
-        "sea_level_height_m": 0.1,
-        "current_velocity_kmh": 1.3,
-        "current_direction_deg": 196.0
+        "wave_direction_deg": 10.0,
+        "wave_period_s": 9.3,
+        "swell_wave_height_m": 0.3,
+        "swell_wave_direction_deg": 22.0,
+        "swell_wave_period_s": 7.1,
+        "sea_level_height_m": 0.12,
+        "current_velocity_kmh": 1.7,
+        "current_direction_deg": 193.0
       },
       {
         "timestamp": "2026-10-20T22:00:00",
         "wave_height_m": 0.38,
-        "wave_direction_deg": 14.0,
-        "wave_period_s": 9.05,
-        "sea_level_height_m": 0.16,
-        "current_velocity_kmh": 2.0,
-        "current_direction_deg": 190.0
-      },
-      {
-        "timestamp": "2026-10-20T23:00:00",
-        "wave_height_m": 0.38,
-        "wave_direction_deg": 14.0,
-        "wave_period_s": 9.05,
-        "sea_level_height_m": 0.11,
-        "current_velocity_kmh": 2.4,
+        "wave_direction_deg": 10.0,
+        "wave_period_s": 9.25,
+        "swell_wave_height_m": 0.3,
+        "swell_wave_direction_deg": 22.0,
+        "swell_wave_period_s": 7.1,
+        "sea_level_height_m": 0.17,
+        "current_velocity_kmh": 2.2,
         "current_direction_deg": 189.0
       },
       {
+        "timestamp": "2026-10-20T23:00:00",
+        "wave_height_m": 0.4,
+        "wave_direction_deg": 10.0,
+        "wave_period_s": 9.0,
+        "swell_wave_height_m": 0.3,
+        "swell_wave_direction_deg": 22.0,
+        "swell_wave_period_s": 7.1,
+        "sea_level_height_m": 0.13,
+        "current_velocity_kmh": 2.5,
+        "current_direction_deg": 188.0
+      },
+      {
         "timestamp": "2026-10-21T00:00:00",
-        "wave_height_m": 0.38,
-        "wave_direction_deg": 13.0,
-        "wave_period_s": 9.05,
-        "sea_level_height_m": -0.02,
-        "current_velocity_kmh": 2.4,
-        "current_direction_deg": 197.0
+        "wave_height_m": 0.4,
+        "wave_direction_deg": 11.0,
+        "wave_period_s": 8.65,
+        "swell_wave_height_m": 0.3,
+        "swell_wave_direction_deg": 22.0,
+        "swell_wave_period_s": 7.05,
+        "sea_level_height_m": 0.0,
+        "current_velocity_kmh": 2.6,
+        "current_direction_deg": 196.0
       },
       {
         "timestamp": "2026-10-21T01:00:00",
-        "wave_height_m": 0.38,
-        "wave_direction_deg": 13.0,
-        "wave_period_s": 9.05,
-        "sea_level_height_m": -0.2,
-        "current_velocity_kmh": 2.1,
-        "current_direction_deg": 211.0
+        "wave_height_m": 0.42,
+        "wave_direction_deg": 11.0,
+        "wave_period_s": 8.3,
+        "swell_wave_height_m": 0.3,
+        "swell_wave_direction_deg": 22.0,
+        "swell_wave_period_s": 7.0,
+        "sea_level_height_m": -0.18,
+        "current_velocity_kmh": 2.3,
+        "current_direction_deg": 209.0
       },
       {
         "timestamp": "2026-10-21T02:00:00",
-        "wave_height_m": 0.38,
-        "wave_direction_deg": 13.0,
-        "wave_period_s": 9.05,
-        "sea_level_height_m": -0.38,
-        "current_velocity_kmh": 1.5,
-        "current_direction_deg": 234.0
+        "wave_height_m": 0.44,
+        "wave_direction_deg": 14.0,
+        "wave_period_s": 7.95,
+        "swell_wave_height_m": 0.28,
+        "swell_wave_direction_deg": 21.0,
+        "swell_wave_period_s": 6.9,
+        "sea_level_height_m": -0.35,
+        "current_velocity_kmh": 1.7,
+        "current_direction_deg": 229.0
       },
       {
         "timestamp": "2026-10-21T03:00:00",
-        "wave_height_m": 0.38,
-        "wave_direction_deg": 12.0,
-        "wave_period_s": 9.05,
-        "sea_level_height_m": -0.51,
-        "current_velocity_kmh": 1.1,
-        "current_direction_deg": 270.0
+        "wave_height_m": 0.44,
+        "wave_direction_deg": 18.0,
+        "wave_period_s": 7.6,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 21.0,
+        "swell_wave_period_s": 6.8,
+        "sea_level_height_m": -0.48,
+        "current_velocity_kmh": 1.3,
+        "current_direction_deg": 262.0
       },
       {
         "timestamp": "2026-10-21T04:00:00",
-        "wave_height_m": 0.38,
-        "wave_direction_deg": 12.0,
-        "wave_period_s": 9.05,
-        "sea_level_height_m": -0.55,
+        "wave_height_m": 0.46,
+        "wave_direction_deg": 21.0,
+        "wave_period_s": 7.25,
+        "swell_wave_height_m": 0.24,
+        "swell_wave_direction_deg": 20.0,
+        "swell_wave_period_s": 6.75,
+        "sea_level_height_m": -0.52,
         "current_velocity_kmh": 1.0,
         "current_direction_deg": 292.0
       },
       {
         "timestamp": "2026-10-21T05:00:00",
-        "wave_height_m": 0.38,
-        "wave_direction_deg": 12.0,
-        "wave_period_s": 9.05,
-        "sea_level_height_m": -0.49,
-        "current_velocity_kmh": 1.0,
-        "current_direction_deg": 315.0
+        "wave_height_m": 0.46,
+        "wave_direction_deg": 24.0,
+        "wave_period_s": 6.95,
+        "swell_wave_height_m": 0.24,
+        "swell_wave_direction_deg": 20.0,
+        "swell_wave_period_s": 6.75,
+        "sea_level_height_m": -0.46,
+        "current_velocity_kmh": 0.9,
+        "current_direction_deg": 307.0
       },
       {
         "timestamp": "2026-10-21T06:00:00",
-        "wave_height_m": 0.36,
-        "wave_direction_deg": 12.0,
-        "wave_period_s": 9.05,
-        "sea_level_height_m": -0.33,
-        "current_velocity_kmh": 0.8,
-        "current_direction_deg": 315.0
+        "wave_height_m": 0.48,
+        "wave_direction_deg": 28.0,
+        "wave_period_s": 6.65,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 20.0,
+        "swell_wave_period_s": 6.75,
+        "sea_level_height_m": -0.31,
+        "current_velocity_kmh": 0.9,
+        "current_direction_deg": 307.0
       },
       {
         "timestamp": "2026-10-21T07:00:00",
-        "wave_height_m": 0.36,
-        "wave_direction_deg": 12.0,
-        "wave_period_s": 9.0,
-        "sea_level_height_m": -0.13,
-        "current_velocity_kmh": 0.6,
-        "current_direction_deg": 252.0
+        "wave_height_m": 0.48,
+        "wave_direction_deg": 31.0,
+        "wave_period_s": 6.4,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 20.0,
+        "swell_wave_period_s": 6.8,
+        "sea_level_height_m": -0.1,
+        "current_velocity_kmh": 0.5,
+        "current_direction_deg": 270.0
       },
       {
         "timestamp": "2026-10-21T08:00:00",
-        "wave_height_m": 0.36,
-        "wave_direction_deg": 12.0,
-        "wave_period_s": 8.95,
-        "sea_level_height_m": 0.09,
+        "wave_height_m": 0.5,
+        "wave_direction_deg": 39.0,
+        "wave_period_s": 6.1,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 19.0,
+        "swell_wave_period_s": 6.9,
+        "sea_level_height_m": 0.11,
         "current_velocity_kmh": 1.0,
         "current_direction_deg": 202.0
       },
       {
         "timestamp": "2026-10-21T09:00:00",
-        "wave_height_m": 0.36,
-        "wave_direction_deg": 13.0,
-        "wave_period_s": 8.9,
-        "sea_level_height_m": 0.26,
-        "current_velocity_kmh": 1.5,
-        "current_direction_deg": 194.0
+        "wave_height_m": 0.54,
+        "wave_direction_deg": 46.0,
+        "wave_period_s": 5.85,
+        "swell_wave_height_m": 0.24,
+        "swell_wave_direction_deg": 19.0,
+        "swell_wave_period_s": 7.0,
+        "sea_level_height_m": 0.28,
+        "current_velocity_kmh": 1.7,
+        "current_direction_deg": 193.0
       },
       {
         "timestamp": "2026-10-21T10:00:00",
-        "wave_height_m": 0.36,
-        "wave_direction_deg": 13.0,
-        "wave_period_s": 8.85,
-        "sea_level_height_m": 0.35,
-        "current_velocity_kmh": 2.0,
-        "current_direction_deg": 190.0
+        "wave_height_m": 0.56,
+        "wave_direction_deg": 54.0,
+        "wave_period_s": 5.6,
+        "swell_wave_height_m": 0.24,
+        "swell_wave_direction_deg": 18.0,
+        "swell_wave_period_s": 6.85,
+        "sea_level_height_m": 0.37,
+        "current_velocity_kmh": 2.2,
+        "current_direction_deg": 189.0
       },
       {
         "timestamp": "2026-10-21T11:00:00",
-        "wave_height_m": 0.36,
-        "wave_direction_deg": 14.0,
-        "wave_period_s": 8.75,
-        "sea_level_height_m": 0.31,
-        "current_velocity_kmh": 2.4,
-        "current_direction_deg": 189.0
+        "wave_height_m": 0.58,
+        "wave_direction_deg": 58.0,
+        "wave_period_s": 5.4,
+        "swell_wave_height_m": 0.26,
+        "swell_wave_direction_deg": 45.0,
+        "swell_wave_period_s": 6.25,
+        "sea_level_height_m": 0.33,
+        "current_velocity_kmh": 2.5,
+        "current_direction_deg": 188.0
       },
       {
         "timestamp": "2026-10-21T12:00:00",
-        "wave_height_m": 0.34,
-        "wave_direction_deg": 16.0,
-        "wave_period_s": 8.7,
-        "sea_level_height_m": 0.16,
-        "current_velocity_kmh": 2.4,
-        "current_direction_deg": 197.0
+        "wave_height_m": 0.6,
+        "wave_direction_deg": 63.0,
+        "wave_period_s": 5.2,
+        "swell_wave_height_m": 0.28,
+        "swell_wave_direction_deg": 73.0,
+        "swell_wave_period_s": 5.4,
+        "sea_level_height_m": 0.17,
+        "current_velocity_kmh": 2.6,
+        "current_direction_deg": 196.0
       },
       {
         "timestamp": "2026-10-21T13:00:00",
-        "wave_height_m": 0.34,
-        "wave_direction_deg": 17.0,
-        "wave_period_s": 8.6,
-        "sea_level_height_m": -0.09,
-        "current_velocity_kmh": 2.1,
-        "current_direction_deg": 211.0
+        "wave_height_m": 0.62,
+        "wave_direction_deg": 67.0,
+        "wave_period_s": 5.1,
+        "swell_wave_height_m": 0.3,
+        "swell_wave_direction_deg": 100.0,
+        "swell_wave_period_s": 4.75,
+        "sea_level_height_m": -0.08,
+        "current_velocity_kmh": 2.4,
+        "current_direction_deg": 207.0
       },
       {
         "timestamp": "2026-10-21T14:00:00",
-        "wave_height_m": 0.34,
-        "wave_direction_deg": 19.0,
-        "wave_period_s": 8.5,
-        "sea_level_height_m": -0.35,
-        "current_velocity_kmh": 1.6,
-        "current_direction_deg": 243.0
+        "wave_height_m": 0.64,
+        "wave_direction_deg": 69.0,
+        "wave_period_s": 5.05,
+        "swell_wave_height_m": 0.32,
+        "swell_wave_direction_deg": 96.0,
+        "swell_wave_period_s": 4.6,
+        "sea_level_height_m": -0.34,
+        "current_velocity_kmh": 1.8,
+        "current_direction_deg": 233.0
       },
       {
         "timestamp": "2026-10-21T15:00:00",
-        "wave_height_m": 0.34,
-        "wave_direction_deg": 20.0,
-        "wave_period_s": 8.45,
-        "sea_level_height_m": -0.58,
-        "current_velocity_kmh": 1.7,
-        "current_direction_deg": 283.0
+        "wave_height_m": 0.64,
+        "wave_direction_deg": 70.0,
+        "wave_period_s": 5.05,
+        "swell_wave_height_m": 0.36,
+        "swell_wave_direction_deg": 93.0,
+        "swell_wave_period_s": 4.65,
+        "sea_level_height_m": -0.57,
+        "current_velocity_kmh": 1.6,
+        "current_direction_deg": 270.0
       },
       {
         "timestamp": "2026-10-21T16:00:00",
-        "wave_height_m": 0.34,
-        "wave_direction_deg": 22.0,
-        "wave_period_s": 8.35,
-        "sea_level_height_m": -0.72,
-        "current_velocity_kmh": 1.8,
-        "current_direction_deg": 307.0
+        "wave_height_m": 0.66,
+        "wave_direction_deg": 72.0,
+        "wave_period_s": 5.05,
+        "swell_wave_height_m": 0.38,
+        "swell_wave_direction_deg": 89.0,
+        "swell_wave_period_s": 4.6,
+        "sea_level_height_m": -0.71,
+        "current_velocity_kmh": 1.6,
+        "current_direction_deg": 297.0
       },
       {
         "timestamp": "2026-10-21T17:00:00",
-        "wave_height_m": 0.34,
-        "wave_direction_deg": 23.0,
-        "wave_period_s": 8.3,
-        "sea_level_height_m": -0.73,
-        "current_velocity_kmh": 1.9,
-        "current_direction_deg": 319.0
-      },
-      {
-        "timestamp": "2026-10-21T18:00:00",
-        "wave_height_m": 0.34,
-        "wave_direction_deg": 24.0,
-        "wave_period_s": 8.25,
-        "sea_level_height_m": -0.62,
+        "wave_height_m": 0.66,
+        "wave_direction_deg": 73.0,
+        "wave_period_s": 5.05,
+        "swell_wave_height_m": 0.42,
+        "swell_wave_direction_deg": 87.0,
+        "swell_wave_period_s": 4.3,
+        "sea_level_height_m": -0.72,
         "current_velocity_kmh": 1.8,
-        "current_direction_deg": 323.0
-      },
-      {
-        "timestamp": "2026-10-21T19:00:00",
-        "wave_height_m": 0.34,
-        "wave_direction_deg": 25.0,
-        "wave_period_s": 8.1,
-        "sea_level_height_m": -0.41,
-        "current_velocity_kmh": 1.5,
         "current_direction_deg": 315.0
       },
       {
+        "timestamp": "2026-10-21T18:00:00",
+        "wave_height_m": 0.66,
+        "wave_direction_deg": 75.0,
+        "wave_period_s": 5.1,
+        "swell_wave_height_m": 0.48,
+        "swell_wave_direction_deg": 86.0,
+        "swell_wave_period_s": 3.9,
+        "sea_level_height_m": -0.61,
+        "current_velocity_kmh": 1.8,
+        "current_direction_deg": 315.0
+      },
+      {
+        "timestamp": "2026-10-21T19:00:00",
+        "wave_height_m": 0.66,
+        "wave_direction_deg": 76.0,
+        "wave_period_s": 5.1,
+        "swell_wave_height_m": 0.52,
+        "swell_wave_direction_deg": 84.0,
+        "swell_wave_period_s": 3.65,
+        "sea_level_height_m": -0.41,
+        "current_velocity_kmh": 1.3,
+        "current_direction_deg": 304.0
+      },
+      {
         "timestamp": "2026-10-21T20:00:00",
-        "wave_height_m": 0.34,
-        "wave_direction_deg": 27.0,
-        "wave_period_s": 7.8,
+        "wave_height_m": 0.68,
+        "wave_direction_deg": 75.0,
+        "wave_period_s": 5.05,
+        "swell_wave_height_m": 0.5,
+        "swell_wave_direction_deg": 83.0,
+        "swell_wave_period_s": 3.6,
         "sea_level_height_m": -0.16,
         "current_velocity_kmh": 0.9,
-        "current_direction_deg": 281.0
+        "current_direction_deg": 270.0
       },
       {
         "timestamp": "2026-10-21T21:00:00",
-        "wave_height_m": 0.36,
-        "wave_direction_deg": 29.0,
-        "wave_period_s": 7.45,
+        "wave_height_m": 0.7,
+        "wave_direction_deg": 74.0,
+        "wave_period_s": 5.0,
+        "swell_wave_height_m": 0.5,
+        "swell_wave_direction_deg": 82.0,
+        "swell_wave_period_s": 3.65,
         "sea_level_height_m": 0.07,
-        "current_velocity_kmh": 0.9,
-        "current_direction_deg": 217.0
+        "current_velocity_kmh": 1.2,
+        "current_direction_deg": 219.0
       },
       {
         "timestamp": "2026-10-21T22:00:00",
-        "wave_height_m": 0.36,
-        "wave_direction_deg": 31.0,
-        "wave_period_s": 7.1,
+        "wave_height_m": 0.72,
+        "wave_direction_deg": 73.0,
+        "wave_period_s": 4.95,
+        "swell_wave_height_m": 0.48,
+        "swell_wave_direction_deg": 81.0,
+        "swell_wave_period_s": 3.75,
         "sea_level_height_m": 0.23,
-        "current_velocity_kmh": 1.5,
-        "current_direction_deg": 201.0
+        "current_velocity_kmh": 1.7,
+        "current_direction_deg": 198.0
       },
       {
         "timestamp": "2026-10-21T23:00:00",
-        "wave_height_m": 0.36,
-        "wave_direction_deg": 33.0,
-        "wave_period_s": 6.75,
+        "wave_height_m": 0.74,
+        "wave_direction_deg": 71.0,
+        "wave_period_s": 4.9,
+        "swell_wave_height_m": 0.48,
+        "swell_wave_direction_deg": 78.0,
+        "swell_wave_period_s": 3.8,
         "sea_level_height_m": 0.27,
-        "current_velocity_kmh": 2.2,
-        "current_direction_deg": 189.0
+        "current_velocity_kmh": 2.4,
+        "current_direction_deg": 193.0
       }
     ]
   }

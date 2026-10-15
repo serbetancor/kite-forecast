@@ -3,7 +3,7 @@ from datetime import datetime
 from pydantic import BaseModel
 
 from kite_forecast.models.beach import Beach
-from kite_forecast.models.weather import WeatherForecast, WeatherObservation
+from kite_forecast.models.forecast import WeatherForecast, WeatherObservation
 from kite_forecast.providers.client import get_json
 
 

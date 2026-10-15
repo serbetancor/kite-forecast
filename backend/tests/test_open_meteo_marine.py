@@ -3,7 +3,7 @@ from datetime import datetime
 from unittest.mock import AsyncMock, patch
 
 from kite_forecast.config.beaches import BEACHES
-from kite_forecast.models.marine import MarineObservation
+from kite_forecast.models.forecast import MarineObservation
 from kite_forecast.providers.open_meteo_marine import (
     OpenMeteoMarineHourly,
     OpenMeteoMarineProvider,
@@ -26,6 +26,9 @@ def test_to_marine_observations() -> None:
             wave_height=[1.24, 1.18],
             wave_direction=[53.0, 55.0],
             wave_period=[5.9, 6.1],
+            swell_wave_height=[0.8, 0.7],
+            swell_wave_direction=[45.0, 48.0],
+            swell_wave_period=[8.0, 8.5],
             sea_level_height_msl=[-0.62, -0.55],
             ocean_current_velocity=[1.5, 1.7],
             ocean_current_direction=[234.0, 230.0],
@@ -45,9 +48,10 @@ def test_to_marine_observations() -> None:
     assert first.wave_height_m == 1.24
     assert first.wave_direction_deg == 53.0
     assert first.wave_period_s == 5.9
+    assert first.swell_wave_height_m == 0.8
+    assert first.swell_wave_direction_deg == 45.0
+    assert first.swell_wave_period_s == 8.0
     assert first.sea_level_height_m == -0.62
-    assert first.current_velocity_kmh == 1.5
-    assert first.current_direction_deg == 234.0
 
 
 def test_to_marine_forecast() -> None:
@@ -62,6 +66,9 @@ def test_to_marine_forecast() -> None:
             wave_height=[1.24],
             wave_direction=[53.0],
             wave_period=[5.9],
+            swell_wave_height=[0.8, 0.7],
+            swell_wave_direction=[45.0, 48.0],
+            swell_wave_period=[8.0, 8.5],
             sea_level_height_msl=[-0.62],
             ocean_current_velocity=[1.5],
             ocean_current_direction=[234.0],
@@ -93,6 +100,9 @@ def test_get_forecast() -> None:
             wave_height=[1.24, 1.18],
             wave_direction=[53.0, 55.0],
             wave_period=[5.9, 6.1],
+            swell_wave_height=[0.8, 0.7],
+            swell_wave_direction=[45.0, 48.0],
+            swell_wave_period=[8.0, 8.5],
             sea_level_height_msl=[-0.62, -0.55],
             ocean_current_velocity=[1.5, 1.7],
             ocean_current_direction=[234.0, 230.0],

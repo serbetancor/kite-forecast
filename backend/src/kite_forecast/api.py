@@ -9,6 +9,7 @@ from kite_forecast.config.beaches import BEACHES
 from kite_forecast.models.scored_forecast import ScoredHour
 from kite_forecast.services.forecast import ForecastService
 from kite_forecast.services.score_cache import ScoreCacheError
+from kite_forecast.services.tides import TideService
 
 app = FastAPI(title="Kite Forecast API")
 
@@ -24,6 +25,7 @@ app.add_middleware(
 )
 
 forecast_service = ForecastService()
+tide_service = TideService(forecast_service.cache)
 
 
 class BeachConfig(TypedDict):
