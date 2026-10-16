@@ -3,9 +3,12 @@ import { onMounted, ref } from "vue"
 
 import BeachRanking from "../components/BeachRanking.vue"
 import type { BeachOption } from "../models/config"
+import type { WeeklyBeachForecast } from "../models/response"
 import { getAppConfig } from "../services/forecastService"
+import { loadWeeklyForecasts } from "../services/scoresService"
 
 const beaches = ref<BeachOption[]>([])
+const weeklyForecasts = ref<WeeklyBeachForecast[]>([])
 const forecastHorizonDays = ref(7)
 const loading = ref(true)
 const error = ref("")
@@ -20,11 +23,12 @@ onMounted(async () => {
 
     beaches.value = config.beaches
     forecastHorizonDays.value = config.forecast_horizon_days
+    weeklyForecasts.value = await loadWeeklyForecasts(config.beaches)
   } catch (err) {
     error.value =
       err instanceof Error
         ? err.message
-        : "No se ha podido cargar la configuración."
+        : "No se han podido cargar las previsiones."
   } finally {
     loading.value = false
   }
@@ -57,7 +61,7 @@ onMounted(async () => {
       class="rounded-xl border border-(--previ-border) bg-white p-6 text-sm"
       role="status"
     >
-      Cargando playas...
+      Cargando previsiones meteorológicas y marinas...
     </div>
 
     <div
@@ -72,6 +76,7 @@ onMounted(async () => {
       v-else
       :beaches="beaches"
       :forecast-horizon-days="forecastHorizonDays"
+      :weekly-forecasts="weeklyForecasts"
     />
   </section>
 </template>

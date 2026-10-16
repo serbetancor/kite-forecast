@@ -1,4 +1,4 @@
-from kite_forecast.models.forecast import HourlyForecast
+from kite_forecast.models.forecast import WeatherObservation
 from kite_forecast.models.kite_sizing import (
     KiteSizingCell,
     KiteSizingMatrix,
@@ -30,10 +30,10 @@ def _suitability_score(
 
 
 def build_kite_sizing_matrix(
-    forecast: HourlyForecast,
+    weatherObservation: WeatherObservation,
 ) -> KiteSizingMatrix:
-    wind_speed = forecast.weather.wind_speed_kn
-    wind_gusts = forecast.weather.wind_gusts_kn
+    wind_speed = weatherObservation.wind_speed_kn
+    wind_gusts = weatherObservation.wind_gusts_kn
 
     weights = list(
         range(
@@ -47,27 +47,19 @@ def build_kite_sizing_matrix(
     cells: list[KiteSizingCell] = []
 
     for weight in weights:
-        if wind_speed <= 0:
-            ideal_size = 0.0
-        else:
-            ideal_size = weight * 2.2 / wind_speed
+        ideal_size = weight * 2.2 / wind_speed if wind_speed > 0 else 0.0
 
         for kite_size in kite_sizes:
-            score = _suitability_score(
-                kite_size,
-                ideal_size,
-            )
-
             cells.append(
                 KiteSizingCell(
                     weight_kg=weight,
                     kite_size_m2=kite_size,
-                    score=score,
+                    score=_suitability_score(kite_size, ideal_size),
                 )
             )
 
     return KiteSizingMatrix(
-        timestamp=forecast.timestamp,
+        timestamp=weatherObservation.timestamp,
         wind_speed_kn=wind_speed,
         wind_gusts_kn=wind_gusts,
         weights_kg=weights,

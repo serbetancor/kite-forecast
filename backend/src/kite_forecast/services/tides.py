@@ -1,36 +1,22 @@
 from datetime import datetime
 
-from kite_forecast.models.beach import Beach
-from kite_forecast.models.forecast import MarineObservation
+from kite_forecast.models.forecast import MarineForecast, MarineObservation
 from kite_forecast.models.report import (
     TideEventReport,
     TideReport,
     TideTrend,
 )
-from kite_forecast.services.forecast_cache import ForecastCache
 
 STABLE_THRESHOLD_M = 0.02
 
 
 class TideService:
-    def __init__(self, cache: ForecastCache) -> None:
-        self.cache = cache
-
-    def _get_observations(self, beach: Beach) -> list[MarineObservation]:
-        cached_forecast = self.cache.get_forecast(beach)
-
-        return sorted(
-            cached_forecast.marine.observations,
-            key=lambda observation: observation.timestamp,
-        )
-
     @staticmethod
     def _get_trend(
         observations: list[MarineObservation],
         index: int,
     ) -> TideTrend:
-        current = observations[index]
-        current_level = current.sea_level_height_m
+        current_level = observations[index].sea_level_height_m
 
         if 0 < index < len(observations) - 1:
             previous_level = observations[index - 1].sea_level_height_m
@@ -77,8 +63,10 @@ class TideService:
 
     @staticmethod
     def _to_event(
-        observation: MarineObservation,
-    ) -> TideEventReport:
+        observation: MarineObservation | None,
+    ) -> TideEventReport | None:
+        if observation is None:
+            return None
 
         return TideEventReport(
             timestamp=observation.timestamp,
@@ -87,10 +75,13 @@ class TideService:
 
     def get_tide_report(
         self,
-        beach: Beach,
+        marine_forecast: MarineForecast,
         timestamp: datetime,
     ) -> TideReport:
-        observations = self._get_observations(beach)
+        observations = sorted(
+            marine_forecast.observations,
+            key=lambda observation: observation.timestamp,
+        )
 
         index_by_timestamp = {
             observation.timestamp: index
@@ -100,7 +91,7 @@ class TideService:
 
         if index is None:
             raise ValueError(
-                f"No marine observation found for {beach.id} at {timestamp}"
+                f"No marine observation found for {marine_forecast.beach.id} at {timestamp}"
             )
 
         high_tides, low_tides = self._get_extrema(observations)
@@ -111,6 +102,7 @@ class TideService:
                 for observation in high_tides
                 if observation.timestamp > timestamp
             ),
+            None,
         )
         next_low = next(
             (
@@ -118,6 +110,7 @@ class TideService:
                 for observation in low_tides
                 if observation.timestamp > timestamp
             ),
+            None,
         )
 
         return TideReport(

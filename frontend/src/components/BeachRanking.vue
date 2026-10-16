@@ -4,14 +4,18 @@ import { computed } from "vue"
 import { useScoreRanking } from "../composables/useScoreRanking"
 import type { BeachOption } from "../models/config"
 import type { ScoredHour } from "../models/forecast"
+import type { WeeklyBeachForecast } from "../models/response"
 import DateSelector from "./DateSelector.vue"
 
 const props = defineProps<{
   beaches: BeachOption[]
   forecastHorizonDays: number
+  weeklyForecasts: WeeklyBeachForecast[]
 }>()
 
-const { selectedDate, entries, loading, error, hasScores } = useScoreRanking()
+const { selectedDate, entries, loading, error, hasScores } = useScoreRanking(
+  props.weeklyForecasts,
+)
 
 const timeFormatter = new Intl.DateTimeFormat("es-ES", {
   hour: "2-digit",

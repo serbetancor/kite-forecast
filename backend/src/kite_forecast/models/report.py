@@ -1,13 +1,10 @@
 from datetime import datetime
+from typing import Literal
 
 from pydantic import BaseModel
 
 from kite_forecast.models.beach import Beach
 from kite_forecast.models.score import HourlyScore
-from datetime import datetime
-from typing import Literal
-
-from pydantic import BaseModel
 
 TideTrend = Literal[
     "rising",
@@ -25,8 +22,8 @@ class TideEventReport(BaseModel):
 
 class TideReport(BaseModel):
     trend: TideTrend
-    next_high_tide: TideEventReport
-    next_low_tide: TideEventReport
+    next_high_tide: TideEventReport | None
+    next_low_tide: TideEventReport | None
 
 
 class WindReport(BaseModel):

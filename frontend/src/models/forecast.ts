@@ -45,8 +45,8 @@ export interface TideObservation {
 
 export interface TideReport {
   trend: TideTrend
-  next_high_tide: TideObservation
-  next_low_tide: TideObservation
+  next_high_tide: TideObservation | null
+  next_low_tide: TideObservation | null
 }
 
 export interface WeatherReport {
