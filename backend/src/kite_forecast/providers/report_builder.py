@@ -3,13 +3,13 @@ from kite_forecast.models.report import (
     ObjectiveReport,
     SeaReport,
     SwellReport,
+    TideReport,
     WavesReport,
     WeatherReport,
     WindReport,
 )
 from kite_forecast.models.score import HourlyScore
 from kite_forecast.utils.directions import degrees_to_cardinal
-from kite_forecast.models.report import TideReport
 
 
 def build_report(

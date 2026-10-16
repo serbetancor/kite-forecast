@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from pydantic import BaseModel, model_validator
+from pydantic import BaseModel
 
 from kite_forecast.models.beach import Beach
 
@@ -45,17 +45,3 @@ class HourlyForecast(BaseModel):
     timestamp: datetime
     weather: WeatherObservation
     marine: MarineObservation
-
-
-class CachedForecast(BaseModel):
-    weather: WeatherForecast
-    marine: MarineForecast
-
-    @model_validator(mode="after")
-    def validate_matching_beaches(self) -> "CachedForecast":
-        if self.weather.beach.id != self.marine.beach.id:
-            raise ValueError(
-                "Weather and marine forecasts must belong to the same beach"
-            )
-
-        return self

@@ -89,9 +89,13 @@ const metricCards = computed(() => [
     text: formatTideTrend(props.forecast.tide.trend),
     detail: [
       `Nivel del mar: ${props.forecast.sea.level_m} m`,
-      `Próxima pleamar: ${formatTime(props.forecast.tide.next_high_tide.timestamp)}`,
-      `Próxima bajamar: ${formatTime(props.forecast.tide.next_low_tide.timestamp)}`,
-    ].join("\n"),
+      props.forecast.tide.next_high_tide &&
+        `Próxima pleamar: ${formatTime(props.forecast.tide.next_high_tide.timestamp)}`,
+      props.forecast.tide.next_low_tide &&
+        `Próxima bajamar: ${formatTime(props.forecast.tide.next_low_tide.timestamp)}`,
+    ]
+      .filter(Boolean)
+      .join("\n"),
   },
 ])
 </script>

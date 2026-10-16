@@ -1,55 +1,67 @@
 from datetime import datetime
 
 from kite_forecast.models.beach import Beach
-from kite_forecast.models.forecast import HourlyForecast
+from kite_forecast.models.forecast import (
+    MarineForecast,
+    WeatherForecast,
+)
 from kite_forecast.models.kite_sizing import KiteSizingMatrix
+from kite_forecast.models.report import ObjectiveReport
+from kite_forecast.models.score import HourlyScore
 from kite_forecast.providers.forecast_builder import build_hourly_forecasts
-from kite_forecast.providers.report_builder import ObjectiveReport, build_report
-from kite_forecast.services.forecast_cache import ForecastCache
+from kite_forecast.providers.report_builder import build_report
 from kite_forecast.services.kite_sizing import build_kite_sizing_matrix
-from kite_forecast.services.score_cache import ScoreCacheService
+from kite_forecast.services.spot_scoring import score_forecast
 from kite_forecast.services.tides import TideService
 
 
 class ForecastService:
-    def __init__(
-        self,
-        cache: ForecastCache | None = None,
-        score_cache: ScoreCacheService | None = None,
-    ) -> None:
-        self.cache = cache if cache is not None else ForecastCache()
-        self.score_cache = (
-            score_cache if score_cache is not None else ScoreCacheService()
-        )
-        self.tide_service = TideService(self.cache)
+    def __init__(self) -> None:
+        self.tide_service = TideService()
 
-    async def _get_hourly_forecast(
-        self,
-        beach: Beach,
+    @staticmethod
+    def _get_hourly_forecast(
+        weather_forecast: WeatherForecast,
+        marine_forecast: MarineForecast,
         timestamp: datetime,
-    ) -> HourlyForecast:
-        cached_forecast = self.cache.get_forecast(beach)
-
+    ):
         forecasts = build_hourly_forecasts(
-            cached_forecast.weather,
-            cached_forecast.marine,
+            weather_forecast,
+            marine_forecast,
         )
 
         for forecast in forecasts:
             if forecast.timestamp == timestamp:
                 return forecast
 
-        raise ValueError(f"No forecast found for {beach.name} at {timestamp}")
+        raise ValueError(
+            f"No forecast found for {weather_forecast.beach.name} at {timestamp}"
+        )
 
-    async def get_forecast(
+    def get_forecast(
         self,
         beach: Beach,
         timestamp: datetime,
+        weather_forecast: WeatherForecast,
+        marine_forecast: MarineForecast,
     ) -> ObjectiveReport:
-        forecast = await self._get_hourly_forecast(beach, timestamp)
-        score = self.score_cache.get_score(beach.id, forecast.timestamp)
+        if (
+            weather_forecast.beach.id != beach.id
+            or marine_forecast.beach.id != beach.id
+        ):
+            raise ValueError("Forecast data does not match the selected beach")
 
-        tide = self.tide_service.get_tide_report(beach, timestamp)
+        forecast = self._get_hourly_forecast(
+            weather_forecast,
+            marine_forecast,
+            timestamp,
+        )
+
+        score: HourlyScore = score_forecast(forecast)
+        tide = self.tide_service.get_tide_report(
+            marine_forecast,
+            timestamp,
+        )
 
         return build_report(
             forecast=forecast,
@@ -57,10 +69,27 @@ class ForecastService:
             tide=tide,
         )
 
-    async def get_kite_sizing(
+    def get_kite_sizing(
         self,
         beach: Beach,
         timestamp: datetime,
+        weather_forecast: WeatherForecast,
     ) -> KiteSizingMatrix:
-        forecast = await self._get_hourly_forecast(beach, timestamp)
-        return build_kite_sizing_matrix(forecast)
+        if weather_forecast.beach.id != beach.id:
+            raise ValueError("Weather data does not match the selected beach")
+
+        observation = next(
+            (
+                item
+                for item in weather_forecast.observations
+                if item.timestamp == timestamp
+            ),
+            None,
+        )
+
+        if observation is None:
+            raise ValueError(
+                f"No weather observation found for {beach.name} at {timestamp}"
+            )
+
+        return build_kite_sizing_matrix(observation)

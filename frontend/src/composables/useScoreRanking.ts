@@ -1,6 +1,7 @@
 import { computed, ref, watch } from "vue"
 
 import type { ScoredHour } from "../models/forecast"
+import type { WeeklyBeachForecast } from "../models/response"
 import { getScores } from "../services/forecastService"
 
 function formatDate(date: Date): string {
@@ -11,7 +12,7 @@ function formatDate(date: Date): string {
   return `${year}-${month}-${day}`
 }
 
-export function useScoreRanking() {
+export function useScoreRanking(weeklyForecasts: WeeklyBeachForecast[]) {
   const selectedDate = ref(formatDate(new Date()))
   const entries = ref<ScoredHour[]>([])
   const loading = ref(false)
@@ -26,8 +27,7 @@ export function useScoreRanking() {
     error.value = ""
 
     try {
-      const scores = await getScores(selectedDate.value)
-
+      const scores = await getScores(selectedDate.value, weeklyForecasts)
       if (currentRequestId === requestId) {
         entries.value = scores
       }

@@ -4,7 +4,6 @@ from pydantic import BaseModel
 
 from kite_forecast.models.beach import Beach
 from kite_forecast.models.forecast import MarineForecast, MarineObservation
-from kite_forecast.providers.client import get_json
 
 
 class OpenMeteoMarineHourly(BaseModel):
@@ -83,40 +82,3 @@ def to_marine_forecast(
         model_longitude=response.longitude,
         observations=to_marine_observations(response.hourly),
     )
-
-
-class OpenMeteoMarineProvider:
-    BASE_URL = "https://marine-api.open-meteo.com/v1/marine"
-
-    async def get_forecast(
-        self,
-        beach: Beach,
-        timestamp: datetime,
-    ) -> MarineForecast:
-        url = (
-            f"{self.BASE_URL}"
-            f"?latitude={beach.location.latitude}"
-            f"&longitude={beach.location.longitude}"
-            "&hourly=wave_height,wave_direction,wave_period,"
-            "swell_wave_height,swell_wave_direction,swell_wave_period,"
-            "sea_level_height_msl,ocean_current_velocity,ocean_current_direction"
-            f"&start_date={timestamp.date()}"
-            f"&end_date={timestamp.date()}"
-            "&timezone=Atlantic%2FCanary"
-        )
-
-        data = await get_json(url)
-        response = OpenMeteoMarineResponse.model_validate(data)
-
-        forecast = to_marine_forecast(beach, response)
-
-        for observation in forecast.observations:
-            if observation.timestamp == timestamp:
-                return MarineForecast(
-                    beach=forecast.beach,
-                    model_latitude=forecast.model_latitude,
-                    model_longitude=forecast.model_longitude,
-                    observations=[observation],
-                )
-
-        raise ValueError(f"No marine forecast found for {beach.name} at {timestamp}")
